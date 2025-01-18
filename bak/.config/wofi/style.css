@@ -1,0 +1,89 @@
+/*@import url("./.config/my-shared-config/colors/frappe.css");*/
+/*@import url("./.config/my-shared-config/colors/gruv-dark.css");*/
+@import url("./.config/my-shared-config/colors/mocha.css");
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 16px;
+}
+
+window {
+    transition: 0.5s ease-in-out;
+    background-color: transparent;
+}
+
+#input {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    border-style: solid;
+    border-radius: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-color: @text;
+    outline: none;
+    color: @surface0;
+    background-color: @base;
+}
+
+#input:focus {
+    outline: none;
+    box-shadow: none;
+    font-size: 20px;
+}
+
+#inner-box {
+    margin: 0px;
+    border: none;
+    background-color: @surface0;
+}
+
+#outer-box {
+    margin: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 4px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    transition: 1s ease-in-out;
+    background-color: @surface0;
+    border-color: @subtext1;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 2px;
+    border: none;
+    color: @subtext1;
+}
+
+#text:selected {
+    font-weight: bold;
+    color: @surface0;
+}
+
+#entry:selected {
+    outline: none;
+    background-color: @subtext1;
+}
+
+#entry {
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 0px;
+    padding-left: 20px;
+    background-color: @surface0;
+}
