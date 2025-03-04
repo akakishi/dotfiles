@@ -16,8 +16,8 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock",
-        "custom/weather"
+        "clock"
+        //"custom/weather"
     ],
     "modules-right": [
         "custom/media",
