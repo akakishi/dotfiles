@@ -77,7 +77,7 @@ if rofi_process.returncode != 0:
     print("User cancelled the operation.")
     exit(0)
 
-selected_sink_name = wofi_process.stdout.strip()
+selected_sink_name = rofi_process.stdout.strip()
 sinks = parse_wpctl_status()
 selected_sink = next(sink for sink in sinks if sink['sink_name'] == selected_sink_name)
 subprocess.run(f"wpctl set-default {selected_sink['sink_id']}", shell=True)

@@ -30,7 +30,6 @@ ShowInstallerIsoInfo() {
     fi
 }
 
-eval "$(oh-my-posh init bash --config $HOME/.config/oh-my-posh/catppuccin_mocha.omp.toml)"
 
 alias v='nvim'
 
@@ -90,4 +89,6 @@ _open_files_for_editing() {
 
 . "$HOME/.cargo/env"
 
+export PATH="$PATH:/home/ramirods/.local/bin"
+eval "$(oh-my-posh init bash --config $HOME/.config/oh-my-posh/catppuccin_mocha.omp.toml)"
 eval "$(thefuck --alias)"

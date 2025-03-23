@@ -233,7 +233,7 @@
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "tooltip": false,
-        "format-muted": "󰕿 Muted",
+        "format-muted": "󰝟 {volume}%",
         "on-click": "sleep 0.1 && ~/.config/waybar/scripts/audio_changer.py",
         "on-click-right": "sleep 0.1 && pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "on-click-middle": "sleep 0.1 && pavucontrol",

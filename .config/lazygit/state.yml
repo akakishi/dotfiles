@@ -6,7 +6,7 @@ lastversion: 0.48.0
 customcommandshistory:
     - q
     - add *
-hidecommandlog: true
+hidecommandlog: false
 ignorewhitespaceindiffview: false
 diffcontextsize: 3
 renamesimilaritythreshold: 50
