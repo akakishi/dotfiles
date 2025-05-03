@@ -90,5 +90,7 @@ _open_files_for_editing() {
 . "$HOME/.cargo/env"
 
 export PATH="$PATH:/home/ramirods/.local/bin"
+export DOTNET_ROOT="$HOME/.dotnet"
+export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"
 eval "$(oh-my-posh init bash --config $HOME/.config/oh-my-posh/catppuccin_mocha.omp.toml)"
 eval "$(thefuck --alias)"

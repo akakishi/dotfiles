@@ -1,3 +1,0 @@
-(include "./modules/hypr-workspaces.yuck")
-(include "./modules/hypr-active-window.yuck")
-(include "./eww-bar/eww.yuck")
