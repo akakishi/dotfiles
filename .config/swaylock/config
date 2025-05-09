@@ -20,7 +20,7 @@ datestr=%a, %e %B
 
 # Add an image as a background 
 # In my setup the current wallpaper (requires wallpaper scripts in /scripts)
-image=~/jwst-desktop-01.jpg
+image=~/wallpapers/jwst-desktop-01.jpg
 
 # Fade in time
 fade-in=1

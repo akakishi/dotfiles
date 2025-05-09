@@ -29,5 +29,5 @@ swaylock \
 	--grace 2 \
 	--fade-in 0.2
 
-	#--image "$HOME/jwst-desktop-01.jpg" \
+	#--image "$HOME/wallpapers/jwst-desktop-01.jpg" \
 	#--daemonize

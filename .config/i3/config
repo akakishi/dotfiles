@@ -606,4 +606,4 @@ exec_always xrandr --output DisplayPort-0 --primary --mode 1920x1080 --pos 1920x
 exec_always xrandr --output DisplayPort-1 --mode 1920x1080 --pos 3840x0 --rotate normal
 exec_always xrandr --output DisplayPort-2 --off
 
-exec_always feh --bg-fill $HOME/Imágenes/jwst-desktop-01.jpg
+exec_always feh --bg-fill $HOME/Imágenes/wallpapers/jwst-desktop-01.jpg
