@@ -20,7 +20,7 @@ case $chosen in
         exit
         ;;
     $lock)
-        swaylock -f
+        hyprlock
         ;;
         # sh $HOME/.local/bin/lock
         # ;;
