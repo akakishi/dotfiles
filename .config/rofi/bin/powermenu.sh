@@ -22,15 +22,13 @@ case $chosen in
     $lock)
         hyprlock
         ;;
-        # sh $HOME/.local/bin/lock
-        # ;;
     $logout)
-		hyprtcl dispatch exit
+        hyprtcl dispatch exit
         ;;
     $reboot)
-		systemctl reboot
+        systemctl reboot
         ;;
     $shutdown)
-		systemctl poweroff
-		;;
+        systemctl poweroff
+        ;;
 esac
