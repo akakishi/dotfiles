@@ -36,9 +36,14 @@
   //****************
 
   "hyprland/window": {
-    "max-length": 40,
+    "max-length": 400,
     "separate-outputs": true,
-    "format": "{title}"
+    "format": "{}",
+    "expand": true,
+    "rewrite": {
+      "^$": "(˶ᵔ ᵕ ᵔ˶)"
+    },
+    "hide-empty-text": true
   },
 
   "hyprland/workspaces": {
