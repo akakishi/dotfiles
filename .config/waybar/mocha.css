@@ -53,69 +53,95 @@
   margin-right: .1rem;
   margin-bottom: 0;
   background-color: transparent;
+  min-width: 1.7rem;
+}
+
+#backlight:hover,
+#battery:hover,
+#cpu:hover,
+#custom-cava-internal:hover,
+#custom-launcher:hover,
+#custom-media:hover,
+#custom-notification:hover,
+#custom-pacman:hover,
+#custom-reboot:hover,
+#custom-weather:hover,
+#disk:hover,
+#idle_inhibitor:hover,
+#memory:hover,
+#mode:hover,
+#network:hover,
+#mpd:hover,
+#pulseaudio:hover,
+#scratchpad:hover,
+#temperature:hover,
+#tray:hover,
+#window:hover,
+#workspaces:hover {
+  background-color: @text;
+  color: @crust;
 }
 
 /* Bar */
 window#waybar {
-    background-color: rgba(30, 30, 46, 0.60);
-    /*background: rgb(30,30,46);
-    background: linear-gradient(
-        90deg,
-        rgba(30,30,46,0.75) 0%,
-        rgba(30,30,46,0.50) 25%,
-        rgba(30,30,46,0.75) 50%,
-        rgba(30,30,46,0.50) 75%,
-        rgba(30,30,46,0.75) 100%
-    );*/
+  /*background-color: rgba(30, 30, 46, 0.60);*/
+  background-color: transparent;
 }
-
 window > box {
   margin: .3rem;
   margin-bottom: 3px;
   border-radius: 1rem;
   background-color: transparent;
 }
-
+.modules-left {
+  background-color: #1e1e2e;
+  margin-left: 0px;
+  padding: 0px 5px 0px 0px;
+}
+.modules-center {
+  background-color: #1e1e2e;
+  margin-left: 0px;
+  padding: 5px 5px 5px 5px;
+}
+.modules-right {
+  background-color: #1e1e2e;
+  margin-left: 0px;
+  padding: 0px 0px 0px 5px;
+}
 
 /* Workspaces */
 #workspaces {
-    background-color: transparent;
+  background-color: transparent;
 }
-
-#workspaces:hover {
-  background-color: @green;
-}
-
 #workspaces button {
+  all: initial;
   padding-right: .4rem;
   padding-left: .4rem;
   padding-top: .1rem;
   padding-bottom: .1rem;
   background: transparent;
+  border-radius: 2px;
   color: @blue;
 }
-
 #workspaces button.active {
   color: @teal;
 }
-
 #workspaces button:hover {
-  border: .2px solid transparent;
   color: @rosewater;
 }
 
 /* Tooltip */
 tooltip {
-  background-color: rgba(30, 30, 46, 1);
-  border-radius: 1rem;
+  background-color: @text;
+  border-radius: 0rem;
+  border: none;
 }
-
 tooltip label {
-    color: @lavender;
+  color: @crust;
 }
 
 /* battery */
-/*#battery {
+#battery {
   color: @lavender;
 }
 #battery.full {
@@ -129,10 +155,10 @@ tooltip label {
 }
 #battery.critical:not(.charging) {
   color: @pink;
-}*/
-
+}
 #custom-powermenu {
-  color: @red;
+  color: @crust;
+  background-color: #e6008e;
 }
 
 /* mpd */
@@ -149,32 +175,42 @@ tooltip label {
 }
 
 /* Extra */
-/*#custom-cava-internal{
+#custom-cava-internal{
   color: @peach;
   padding-right: 1rem;
-}*/
-/*#custom-launcher {
+}
+#custom-launcher {
   color: @yellow;
-}*/
-/*#memory {
+}
+#memory {
   color: @peach;
-}*/
-/*#cpu {
+}
+#cpu {
   color: @text;
-}*/
+}
+/*
+ *ff00ff purple
+ *fbff00 yellow
+ *26ff00 green
+ *00eeff cyan
+ * */
 #clock {
+  color: @crust;
+  background-color: #26ff00;
+  font-weight: bold;
+}
+#clock:hover {
+  background-color: @text;
+}
+#idle_inhibitor {
+  color: @green;
+}
+#temperature {
   color: @lavender;
 }
-/*#idle_inhibitor {
+#backlight {
   color: @green;
-}*/
-#temperature {
-    color: @lavender;
 }
-
-/*#backlight {
-  color: @green;
-}*/
 #pulseaudio {
   color: @lavender;  /* not active */
 }
@@ -184,7 +220,7 @@ tooltip label {
 #network.disconnected {
   color: @red;  /* not active */
 }
-/*#disk {
+#disk {
   color: @maroon;
 }
 #custom-pacman{
@@ -192,7 +228,7 @@ tooltip label {
 }
 #custom-scratchpad-indicator {
   color: @yellow;
-}*/
+}
 #custom-weather {
   color: @lavender;
 }

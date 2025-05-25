@@ -1,363 +1,318 @@
 [{
 
-    //****************
-    // Bar Properties
-    //****************
+  //****************
+  // Bar Properties
+  //****************
 
-    "name": "topbar",
-    "layer": "top",
-    "position": "top",
+  "name": "topbar",
+  "layer": "top",
+  "position": "top",
 
-    //****************
-    // Define Modules
-    //****************
+  //****************
+  // Define Modules
+  //****************
 
-    "modules-left": [
-        "hyprland/workspaces"
+  "modules-left": [
+    "clock",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "custom/media",
+    "mpd",
+    "tray",
+    "temperature",
+    "pulseaudio",
+    "network",
+    "battery",
+    "custom/notification",
+    "custom/powermenu"
+  ],
+
+  //****************
+  // Hyprland Components
+  //****************
+
+  "hyprland/window": {
+    "max-length": 40,
+    "separate-outputs": true,
+    "format": "{title}"
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "on-scroll-up": "sleep 0.1 && hyprctl dispatch workspace e+1",
+    "on-scroll-down": "sleep 0.1 && hyprctl dispatch workspace e-1",
+    "active-only": true,
+    "all-outputs": true,
+    "format-icons": {
+      //"1": "",
+      //"2": "",
+      //"3": "",
+      //"4": "",
+      //"5": "",
+      "urgent": "",
+      "active": "",
+      "default": "",
+      "special": ""
+    },
+    "sort-by-number": true,
+    "show-special": true
+  },
+
+  //****************
+  // PC Components
+  //****************
+
+  "battery": {
+    "interval": 10,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ],
-    "modules-center": [
-        "clock"
-        //"custom/weather"
-    ],
-    "modules-right": [
-        "custom/media",
-        "mpd",
-        "tray",
-        "temperature",
-        "pulseaudio",
-        "network",
-        "battery",
-        "custom/notification",
-        "custom/powermenu"
-    ],
+    "format-full": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "tooltip": true
+  },
 
-    //****************
-    // SWAY Modules
-    //****************
-
-    "sway/language": {
-        "format": "{}",
-        "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
-    },
-
-    "sway/mode": {
-        "format": "󰩨 {}"
-    },
-
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
-    },
-
-    "sway/window": {
-        "format": "{}"
-    },
-
-    "sway/workspaces": {
-        "disable-scroll": true,
-        /* "all-outputs": true, */
-        "active-only": true,
-        "format": "{icon}",
-        "format-icons": {
-            /*"1": "[1]",
-            "2": "[2]",
-            "3": "[3]",
-            "4": "[4]",
-            "5": "[5]",
-            "6": "[6]",
-            "7": "[7]",
-            "8": "[8]",
-            "9": "[9]",
-            "10": "[10]",*/
-            "urgent": "",
-            "focused": "",
-            "default": ""
-        }
-    },
-
-    //****************
-    // Hyprland Components
-    //****************
-
-    "hyprland/window": {
-        "max-length": 400,
-        "separate-outputs": true
-    },
-
-    "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "on-scroll-up": "sleep 0.1 && hyprctl dispatch workspace e+1",
-        "on-scroll-down": "sleep 0.1 && hyprctl dispatch workspace e-1",
-        "active-only": true,
-        "all-outputs": true,
-        "format-icons": {
-            //"1": "",
-            //"2": "",
-            //"3": "",
-            //"4": "",
-            //"5": "",
-            "urgent": "",
-            "active": "",
-            "default": "",
-            "special": ""
-        },
-        "sort-by-number": true,
-        "show-special": true
-    },
-
-    //****************
-    // PC Components
-    //****************
-
-    "battery": {
-        "interval": 10,
-        "states": {
-            "warning": 20,
-            "critical": 10
-        },
-        "format": "{icon} {capacity}%",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "format-full": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "tooltip": true
-    },
-
-    "cpu": {
-        "interval": 1,
-        "format": " {usage}%",
-        "states": {
-            "warning": 85
-        }
-    },
-
-    "disk": {
-        "interval": 30,
-        "format": "󰋊 {percentage_used}%",
-        "path": "/home",
-        "tooltip": true,
-        "tooltip-format": "{used}/{total} => {path} {percentage_used}%"
-    },
-
-    "memory": {
-        "on-click": "kitty btop",
-        "interval": 1,
-        "format": " {percentage}%",
-        "states": {
-            "warning": 85
-        }
-    },
-
-    "network": {
-        "interval": 1,
-        "format-wifi": "",
-        "format-ethernet": "󰈀",
-        "format-linked": "",
-        "format-disconnected": "󰪎",
-        "tooltip": true,
-        "tooltip-format": "{ifname} ({ipaddr})"
-    },
-
-    "temperature": {
-        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
-        "critical-threshold": 70,
-        "states": {
-            "warning": 70,
-            "critical": 80
-        },
-        "interval": 5,
-        "format-critical": "!!󰈸{temperatureC}°C!!",
-        "format": " {temperatureC}°C",
-        "on-click": "sleep 0.1 && kitty btop"
-    },
-
-    //****************
-    // Information Apps
-    //****************
-
-    "backlight": {
-        "device": "intel_backlight",
-        "on-scroll-up": "light -A 7",
-        "on-scroll-down": "light -U 7",
-        "format": "{icon} {percent}%",
-        "format-icons": [
-            "",
-            "󰄋",
-            "󰧑",
-            "󰄌"
-        ]
-    },
-
-    "clock": {
-        "interval": 1,
-        "format": "{:%H:%M %a %b %d}",
-        "tooltip": true,
-        "tooltip-format": "<big>{:%A, %d %B %Y}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-
-    "mpd": {
-        "max-length": 25,
-        "format": "<span foreground='#bb9af7'>󰝚</span> {title}",
-        "format-paused": "󰝚 {title}",
-        "format-stopped": "<span foreground='#bb9af7'>󰝚</span>",
-        "format-disconnected": "",
-        "on-click": "mpc --quiet toggle",
-        "on-click-right": "mpc ls | mpc add",
-        "on-click-middle": "kitty ncmpcpp",
-        "on-scroll-up": "mpc --quiet prev",
-        "on-scroll-down": "mpc --quiet next",
-        "smooth-scrolling-threshold": 5,
-        "tooltip-format": "{title} - {artist} ({elapsedTime:%M:%S}/{totalTime:%H:%M:%S})"
-    },
-
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "tooltip": false,
-        "format-muted": "󰝟 {volume}%",
-        "on-click": "sleep 0.1 && ~/.config/waybar/scripts/audio_changer.py",
-        "on-click-right": "sleep 0.1 && pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-click-middle": "sleep 0.1 && pavucontrol",
-        "scroll-step": 5,
-        "format-icons": {
-            "headphone": "󰋋",
-            "hands-free": "󰥰",
-            "headset": "󰋎",
-            "phone": "󰏲",
-            "portable": "󰏲",
-            "car": "󰄋",
-            "default": ["", "", "󰕾"]
-        }
-    },
-
-    "tray": {
-        "icon-size": 15,
-        "spacing": 5
-    },
-
-    //****************
-    // Custom Modules
-    //****************
-
-    "custom/cava-internal": {
-        "exec": "~/.config/waybar/Cava.sh",
-        "tooltip": false
-    },
-
-    "custom/launcher": {
-        "format": "",
-        "on-click": "~/.config/rofi/bin/launcher.sh",
-        "tooltip-format": "pacman -Q linux",
-        "tooltip": true
-    },
-
-    "custom/media": {
-        "format": "{icon} {0}",
-        "return-type": "json",
-        "max-length": 25,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        // "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        "exec": "python3 $HOME/.config/waybar/scripts/mediaplayer.py --player spotify 2> /dev/null", // Filter player based on name
-        "on-click": "sleep 0.1 && playerctl --player=spotify play-pause",
-        "on-scroll-up": "sleep 0.1 && playerctl --player=spotify next",
-        "on-scroll-down": "sleep 0.1 && playerctl --player=spotify previous"
-    },
-
-    "custom/notification": {
-        "tooltip": false,
-        "format": "{icon} {0}",
-        "format-icons": {
-            "notification": "󰂚",
-            "none": "󰂜",
-            "dnd-notification": "󰂛",
-            "dnd-none": "󰪑",
-            "inhibited-notification": "󰂚",
-            "inhibited-none": "󰂜",
-            "dnd-inhibited-notification": "󰂛",
-            "dnd-inhibited-none": "󰪑"
-        },
-        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "on-click": "sleep 0.1 && swaync-client -t -sw",
-        "on-click-right": "sleep 0.1 && swaync-client -d -sw",
-        "escape": true
-    },
-
-    "custom/pacman": {
-        "format": " {}",
-        "interval": 1800,
-        "exec": "sleep 0.1 && checkupdates | wc -l",
-        //"exec-if": "exit 0",
-        "on-click": "sleep 0.1 && kitty yay",
-        "signal": 8
-    },
-
-    "custom/powermenu": {
-        "format": "",
-        "on-click": "sleep 0.1 && ~/.config/rofi/bin/powermenu.sh",
-        "tooltip": false
-    },
-
-    "custom/reboot": {
-        "format": "{}",
-        "critical-threshold": 1,
-        "states": {
-            "critical": 1
-        },
-        "interval": 600,
-        "exec": "sleep 0.1 && ~/.config/my-shared-config/check-reboot-required.sh",
-        "return-type": "json"
-    },
-
-    "custom/recording": {
-        "exec": "sleep 0.1 && $XDG_CONFIG_HOME/waybar/scripts/recording.sh status",
-        "format": "{}",
-        "on-click": "sleep 0.1 && $XDG_CONFIG_HOME/waybar/scripts/recording.sh toggle fullscreen",
-        "on-click-right": "sleep 0.1 && $XDG_CONFIG_HOME/waybar/scripts/recording.sh toggle region",
-        "restart-interval": 1,
-        "return-type": "json",
-        "tooltip": true
-    },
-
-    "custom/scratchpad-indicator": {
-        "interval": 3,
-        "return-type": "json",
-        "exec": "swaymsg -t get_tree | jq --unbuffered --compact-output '(recurse(.nodes[]) | select(.name == \"__i3_scratch\") | .focus) as $scratch_ids | [..  | (.nodes? + .floating_nodes?) // empty | .[] | select(.id |IN($scratch_ids[]))] as $scratch_nodes | if ($scratch_nodes|length) > 0 then { text: \"\\($scratch_nodes | length)\", tooltip: $scratch_nodes | map(\"\\(.app_id // .window_properties.class) (\\(.id)): \\(.name)\") | join(\"\\n\") } else empty end'",
-        "format": " {}",
-        "on-click": "sleep 0.1 && exec swaymsg 'scratchpad show'",
-        "on-click-right": "sleep 0.1 && exec swaymsg 'move scratchpad'"
-    },
-
-    "custom/weather": {
-        "format": "{}",
-        "tooltip": true,
-        "interval": 900,
-        "exec": "sleep 0.1 && ~/.config/waybar/scripts/wabar-wttr.py",
-        "return-type": "json"
+  "cpu": {
+    "interval": 1,
+    "format": " {usage}%",
+    "states": {
+      "warning": 85
     }
+  },
+
+  "disk": {
+    "interval": 30,
+    "format": "󰋊 {percentage_used}%",
+    "path": "/home",
+    "tooltip": true,
+    "tooltip-format": "{used}/{total} => {path} {percentage_used}%"
+  },
+
+  "memory": {
+    "on-click": "kitty btop",
+    "interval": 1,
+    "format": " {percentage}%",
+    "states": {
+      "warning": 85
+    }
+  },
+
+  "network": {
+    "interval": 1,
+    "format-wifi": "",
+    "format-ethernet": "󰈀",
+    "format-linked": "",
+    "format-disconnected": "󰪎",
+    "tooltip": true,
+    "tooltip-format": "{ifname} ({ipaddr})"
+  },
+
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    "critical-threshold": 70,
+    "states": {
+      "warning": 70,
+      "critical": 80
+    },
+    "interval": 5,
+    "format-critical": "!!󰈸{temperatureC}°C!!",
+    "format": " {temperatureC}°C",
+    //"format": "TMP:{temperatureC}°C",
+    "on-click": "sleep 0.1 && kitty btop"
+  },
+
+  //****************
+  // Information Apps
+  //****************
+
+  "backlight": {
+    "device": "intel_backlight",
+    "on-scroll-up": "light -A 7",
+    "on-scroll-down": "light -U 7",
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "",
+      "󰄋",
+      "󰧑",
+      "󰄌"
+    ]
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": "{:%H:%M %a %b %d}",
+    "tooltip": true,
+    "tooltip-format": "<big>{:%A, %d %B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+
+  "mpd": {
+    "max-length": 25,
+    "format": "<span foreground='#bb9af7'>󰝚</span> {title}",
+    "format-paused": "󰝚 {title}",
+    "format-stopped": "<span foreground='#bb9af7'>󰝚</span>",
+    "format-disconnected": "",
+    "on-click": "mpc --quiet toggle",
+    "on-click-right": "mpc ls | mpc add",
+    "on-click-middle": "kitty ncmpcpp",
+    "on-scroll-up": "mpc --quiet prev",
+    "on-scroll-down": "mpc --quiet next",
+    "smooth-scrolling-threshold": 5,
+    "tooltip-format": "{title} - {artist} ({elapsedTime:%M:%S}/{totalTime:%H:%M:%S})"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "tooltip": false,
+    "format-muted": "󰝟 {volume}%",
+    "on-click": "sleep 0.1 && ~/.config/waybar/scripts/audio_changer.py",
+    "on-click-right": "sleep 0.1 && pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-middle": "sleep 0.1 && pavucontrol",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "󰋋",
+      "hands-free": "󰥰",
+      "headset": "󰋎",
+      "phone": "󰏲",
+      "portable": "󰏲",
+      "car": "󰄋",
+      "default": ["", "", "󰕾"]
+    }
+  },
+
+  "tray": {
+    "icon-size": 15,
+    "spacing": 5
+  },
+
+  //****************
+  // Custom Modules
+  //****************
+
+  "custom/cava-internal": {
+    "exec": "~/.config/waybar/Cava.sh",
+    "tooltip": false
+  },
+
+  "custom/launcher": {
+    "format": "",
+    "on-click": "~/.config/rofi/bin/launcher.sh",
+    "tooltip-format": "pacman -Q linux",
+    "tooltip": true
+  },
+
+  "custom/media": {
+    "format": "{icon} {0}",
+    "return-type": "json",
+    "max-length": 25,
+    "format-icons": {
+      "spotify": "",
+      "default": "🎜"
+    },
+    "escape": true,
+    // "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+    "exec": "python3 $HOME/.config/waybar/scripts/mediaplayer.py --player spotify 2> /dev/null", // Filter player based on name
+    "on-click": "sleep 0.1 && playerctl --player=spotify play-pause",
+    "on-scroll-up": "sleep 0.1 && playerctl --player=spotify next",
+    "on-scroll-down": "sleep 0.1 && playerctl --player=spotify previous"
+  },
+
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon} {0}",
+    "format-icons": {
+      "notification": "󰂚",
+      "none": "󰂜",
+      "dnd-notification": "󰂛",
+      "dnd-none": "󰪑",
+      "inhibited-notification": "󰂚",
+      "inhibited-none": "󰂜",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+    "escape": true
+  },
+
+  "custom/pacman": {
+    "format": " {}",
+    "interval": 1800,
+    "exec": "sleep 0.1 && checkupdates | wc -l",
+    //"exec-if": "exit 0",
+    "on-click": "sleep 0.1 && kitty yay",
+    "signal": 8
+  },
+
+  "custom/powermenu": {
+    "format": "",
+    "on-click": "sleep 0.1 && ~/.config/rofi/bin/powermenu.sh",
+    "tooltip": false
+  },
+
+  "custom/reboot": {
+    "format": "{}",
+    "critical-threshold": 1,
+    "states": {
+        "critical": 1
+    },
+    "interval": 600,
+    "exec": "sleep 0.1 && ~/.config/my-shared-config/check-reboot-required.sh",
+    "return-type": "json"
+  },
+
+  "custom/recording": {
+    "exec": "sleep 0.1 && $XDG_CONFIG_HOME/waybar/scripts/recording.sh status",
+    "format": "{}",
+    "on-click": "sleep 0.1 && $XDG_CONFIG_HOME/waybar/scripts/recording.sh toggle fullscreen",
+    "on-click-right": "sleep 0.1 && $XDG_CONFIG_HOME/waybar/scripts/recording.sh toggle region",
+    "restart-interval": 1,
+    "return-type": "json",
+    "tooltip": true
+  },
+
+  "custom/scratchpad-indicator": {
+    "interval": 3,
+    "return-type": "json",
+    "exec": "swaymsg -t get_tree | jq --unbuffered --compact-output '(recurse(.nodes[]) | select(.name == \"__i3_scratch\") | .focus) as $scratch_ids | [..  | (.nodes? + .floating_nodes?) // empty | .[] | select(.id |IN($scratch_ids[]))] as $scratch_nodes | if ($scratch_nodes|length) > 0 then { text: \"\\($scratch_nodes | length)\", tooltip: $scratch_nodes | map(\"\\(.app_id // .window_properties.class) (\\(.id)): \\(.name)\") | join(\"\\n\") } else empty end'",
+    "format": " {}",
+    "on-click": "sleep 0.1 && exec swaymsg 'scratchpad show'",
+    "on-click-right": "sleep 0.1 && exec swaymsg 'move scratchpad'"
+  },
+
+  "custom/weather": {
+    "format": "{}",
+    "tooltip": true,
+    "interval": 900,
+    "exec": "sleep 0.1 && ~/.config/waybar/scripts/wabar-wttr.py",
+    "return-type": "json"
+  }
 }]
