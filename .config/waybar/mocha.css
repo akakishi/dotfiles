@@ -75,7 +75,6 @@
 #pulseaudio:hover,
 #scratchpad:hover,
 #temperature:hover,
-#tray:hover,
 #window:hover {
   background-color: @text;
   color: @crust;
