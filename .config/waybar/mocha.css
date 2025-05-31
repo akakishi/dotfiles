@@ -48,10 +48,10 @@
 #window,
 #workspaces {
   padding: .3rem .6rem;
-  margin-top: 0;
-  margin-left: .1rem;
-  margin-right: .1rem;
-  margin-bottom: 0;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
   background-color: transparent;
   min-width: 1.7rem;
 }
@@ -76,8 +76,7 @@
 #scratchpad:hover,
 #temperature:hover,
 #tray:hover,
-#window:hover,
-#workspaces:hover {
+#window:hover {
   background-color: @text;
   color: @crust;
 }
@@ -88,23 +87,21 @@ window#waybar {
   background-color: transparent;
 }
 window > box {
-  margin: .3rem;
-  margin-bottom: 3px;
-  border-radius: 1rem;
-  background-color: transparent;
+  /*background-color: transparent;*/
+  background-color: rgba(30, 30, 46, 0.60);
 }
 .modules-left {
-  background-color: #1e1e2e;
+  /*background-color: #1e1e2e;*/
   margin-left: 0px;
   padding: 0px 5px 0px 0px;
 }
 .modules-center {
-  background-color: #1e1e2e;
+  /*background-color: #1e1e2e;*/
   margin-left: 0px;
-  padding: 5px 5px 5px 5px;
+  padding: 0px 5px 0px 5px;
 }
 .modules-right {
-  background-color: #1e1e2e;
+  /*background-color: #1e1e2e;*/
   margin-left: 0px;
   padding: 0px 0px 0px 5px;
 }
