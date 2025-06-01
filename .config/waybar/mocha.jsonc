@@ -57,12 +57,13 @@
       "1": "",
       "2": "",
       "3": "",
-      "4": "",
-      "5": "",
       "urgent": "",
       "active": "",
       "default": "",
       "special": ""
+    },
+    "persistent-workspaces": {
+      "eDP-1": [1,2,3]
     },
     "sort-by-number": true,
     "show-special": true
@@ -80,18 +81,19 @@
     },
     "format": "{icon} {capacity}%",
     "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
     ],
     "format-full": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
     "tooltip": true
   },
 
