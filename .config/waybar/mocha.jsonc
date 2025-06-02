@@ -124,12 +124,22 @@
 
   "network": {
     "interval": 1,
-    "format-wifi": "",
+    "format-wifi": "{icon}",
     "format-ethernet": "󰈀",
     "format-linked": "",
     "format-disconnected": "󰪎",
+    "format-disabled": "󰤭",
+    "format-icons": [
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
+    "justify": "center",
+    "align": 0.5,
     "tooltip": true,
-    "tooltip-format": "{ifname} ({ipaddr})"
+    "tooltip-format": "{ifname} ({ipaddr})",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%): {ipaddr}"
   },
 
   "temperature": {
@@ -140,7 +150,7 @@
       "critical": 80
     },
     "interval": 5,
-    "format-critical": "!!󰈸{temperatureC}°C!!",
+    "format-critical": "󰈸 {temperatureC}°C",
     "format": " {temperatureC}°C",
     //"format": "TMP:{temperatureC}°C",
     "on-click": "sleep 0.1 && kitty btop"
