@@ -20,9 +20,9 @@
     "hyprland/window"
   ],
   "modules-right": [
+    "tray",
     "custom/media",
     "mpd",
-    "tray",
     "temperature",
     "pulseaudio",
     "network",

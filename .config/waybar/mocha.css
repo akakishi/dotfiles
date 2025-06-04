@@ -140,14 +140,11 @@ tooltip label {
 #battery {
   color: @lavender;
 }
-#battery.full {
-  color: @green;
-}
-#battery.charging{
-  color: @teal;
-}
-#battery.discharging {
-  color: @peach;
+#battery.full:hover,
+#battery.charging:hover,
+#battery.discharging:hover,
+#battery.critical:hover {
+  color: @crust;
 }
 #battery.critical:not(.charging) {
   color: @pink;
