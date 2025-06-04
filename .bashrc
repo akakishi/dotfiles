@@ -32,7 +32,7 @@ ShowInstallerIsoInfo() {
 
 
 alias v='nvim'
-alias ..='cd ..'
+alias ..='z ..'
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
@@ -94,3 +94,4 @@ export DOTNET_ROOT="$HOME/.dotnet"
 export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"
 eval "$(oh-my-posh init bash --config $HOME/.config/oh-my-posh/catppuccin_mocha.omp.toml)"
 eval "$(thefuck --alias)"
+eval "$(zoxide init bash)"
