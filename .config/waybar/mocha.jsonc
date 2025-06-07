@@ -62,9 +62,9 @@
       "default": "",
       "special": ""
     },
-    "persistent-workspaces": {
-      "eDP-1": [1,2,3]
-    },
+    //"persistent-workspaces": {
+    //  "eDP-1": [1,2,3]
+    //},
     "sort-by-number": true,
     "show-special": true
   },
