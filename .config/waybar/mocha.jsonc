@@ -41,7 +41,8 @@
     "format": "{}",
     "expand": true,
     "rewrite": {
-      "^$": "(˶ᵔ ᵕ ᵔ˶)"
+      //"^$": "(˶ᵔ ᵕ ᵔ˶)"
+      "^$": "󱇄 STAY FREE 󱇂"
     },
     "hide-empty-text": true
   },
@@ -51,12 +52,12 @@
     "on-click": "activate",
     "on-scroll-up": "sleep 0.1 && hyprctl dispatch workspace e+1",
     "on-scroll-down": "sleep 0.1 && hyprctl dispatch workspace e-1",
-    "active-only": true,
+    "active-only": false,
     "all-outputs": true,
     "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
+      //"1": "",
+      //"2": "",
+      //"3": "",
       "urgent": "",
       "active": "",
       "default": "",
