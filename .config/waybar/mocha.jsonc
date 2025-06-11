@@ -42,6 +42,8 @@
     "expand": true,
     "rewrite": {
       //"^$": "(˶ᵔ ᵕ ᵔ˶)"
+      "v (.*)": " $1",
+      "nvim (.*)": " $1",
       "^$": "󱇄 STAY FREE 󱇂"
     },
     "hide-empty-text": true
