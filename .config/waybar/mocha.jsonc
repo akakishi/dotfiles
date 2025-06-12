@@ -25,6 +25,7 @@
     "mpd",
     "temperature",
     "pulseaudio",
+    "backlight",
     "network",
     "battery",
     "custom/notification",
@@ -168,14 +169,13 @@
 
   "backlight": {
     "device": "intel_backlight",
-    "on-scroll-up": "light -A 7",
-    "on-scroll-down": "light -U 7",
+    "on-scroll-up": "brightnessctl s 5%+",
+    "on-scroll-down": "brightnessctl s 5%-",
     "format": "{icon} {percent}%",
     "format-icons": [
-      "",
-      "󰄋",
-      "󰧑",
-      "󰄌"
+      "󱩎",
+      "󱩒",
+      "󰛨"
     ]
   },
 
