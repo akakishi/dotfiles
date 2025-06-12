@@ -1,0 +1,25 @@
+
+@define-color white     #fefff0;
+@define-color black     #1a1a1a;
+@define-color grey      #767b77;
+
+@define-color cyan      #72f7ff;
+
+@define-color lightblue #4ebad9;
+@define-color blue      #8aadfb;
+@define-color darkblue  #233837;
+@define-color lightgreen #45ff8e;
+@define-color green     #72d85d;
+@define-color darkgreen #699753;
+
+@define-color yellow    #ffea00;
+@define-color orange    #fd9e48;
+
+@define-color lightred  #ff665b;
+@define-color red       #a82c2b;
+@define-color darkred   #4e0010;
+
+@define-color pink      #fb5fcd;
+
+@define-color tan       #c8b478;
+@define-color darktan   #3d3e28;
