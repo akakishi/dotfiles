@@ -1,30 +1,30 @@
-@define-color base      #1e1e2e;
-@define-color mantle    #181825;
-@define-color crust     #11111b;
+@define-color base      hsl(240deg, 21%, 15%);
+@define-color mantle    hsl(240deg, 21%, 12%);
+@define-color crust     hsl(240deg, 23%, 9%);
 
-@define-color text      #cdd6f4;
-@define-color subtext0  #a6adc8;
-@define-color subtext1  #bac2de;
+@define-color text      hsl(226deg, 64%, 88%);
+@define-color subtext0  hsl(228deg, 24%, 72%);
+@define-color subtext1  hsl(227deg, 35%, 80%);
 
-@define-color surface0  #313244;
-@define-color surface1  #45475a;
-@define-color surface2  #585b70;
+@define-color surface0  hsl(237deg, 16%, 23%);
+@define-color surface1  hsl(234deg, 13%, 31%);
+@define-color surface2  hsl(233deg, 12%, 39%);
 
-@define-color overlay0  #6c7086;
-@define-color overlay1  #7f849c;
-@define-color overlay2  #9399b2;
+@define-color overlay0  hsl(231deg, 11%, 47%);
+@define-color overlay1  hsl(230deg, 13%, 55%);
+@define-color overlay2  hsl(228deg, 17%, 64%);
 
-@define-color blue      #89b4fa;
-@define-color lavender  #b4befe;
-@define-color sapphire  #74c7ec;
-@define-color sky       #89dceb;
-@define-color teal      #94e2d5;
-@define-color green     #a6e3a1;
-@define-color yellow    #f9e2af;
-@define-color peach     #fab387;
-@define-color maroon    #eba0ac;
-@define-color red       #f38ba8;
-@define-color mauve     #cba6f7;
-@define-color pink      #f5c2e7;
-@define-color flamingo  #f2cdcd;
-@define-color rosewater #f5e0dc;
+@define-color blue      hsl(217deg, 92%, 76%);
+@define-color lavender  hsl(232deg, 97%, 85%);
+@define-color sapphire  hsl(199deg, 76%, 69%);
+@define-color sky       hsl(189deg, 71%, 73%);
+@define-color teal      hsl(170deg, 57%, 73%);
+@define-color green     hsl(115deg, 54%, 76%);
+@define-color yellow    hsl(41deg, 86%, 83%);
+@define-color peach     hsl(23deg, 92%, 75%);
+@define-color maroon    hsl(350deg, 65%, 77%);
+@define-color red       hsl(343deg, 81%, 75%);
+@define-color mauve     hsl(267deg, 84%, 81%);
+@define-color pink      hsl(316deg, 72%, 86%);
+@define-color flamingo  hsl(0deg, 59%, 88%);
+@define-color rosewater hsl(10deg, 56%, 91%);
