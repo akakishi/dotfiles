@@ -83,7 +83,7 @@
       "warning": 20,
       "critical": 10
     },
-    "format": "{icon} {capacity}%",
+    "format": "{icon} {capacity}",
     "format-icons": [
       "󰁺",
       "󰁻",
@@ -96,8 +96,8 @@
       "󰂂",
       "󰁹"
     ],
-    "format-full": "{icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
+    "format-full": "{icon}",
+    "format-charging": "󰂄 {capacity}",
     "tooltip": true
   },
 
@@ -171,7 +171,7 @@
     "device": "intel_backlight",
     "on-scroll-up": "brightnessctl s 5%+",
     "on-scroll-down": "brightnessctl s 5%-",
-    "format": "{icon} {percent}%",
+    "format": "{icon} {percent}",
     "format-icons": [
       "󱩎",
       "󱩒",
@@ -210,9 +210,9 @@
   },
 
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon} {volume}",
     "tooltip": false,
-    "format-muted": "󰝟 {volume}%",
+    "format-muted": "󰝟 {volume}",
     "on-click": "sleep 0.1 && ~/.config/waybar/scripts/audio_changer.py",
     "on-click-right": "sleep 0.1 && pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-middle": "sleep 0.1 && pavucontrol",

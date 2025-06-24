@@ -1,3 +1,7 @@
+bluez
+bluez-obex
+bluez-utils
+bluetuith
 brightnessctl
 clipse
 discover
