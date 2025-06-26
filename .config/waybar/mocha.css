@@ -2,7 +2,11 @@
 
 /* Global */
 * {
-  font-family: "JetBrainsMono Nerd Font", "IPA Gothic", FontAwesome, monospace;
+  /* font "JetBrainsMono Nerd Font" shows icons vertically aligned
+   * font "JetBrains Mono" show icons horizontally aligned
+   * fix modules with only text/icons and with both
+   * */
+  font-family: "JetBrains Mono", "Symbols Nerd Font", FontAwesome, monospace;
   font-size: 1.2rem;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -11,7 +15,7 @@
 @keyframes blink_red {
   to {
     background-color: @red;
-    color: @text;
+    color: @mantle;
   }
 }
 
@@ -41,6 +45,8 @@
 #mode,
 #network,
 #mpd,
+#mpd.paused,
+#mpd.stopped,
 #pulseaudio,
 #scratchpad,
 #temperature,
@@ -48,22 +54,31 @@
 #window,
 #workspaces {
   padding: .3rem .6rem;
-  margin-top: 0rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  margin-bottom: 0rem;
+  margin-top: .2rem;
+  margin-left: .2rem;
+  margin-right: .2rem;
+  margin-bottom: .2rem;
   background-color: transparent;
-  min-width: 1.7rem;
+  min-width: 1.5rem;
+  color: @lavender;
+  text-shadow: 0px 0px 4px @mantle;
+  border-radius: .4em;
 }
 
 #backlight:hover,
 #battery:hover,
+#battery.full:hover,
+#battery.charging:hover,
+#battery.discharging:hover,
+#battery.critical:hover,
+#clock:hover,
 #cpu:hover,
 #custom-cava-internal:hover,
 #custom-launcher:hover,
 #custom-media:hover,
 #custom-notification:hover,
 #custom-pacman:hover,
+#custom-powermenu:hover,
 #custom-reboot:hover,
 #custom-weather:hover,
 #disk:hover,
@@ -76,33 +91,34 @@
 #scratchpad:hover,
 #temperature:hover,
 #window:hover {
-  background-color: @text;
-  color: @crust;
+  background-color: rgba(180, 190, 254, 0.2);
+  color: @text;
+  text-shadow: none;
 }
 
 /* Bar */
 window#waybar {
   /*background-color: rgba(30, 30, 46, 0.60);*/
+  /*margin: .2rem;*/
   background-color: transparent;
 }
 window > box {
   /*background-color: transparent;*/
-  background-color: rgba(30, 30, 46, 0.60);
+  background-color: rgba(30, 30, 46, 0.2);
 }
 .modules-left {
   /*background-color: #1e1e2e;*/
-  margin-left: 0px;
-  padding: 0px 5px 0px 0px;
+  margin-left: .2rem;
+  padding: 0rem .1rem 0rem .1rem;
 }
 .modules-center {
   /*background-color: #1e1e2e;*/
-  margin-left: 0px;
-  padding: 0px 5px 0px 5px;
+  padding: 0rem .1rem 0rem .1rem;
 }
 .modules-right {
   /*background-color: #1e1e2e;*/
-  margin-left: 0px;
-  padding: 0px 0px 0px 5px;
+  margin-right: .2rem;
+  padding: 0rem .1rem 0rem .1rem;
 }
 
 /* Workspaces */
@@ -111,75 +127,44 @@ window > box {
 }
 #workspaces button {
   all: initial;
-  padding-right: .4rem;
-  padding-left: .4rem;
+  padding-right: .2rem;
+  padding-left: .2rem;
   padding-top: .1rem;
   padding-bottom: .1rem;
   background: transparent;
-  border-radius: 2px;
-  color: @blue;
+  border-radius: .4rem;
+  color: @lavender;
 }
 #workspaces button.active {
-  color: @teal;
+  color: @text;
 }
 #workspaces button:hover {
-  color: @rosewater;
+  color: @text;
 }
 
 /* Tooltip */
 tooltip {
-  background-color: @text;
-  border-radius: 0rem;
+  background-color: @lavender;
+  border-radius: .4rem;
   border: none;
 }
 tooltip label {
-  color: @crust;
+  color: @mantle;
 }
 
 /* battery */
-#battery {
-  color: @lavender;
-}
-#battery.full:hover,
-#battery.charging:hover,
-#battery.discharging:hover,
-#battery.critical:hover {
-  color: @crust;
-}
 #battery.critical:not(.charging) {
   color: @pink;
 }
-#custom-powermenu {
-  color: @crust;
+#custom-powermenu:hover {
+  color: @text;
   background-color: #e6008e;
-}
-
-/* mpd */
-#mpd.paused {
-  color: @text;
-  font-style: italic;
-}
-#mpd.stopped {
-  color: @text;
-  background: transparent;
-}
-#mpd {
-  color: @text;
 }
 
 /* Extra */
 #custom-cava-internal{
   color: @peach;
   padding-right: 1rem;
-}
-#custom-launcher {
-  color: @yellow;
-}
-#memory {
-  color: @peach;
-}
-#cpu {
-  color: @text;
 }
 /*
  *ff00ff purple
@@ -188,21 +173,9 @@ tooltip label {
  *00eeff cyan
  * */
 #clock {
-  color: @crust;
-  background-color: #26ff00;
+  /*color: @mantle;
+  background-color: #26ff00;*/
   font-weight: bold;
-}
-#clock:hover {
-  background-color: @text;
-}
-#idle_inhibitor {
-  color: @green;
-}
-#temperature {
-  color: @lavender;
-}
-#backlight {
-  color: @green;
 }
 #pulseaudio {
   color: @lavender;  /* not active */
@@ -212,18 +185,6 @@ tooltip label {
 }
 #network.disconnected {
   color: @red;  /* not active */
-}
-#disk {
-  color: @maroon;
-}
-#custom-pacman{
-  color: @sky;
-}
-#custom-scratchpad-indicator {
-  color: @yellow;
-}
-#custom-weather {
-  color: @lavender;
 }
 #custom-media {
   color: #333333;
