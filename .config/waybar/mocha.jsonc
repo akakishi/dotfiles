@@ -13,15 +13,15 @@
   //****************
 
   "modules-left": [
-    "clock",
-    "hyprland/workspaces"
+    "custom/powermenu",
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
   "modules-center": [
-    "hyprland/window"
+    "custom/media",
   ],
   "modules-right": [
     "tray",
-    "custom/media",
     "mpd",
     "temperature",
     "pulseaudio",
@@ -29,7 +29,7 @@
     "network",
     "battery",
     "custom/notification",
-    "custom/powermenu"
+    "clock"
   ],
 
   //****************
@@ -62,8 +62,8 @@
       //"2": "",
       //"3": "",
       "urgent": "",
-      "active": "",
-      "default": "",
+      "active": "",
+      "default": "",
       "special": ""
     },
     //"persistent-workspaces": {
@@ -83,7 +83,7 @@
       "warning": 20,
       "critical": 10
     },
-    "format": "{icon} {capacity}",
+    "format": "{icon}",
     "format-icons": [
       "󰁺",
       "󰁻",
@@ -97,8 +97,9 @@
       "󰁹"
     ],
     "format-full": "{icon}",
-    "format-charging": "󰂄 {capacity}",
-    "tooltip": true
+    "format-charging": "",
+    "tooltip": true,
+    "tooltip-format": "Charge: {capacity}%\nTime: {time}"
   },
 
   "cpu": {
@@ -196,9 +197,9 @@
 
   "mpd": {
     "max-length": 25,
-    "format": "<span foreground='#bb9af7'>󰝚</span> {title}",
-    "format-paused": "󰝚 {title}",
-    "format-stopped": "<span foreground='#bb9af7'>󰝚</span>",
+    "format": " {title}",
+    "format-paused": " {title}",
+    "format-stopped": "",
     "format-disconnected": "",
     "on-click": "mpc --quiet toggle",
     "on-click-right": "mpc ls | mpc add",
@@ -212,19 +213,19 @@
   "pulseaudio": {
     "format": "{icon} {volume}",
     "tooltip": false,
-    "format-muted": "󰝟 {volume}",
+    "format-muted": " {volume}",
     "on-click": "sleep 0.1 && ~/.config/waybar/scripts/audio_changer.py",
     "on-click-right": "sleep 0.1 && pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-middle": "sleep 0.1 && pavucontrol",
     "scroll-step": 5,
     "format-icons": {
-      "headphone": "󰋋",
-      "hands-free": "󰥰",
-      "headset": "󰋎",
-      "phone": "󰏲",
-      "portable": "󰏲",
-      "car": "󰄋",
-      "default": ["", "", "󰕾"]
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
     }
   },
 
@@ -255,7 +256,7 @@
     "max-length": 25,
     "format-icons": {
       "spotify": "",
-      "default": "🎜"
+      "default": ""
     },
     "escape": true,
     // "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
@@ -269,10 +270,10 @@
     "tooltip": false,
     "format": "{icon} {0}",
     "format-icons": {
-      "notification": "󰂚",
-      "none": "󰂜",
-      "dnd-notification": "󰂛",
-      "dnd-none": "󰪑",
+      "notification": "",
+      "none": "",
+      "dnd-notification": "",
+      "dnd-none": "",
       "inhibited-notification": "󰂚",
       "inhibited-none": "󰂜",
       "dnd-inhibited-notification": "󰂛",
@@ -320,15 +321,6 @@
     "restart-interval": 1,
     "return-type": "json",
     "tooltip": true
-  },
-
-  "custom/scratchpad-indicator": {
-    "interval": 3,
-    "return-type": "json",
-    "exec": "swaymsg -t get_tree | jq --unbuffered --compact-output '(recurse(.nodes[]) | select(.name == \"__i3_scratch\") | .focus) as $scratch_ids | [..  | (.nodes? + .floating_nodes?) // empty | .[] | select(.id |IN($scratch_ids[]))] as $scratch_nodes | if ($scratch_nodes|length) > 0 then { text: \"\\($scratch_nodes | length)\", tooltip: $scratch_nodes | map(\"\\(.app_id // .window_properties.class) (\\(.id)): \\(.name)\") | join(\"\\n\") } else empty end'",
-    "format": " {}",
-    "on-click": "sleep 0.1 && exec swaymsg 'scratchpad show'",
-    "on-click-right": "sleep 0.1 && exec swaymsg 'move scratchpad'"
   },
 
   "custom/weather": {
