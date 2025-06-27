@@ -42,10 +42,7 @@
     "format": "{}",
     "expand": true,
     "rewrite": {
-      //"^$": "(˶ᵔ ᵕ ᵔ˶)"
-      "v (.*)": " $1",
-      "nvim (.*)": " $1",
-      "^$": "󱇄 STAY FREE 󱇂"
+      "^$": "(˶ᵔ ᵕ ᵔ˶)"
     },
     "hide-empty-text": true
   },
@@ -61,14 +58,11 @@
       //"1": "",
       //"2": "",
       //"3": "",
-      "urgent": "",
-      "active": "",
-      "default": "",
-      "special": ""
+      "urgent": "!",
+      "active": "+",
+      "default": "·",
+      "special": "-"
     },
-    //"persistent-workspaces": {
-    //  "eDP-1": [1,2,3]
-    //},
     "sort-by-number": true,
     "show-special": true
   },
@@ -83,28 +77,28 @@
       "warning": 20,
       "critical": 10
     },
-    "format": "{icon}",
+    "format": "BAT:{icon}",
     "format-icons": [
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "F"
     ],
-    "format-full": "{icon}",
-    "format-charging": "",
+    "format-full": "BAT:{icon}",
+    "format-charging": "C",
     "tooltip": true,
     "tooltip-format": "Charge: {capacity}%\nTime: {time}"
   },
 
   "cpu": {
     "interval": 1,
-    "format": " {usage}%",
+    "format": "CPU:{usage}%",
     "states": {
       "warning": 85
     }
@@ -112,7 +106,7 @@
 
   "disk": {
     "interval": 30,
-    "format": "󰋊 {percentage_used}%",
+    "format": "DSK:{percentage_used}%",
     "path": "/home",
     "tooltip": true,
     "tooltip-format": "{used}/{total} => {path} {percentage_used}%"
@@ -121,7 +115,7 @@
   "memory": {
     "on-click": "kitty btop",
     "interval": 1,
-    "format": " {percentage}%",
+    "format": "RAM:{percentage}%",
     "states": {
       "warning": 85
     }
@@ -130,15 +124,15 @@
   "network": {
     "interval": 1,
     "format-wifi": "{icon}",
-    "format-ethernet": "󰈀",
-    "format-linked": "",
-    "format-disconnected": "󰪎",
-    "format-disabled": "󰤭",
+    "format-ethernet": "ETH",
+    "format-linked": "LNK",
+    "format-disconnected": "DIS",
+    "format-disabled": "OFF",
     "format-icons": [
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
+      "LOW",
+      "MED",
+      "HIG",
+      "MAX"
     ],
     "justify": "center",
     "align": 0.5,
@@ -158,9 +152,8 @@
       "critical": 80
     },
     "interval": 5,
-    "format-critical": "󰈸 {temperatureC}°C",
-    "format": " {temperatureC}°C",
-    //"format": "TMP:{temperatureC}°C",
+    "format-critical": "!!!:{temperatureC}°C",
+    "format": "TMP:{temperatureC}°C",
     "on-click": "sleep 0.1 && kitty btop"
   },
 
@@ -172,12 +165,7 @@
     "device": "intel_backlight",
     "on-scroll-up": "brightnessctl s 5%+",
     "on-scroll-down": "brightnessctl s 5%-",
-    "format": "{icon} {percent}",
-    "format-icons": [
-      "󱩎",
-      "󱩒",
-      "󰛨"
-    ]
+    "format": "BL:{percent}"
   },
 
   "backlight/slider": {
@@ -227,13 +215,13 @@
     "on-click-middle": "sleep 0.1 && pavucontrol",
     "scroll-step": 5,
     "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", "", ""]
+      "headphone": "HP",
+      "hands-free": "BT",
+      "headset": "HS",
+      "phone": "PH",
+      "portable": "PT",
+      "car": "CA",
+      "default": ["SP"]
     }
   },
 
@@ -259,7 +247,7 @@
   },
 
   "custom/media": {
-    "format": "{icon} {0}",
+    "format": "MSC:{0}",
     "return-type": "json",
     "max-length": 25,
     "format-icons": {
@@ -305,7 +293,7 @@
   },
 
   "custom/powermenu": {
-    "format": "",
+    "format": "PWR",
     "on-click": "sleep 0.1 && ~/.config/rofi/bin/powermenu.sh",
     "tooltip": false
   },

@@ -39,6 +39,7 @@
 #custom-powermenu,
 #custom-reboot,
 #custom-weather,
+#custom-workspaces,
 #disk,
 #idle_inhibitor,
 #memory,
@@ -54,15 +55,15 @@
 #window,
 #workspaces {
   padding: .3rem .6rem;
-  margin-top: .2rem;
-  margin-left: .2rem;
-  margin-right: .2rem;
-  margin-bottom: .2rem;
+  margin-top: .0rem;
+  margin-left: .0rem;
+  margin-right: .0rem;
+  margin-bottom: .0rem;
   background-color: transparent;
   min-width: 1.5rem;
-  color: @lavender;
+  color: @text;
   text-shadow: 0px 0px 4px @mantle;
-  border-radius: .4em;
+  border-radius: .0em;
 }
 
 #backlight:hover,
@@ -91,7 +92,7 @@
 #scratchpad:hover,
 #temperature:hover,
 #window:hover {
-  background-color: rgba(180, 190, 254, 0.2);
+  background-color: rgba(180, 190, 254, 0.1);
   color: @text;
   text-shadow: none;
 }
@@ -109,16 +110,16 @@ window > box {
 .modules-left {
   /*background-color: #1e1e2e;*/
   margin-left: .2rem;
-  padding: 0rem .1rem 0rem .1rem;
+  padding: 0rem .0rem 0rem .0rem;
 }
 .modules-center {
   /*background-color: #1e1e2e;*/
-  padding: 0rem .1rem 0rem .1rem;
+  padding: 0rem .0rem 0rem .0rem;
 }
 .modules-right {
   /*background-color: #1e1e2e;*/
   margin-right: .2rem;
-  padding: 0rem .1rem 0rem .1rem;
+  padding: 0rem .0rem 0rem .0rem;
 }
 
 /* Workspaces */
@@ -129,11 +130,11 @@ window > box {
   all: initial;
   padding-right: .2rem;
   padding-left: .2rem;
-  padding-top: .1rem;
-  padding-bottom: .1rem;
+  padding-top: .0rem;
+  padding-bottom: .0rem;
   background: transparent;
-  border-radius: .4rem;
-  color: @lavender;
+  border-radius: .0rem;
+  color: @text;
 }
 #workspaces button.active {
   color: @text;
@@ -144,7 +145,7 @@ window > box {
 
 /* Tooltip */
 tooltip {
-  background-color: @lavender;
+  background-color: @text;
   border-radius: .4rem;
   border: none;
 }
@@ -162,9 +163,12 @@ tooltip label {
 }
 
 /* Extra */
+#backlight-slider {
+  min-width: 100px;
+}
 #custom-cava-internal{
   color: @peach;
-  padding-right: 1rem;
+  padding-right: 0rem;
 }
 /*
  *ff00ff purple
@@ -178,10 +182,10 @@ tooltip label {
   font-weight: bold;
 }
 #pulseaudio {
-  color: @lavender;  /* not active */
+  color: @text;  /* not active */
 }
 #network {
-  color: @lavender; /* not active */
+  color: @text; /* not active */
 }
 #network.disconnected {
   color: @red;  /* not active */
