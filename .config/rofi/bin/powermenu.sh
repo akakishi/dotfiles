@@ -9,10 +9,12 @@ shutdown=" Shutdown"
 reboot=" Restart"
 lock=" Lock"
 logout=" Logout"
+suspend="󰒲 Suspend"
+hibernate="󰜗 Hibernate"
 ddir="$HOME/.config/rofi/config"
 
 # Variable passed to rofi
-options="$cancel\n$lock\n$logout\n$reboot\n$shutdown"
+options="$cancel\n$lock\n$logout\n$suspend\n$hibernate\n$reboot\n$shutdown"
 
 chosen="$(echo -e "$options" | $rofi_command -p "UP - $uptime" -dmenu -selected-row 0)"
 case $chosen in
@@ -27,6 +29,12 @@ case $chosen in
         ;;
     $reboot)
         systemctl reboot
+        ;;
+    $suspend)
+        systemctl suspend
+        ;;
+    $hibernate)
+        systemctl hibernate
         ;;
     $shutdown)
         systemctl poweroff

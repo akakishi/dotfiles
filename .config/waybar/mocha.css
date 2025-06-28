@@ -15,7 +15,8 @@
 @keyframes blink_red {
   to {
     background-color: @red;
-    color: @mantle;
+    color: @text;
+    text-shadow: none;
   }
 }
 

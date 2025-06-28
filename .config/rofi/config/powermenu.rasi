@@ -18,7 +18,7 @@ window {
     transparency:                   "real";
     background-color:               @BLK1;
     text-color:                     @LGRY;
-    border:                  	    2px;
+    border:                         2px;
     border-color:                   @LBLU;
     border-radius:                  2px;
     width:                          350px;
@@ -55,7 +55,7 @@ inputbar {
 listview {
     background-color:               @BLK1;
     columns:                        1;
-    lines:			                5;
+    lines:                          7;
     fixed-height:                   true;
     fixed-columns:                  true;
     spacing:                        4px;
