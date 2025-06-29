@@ -12,6 +12,7 @@ hypridle
 hyprland
 hyprland-qtutils
 hyprlock
+hyprpaper
 hyprpolkitagent
 hyprutils
 neovim
