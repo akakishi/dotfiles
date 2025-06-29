@@ -24,6 +24,8 @@ stow
 swaync
 thefuck
 ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
 waybar
 wl-clip-persist
 wl-clipboard
