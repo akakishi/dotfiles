@@ -5,6 +5,7 @@ bluetuith
 brightnessctl
 clipse
 discover
+feh
 flatpak
 ghostty
 hyprcursor
