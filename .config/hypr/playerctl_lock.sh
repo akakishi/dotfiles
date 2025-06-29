@@ -74,7 +74,7 @@ case "$1" in
   elif [[ $status == "Paused" ]]; then
     echo ""
   else
-    echo ""
+    echo ""
   fi
   ;;
 --album)
