@@ -16,4 +16,6 @@ done
 
 #sed -i "/hwmon-path/c\ \ \ \ \"hwmon-path\": \"$HWMON_PATH\"," $SDIR/mocha.jsonc
 
-waybar -c "$SDIR"/mocha.jsonc -s "$SDIR"/mocha.css &
+JSON=${1:-"default.jsonc"}
+CSS=${2:-"mocha.css"}
+waybar -c "$SDIR"/"$JSON" -s "$SDIR"/"$CSS" &

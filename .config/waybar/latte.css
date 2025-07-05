@@ -1,0 +1,205 @@
+@import "./themes/latte.css";
+
+/* Global */
+* {
+  /* font "JetBrainsMono Nerd Font" shows icons vertically aligned
+   * font "JetBrains Mono" show icons horizontally aligned
+   * fix modules with only text/icons and with both
+   * */
+  font-family: "JetBrains Mono", "Symbols Nerd Font", FontAwesome, monospace;
+  font-size: 1.2rem;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+@keyframes blink_red {
+  to {
+    background-color: @red;
+    color: @base;
+    text-shadow: none;
+  }
+}
+
+.warning, .critical, .urgent {
+  animation-name: blink_red;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#backlight,
+#battery,
+#clock,
+#cpu,
+#custom-cava-internal,
+#custom-launcher,
+#custom-media,
+#custom-notification,
+#custom-pacman,
+#custom-powermenu,
+#custom-reboot,
+#custom-weather,
+#custom-workspaces,
+#disk,
+#idle_inhibitor,
+#memory,
+#mode,
+#network,
+#mpd,
+#mpd.paused,
+#mpd.stopped,
+#pulseaudio,
+#scratchpad,
+#temperature,
+#tray,
+#window,
+#workspaces {
+  padding: .3rem .6rem;
+  margin-top: .0rem;
+  margin-left: .0rem;
+  margin-right: .0rem;
+  margin-bottom: .0rem;
+  background-color: transparent;
+  min-width: 1.5rem;
+  color: @base;
+  text-shadow: 0px 0px 8px @text;
+  border-radius: .0em;
+}
+
+#backlight:hover,
+#battery:hover,
+#battery.full:hover,
+#battery.charging:hover,
+#battery.discharging:hover,
+#battery.critical:hover,
+#clock:hover,
+#cpu:hover,
+#custom-cava-internal:hover,
+#custom-launcher:hover,
+#custom-media:hover,
+#custom-notification:hover,
+#custom-pacman:hover,
+#custom-powermenu:hover,
+#custom-reboot:hover,
+#custom-weather:hover,
+#disk:hover,
+#idle_inhibitor:hover,
+#memory:hover,
+#mode:hover,
+#network:hover,
+#mpd:hover,
+#pulseaudio:hover,
+#scratchpad:hover,
+#temperature:hover,
+#window:hover {
+  background-color: rgba(220, 224, 232, 0.2);
+  color: @base;
+  text-shadow: none;
+}
+
+/* Bar */
+window#waybar {
+  /*background-color: rgba(30, 30, 46, 0.60);*/
+  /*margin: .2rem;*/
+  background-color: transparent;
+}
+window > box {
+  /*background-color: transparent;*/
+  background-color: rgba(239, 241, 245, 0.2);
+}
+.modules-left {
+  /*background-color: #1e1e2e;*/
+  margin-left: .2rem;
+  padding: 0rem .0rem 0rem .0rem;
+}
+.modules-center {
+  /*background-color: #1e1e2e;*/
+  padding: 0rem .0rem 0rem .0rem;
+}
+.modules-right {
+  /*background-color: #1e1e2e;*/
+  margin-right: .2rem;
+  padding: 0rem .0rem 0rem .0rem;
+}
+
+/* Workspaces */
+#workspaces {
+  background-color: transparent;
+}
+#workspaces button {
+  all: initial;
+  padding-right: .2rem;
+  padding-left: .2rem;
+  padding-top: .0rem;
+  padding-bottom: .0rem;
+  background: transparent;
+  border-radius: .0rem;
+  color: @base;
+}
+#workspaces button.active {
+  color: @base;
+}
+#workspaces button:hover {
+  color: @base;
+}
+
+/* Tooltip */
+tooltip {
+  background-color: @base;
+  border-radius: .4rem;
+  border: none;
+}
+tooltip label {
+  color: @mantle;
+}
+
+/* battery */
+#battery.critical:not(.charging) {
+  color: @pink;
+}
+#custom-powermenu:hover {
+  color: @base;
+  background-color: #e6008e;
+}
+
+/* Extra */
+#backlight-slider {
+  min-width: 100px;
+}
+#custom-cava-internal{
+  color: @peach;
+  padding-right: 0rem;
+}
+/*
+ *ff00ff purple
+ *fbff00 yellow
+ *26ff00 green
+ *00eeff cyan
+ * */
+#clock {
+  /*color: @mantle;
+  background-color: #26ff00;*/
+  font-weight: bold;
+}
+#pulseaudio {
+  color: @base;  /* not active */
+}
+#network {
+  color: @base; /* not active */
+}
+#network.disconnected {
+  color: @red;  /* not active */
+}
+#custom-media {
+  color: #333333;
+}
+#custom-media.custom-spotify {
+  color: #1db954;
+}
+#custom-media.custom-vlc {
+  color: #ffa000;
+}
+#custom-notification {
+  font-family: "JetBrainsMono Nerd Font";
+}
