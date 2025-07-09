@@ -9,9 +9,7 @@
   "control-center-margin-top": 10,
   "control-center-margin-bottom": 10,
   "control-center-margin-right": 10,
-  "control-center-margin-left": 10,
   "control-center-width": 500,
-  "control-center-height": 600,
   "fit-to-screen": true,
 
   "layer": "overlay",
@@ -19,33 +17,19 @@
   "cssPriority": "user",
   "notification-icon-size": 64,
   "notification-body-image-height": 100,
-  "notification-body-image-width": 200,
+  "notification-body-image-width": 100,
   "notification-inline-replies": true,
   "timeout": 10,
   "timeout-low": 5,
   "timeout-critical": 0,
   "notification-window-width": 500,
-  "keyboard-shortcuts": false,
+  "keyboard-shortcuts": true,
   "image-visibility": "when-available",
   "transition-time": 200,
-  "hide-on-clear": true,
+  "hide-on-clear": false,
   "hide-on-action": true,
   "script-fail-notify": true,
-
-  "scripts": {
-    "example-script": {
-      "exec": "echo 'Do something...'",
-      "urgency": "Normal"
-    }
-  },
-
-  "notification-visibility": {
-    "example-name": {
-      "state": "muted",
-      "urgency": "Low",
-      "app-name": "Spotify"
-    }
-  },
+  "text-empty": "Nothing here",
 
   "widgets": [
     "mpris",
@@ -55,9 +39,8 @@
   ],
 
   "widget-config": {
-
     "title": {
-      "text": "Notifications",
+      "text": "Notification Center",
       "clear-all-button": true,
       "button-text": "Clear All"
     },
@@ -68,81 +51,12 @@
 
     "label": {
       "max-lines": 1,
-      "text": "Controll Center"
+      "text": "Notification Center"
     },
     
     "mpris": {
       "image-size": 96,
-      "image-radius": 12
-    },
-    
-    "volume": {
-      "label": ""
-    },
-    
-    "menubar#label": {
-      "menu#power-buttons": {
-        "label": "", 
-        "position": "right",
-        "actions": [ 
-          {
-            "label": "  Reboot",
-            "command": "systemctl reboot"
-          },
-          {
-            "label": "  Lock",
-            "command": "swaylock -f"
-          },
-          {
-            "label": "  Logout",
-            "command": "swaymsg exit"
-          },
-          {
-            "label": "  Shut down",
-            "command": "systemctl poweroff"
-          }
-        ]
-      },
-      "menu#powermode-buttons": {
-        "label": "", 
-        "position": "left",
-        "actions": [ 
-          {
-            "label": "Performance",
-            "command": "powerprofilesctl set performance"
-          },
-          {
-            "label": "Balanced",
-            "command": "powerprofilesctl set balanced"
-          },
-          {
-            "label": "Power-saver",
-            "command": "powerprofilesctl set power-saver"
-          }
-        ]
-      },
-      "buttons#topbar-buttons": {
-        "position": "left",
-        "actions": [
-          {
-            "label": "",
-            "command": "grim"
-          }
-        ]
-      }
-    },
-    
-    "buttons-grid": {
-      "actions": [
-        {
-          "label": "",
-          "command": "~/.config/rofi/config/rofi-wifi-menu.sh"
-        },
-        {
-          "label": "",
-          "command": "~/.config/rofi/rofi-bluetooth"
-        }
-      ]
+      "image-radius": 4
     }
   }
 }
