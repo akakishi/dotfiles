@@ -6,7 +6,7 @@
    * font "JetBrains Mono" show icons horizontally aligned
    * fix modules with only text/icons and with both
    * */
-  font-family: "JetBrains Mono", "Symbols Nerd Font", FontAwesome, monospace;
+  font-family: "JetBrainsMono Nerd Font Propo", "Symbols Nerd Font", FontAwesome, monospace;
   font-size: 1.2rem;
   transition-property: background-color;
   transition-duration: 0.5s;
