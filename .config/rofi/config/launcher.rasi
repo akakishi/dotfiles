@@ -1,163 +1,162 @@
 configuration {
-    modi:                           "drun";
-    show-icons:                     true;
-    display-drun:                   "Apps";
-    drun-display-format:            "{icon} {name}";
-    disable-history:                false;
-    click-to-exit:                  true;
-    location:                       0;
+  modi:                           "drun";
+  show-icons:                     true;
+  display-drun:                   "Apps";
+  drun-display-format:            "{icon} {name}";
+  disable-history:                false;
+  click-to-exit:                  true;
+  location:                       0;
 }
 
 @import "font.rasi"
 @import "colors.rasi"
 
 window {
-    transparency:                   "real";
-    background-color:               @BLK1;
-    text-color:                     @LGRY;
-    border:                         2px;
-    border-color:                   @LBLU;
-    border-radius:                  2px;
-    width:                          500px;
-    anchor:                         center;
-    padding:                        10px;
-    x-offset:                       0;
-    y-offset:                       0;
+  transparency:                   "real";
+  background-color:               rgba(30,30,47,0.6);
+  text-color:                     @LGRY;
+  border:                         2px;
+  border-color:                   @LBLU;
+  border-radius:                  2px;
+  width:                          500px;
+  anchor:                         center;
+  padding:                        10px;
+  x-offset:                       0;
+  y-offset:                       0;
 }
 
 prompt {
-    enabled:                        true;
-    padding:                        8px;
-    background-color:               @BLK1;
-    text-color:                     @YLLW;
+  enabled:                        true;
+  padding:                        8px;
+  background-color:               @BLK1;
+  text-color:                     @YLLW;
 }
 
 textbox-prompt-colon {
-    expand:                         false;
-    str:                            "";
-    /*border-radius:                  100%;*/
-    background-color:               @BLK2;
-    text-color:                     @LGRY;
-    padding:                        8px 12px 8px 12px;
+  expand:                         false;
+  str:                            "";
+  /*border-radius:                  100%;*/
+  background-color:               @BLK2;
+  text-color:                     @LGRY;
+  padding:                        8px 12px 8px 12px;
 }
 
 entry {
-    background-color:               @BLK1;
-    text-color:                     @LGRY;
-    placeholder-color:              @LGRY;
-    expand:                         true;
-    horizontal-align:               0;
-    placeholder:                    "Search...";
-    blink:                          true;
-    border:                         0px 0px 2px 0px;
-    border-color:                   @LBLU;
-    /*border-radius:                  2px;*/
-    padding:                        8px;
+  background-color:               @BLK1;
+  text-color:                     @LGRY;
+  placeholder-color:              @LGRY;
+  expand:                         true;
+  horizontal-align:               0;
+  placeholder:                    "Search...";
+  blink:                          true;
+  border:                         0px 0px 2px 0px;
+  border-color:                   @LBLU;
+  padding:                        8px;
 }
 
 inputbar {
-	children:                       [ entry ];
-    background-color:               @BLK1;
-    text-color:                     @LGRY;
-    expand:                         false;
-    border:                  	    0px 0px 0px 0px;
-    border-radius:                  2px;
-    border-color:                   @LBLU;
-    margin:                         0px 0px 0px 0px;
-    padding:                        0px;
-    position:                       center;
+  children:                     [ entry ];
+  background-color:             @BLK1;
+  text-color:                   @LGRY;
+  expand:                       false;
+  border:                       0px 0px 0px 0px;
+  border-radius:                2px;
+  border-color:                 @LBLU;
+  margin:                       0px 0px 0px 0px;
+  padding:                      0px;
+  position:                     center;
 }
 
 case-indicator {
-    background-color:               @BLK1;
-    text-color:                     @LGRY;
-    spacing:                        0;
+  background-color:             transparent;
+  text-color:                   @LGRY;
+  spacing:                      0;
 }
 
 listview {
-    background-color:               @BLK1;
-    columns:                        1;
-    lines:                          7;
-    fixed-height:                   true;
-    fixed-columns:                  true;
-    spacing:                        4px;
-    cycle:                          false;
-    dynamic:                        true;
-    layout:                         vertical;
+  background-color:             transparent;
+  columns:                      1;
+  lines:                        7;
+  fixed-height:                 true;
+  fixed-columns:                true;
+  spacing:                      4px;
+  cycle:                        false;
+  dynamic:                      true;
+  layout:                       vertical;
 }
 
 mainbox {
-    background-color:               @BLK1;
-    children:                       [ inputbar, listview, message ];
-    spacing:                        10px;
-    padding:                        15px;
+  background-color:             transparent;
+  children:                     [ inputbar, listview, message ];
+  spacing:                      10px;
+  padding:                      15px;
 }
 
 element {
-    background-color:               @BLK1;
-    text-color:                     @LGRY;
-    orientation:                    horizontal;
-    border-width:                   0px;
-    border-radius:                  2px;
-    padding:                        6px;
+  background-color:             @BLK1;
+  text-color:                   @LGRY;
+  orientation:                  horizontal;
+  border-width:                 0px;
+  border-radius:                2px;
+  padding:                      6px;
 }
 
 element-icon {
-    background-color:               inherit;
-    text-color:                     inherit;
-    horizontal-align:               0.5;
-    vertical-align:                 0.5;
-    size:                           36px;
-    border:                         0px;
+  background-color:             inherit;
+  text-color:                   inherit;
+  horizontal-align:             0.5;
+  vertical-align:               0.5;
+  size:                         36px;
+  border:                       0px;
 }
 
 element-text {
-    background-color:               inherit;
-    text-color:                     inherit;
-    expand:                         true;
-    horizontal-align:               0;
-    vertical-align:                 0.5;
-    border-color:                   @BLK1;
-    border:                         0px solid;
-    margin:                         2px;
+  background-color:             inherit;
+  text-color:                   inherit;
+  expand:                       true;
+  horizontal-align:             0;
+  vertical-align:               0.5;
+  border-color:                 @BLK1;
+  border:                       0px solid;
+  margin:                       2px;
 }
 
 element normal.urgent,
 element alternate.urgent {
-    background-color:               @PINK;
-    text-color:                     @LGRY;
-    border-radius:                  2px;
+  background-color:             @PINK;
+  text-color:                   @LGRY;
+  border-radius:                2px;
 }
 
 element normal.active,
 element alternate.active {
-    background-color:               @LBLU;
-    text-color:                     @LGRY;
+  background-color:             @LBLU;
+  text-color:                   @LGRY;
 }
 
 element selected {
-    background-color:               @LBLU;
-    text-color:                     @BLK2;
-    border:                         0px 0px 0px 0px;
-    border-radius:                  2px;
-    border-color:                   @LBLU;
+  background-color:             @LBLU;
+  text-color:                   @BLK2;
+  border:                       0px 0px 0px 0px;
+  border-radius:                2px;
+  border-color:                 @LBLU;
 }
 
 element-text selected {
-    border-color:                   @LBLU;
+  border-color:                 @LBLU;
 }
 
 element selected.urgent {
-    background-color:               @PINK;
-    text-color:                     @LGRY;
+  background-color:             @PINK;
+  text-color:                   @LGRY;
 }
 
 element selected.active {
-    background-color:               @LBLU;
-    color:                          @LGRY;
+  background-color:             @LBLU;
+  color:                        @LGRY;
 }
 
 message {
-    background-color:               @PINK;
-    text-color:                     @LGRY;
+  background-color:             @PINK;
+  text-color:                   @LGRY;
 }
