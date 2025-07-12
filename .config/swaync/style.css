@@ -50,14 +50,15 @@ label {
 }
 
 .notification {
-  border: none;
+  border: @lavender;
   box-shadow: none;
   border-radius: 4px;
-  background: inherit;
+  border-width: 2px;
+  background: @base;
 }
 
 .notification button {
-  background: transparent;
+  background: @lavender;
   border-radius: 0px;
   border: none;
   margin: 0px;
@@ -65,7 +66,7 @@ label {
 }
 
 .notification button:hover {
-  background: @insensitive_bg_color;
+  background: @text;
 }
 
 .notification-content {
@@ -76,13 +77,14 @@ label {
 }
 
 .close-button {
-  background: transparent;
-  color: transparent;
+  min-height: 64px;
+  background: @lavender;
+  color: @base;
 }
 
 .notification-default-action,
 .notification-action {
-  background: transparent;
+  background: @base;
   border: none;
 }
 
@@ -148,7 +150,7 @@ label {
 /* Control center */
 
 .control-center {
-  background: alpha(@crust, 0.7);
+  background: @crust;
   border-radius: 4px;
   border: 2px solid @lavender;
   box-shadow: none;
@@ -157,7 +159,7 @@ label {
 }
 
 .control-center-list {
-  background: alpha(@crust, 0.9);
+  background: @crust;
   min-height: 5px;
   border-top: none;
   border-radius: 0px 0px 4px 4px;
@@ -166,7 +168,7 @@ label {
 .control-center-list-placeholder,
 .notification-group-icon,
 .notification-group {
-  color: alpha(@theme_text_color, 0.50);
+  color: @theme_text_color;
 }
 
 .notification-group {
@@ -188,7 +190,7 @@ label {
 .notification-row {
   outline: none;
   transition: all 1s ease;
-  background: alpha(@mantle, .80);
+  background: @mantle;
   border: 0px solid @crust;
   margin: 10px 5px 0px 5px;
   border-radius: 14px;
@@ -245,7 +247,7 @@ label {
   border-radius: 4px;
 }
 .widget-title > button:hover {
-  background: alpha(@lavender, .1);
+  background: @lavender;
 }
 
 /* Label widget */
@@ -253,7 +255,7 @@ label {
   margin: 0px;
   padding: 0px;
   min-height: 5px;
-  background: alpha(@mantle, .80);
+  background: @mantle;
   border-radius: 0px 0px 4px 4px;
   border-top: none;
 }
@@ -275,7 +277,7 @@ label {
   background: transparent;
 }
 .widget-menubar > box > box > button {
-  background: alpha(@mantle, .80);
+  background: @mantle;
   min-width: 185px;
   min-height: 50px;
   margin-right: 10px;
@@ -295,7 +297,7 @@ label {
 
 .widget-menubar > box > revealer > box {
   margin: 5px 10px 5px 10px;
-  background: alpha(@mantle, .80);
+  background: @mantle;
   border-radius: 4px;
 }
 .widget-menubar > box > revealer > box > button {
@@ -316,7 +318,7 @@ label {
   margin: -5px 0px -10px 0px;
   padding: 0px;
   border-radius: 4px;
-  background: alpha(@mantle, .80);
+  background: @mantle;
 }
 .widget-mpris > box > button:nth-child(1),
 .widget-mpris > box > button:nth-child(3) {
@@ -347,7 +349,7 @@ label {
   border-radius: 4px;
 }
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) > button:hover {
-  background: alpha(currentColor, 0.1);
+  background: currentColor;
 }
 carouselindicatordots {
   opacity: 0;
@@ -357,7 +359,7 @@ carouselindicatordots {
   color: #eeeeee;
   font-weight: bold;
   font-size: 1.25rem;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 }
 .widget-mpris-subtitle {
   color: #eeeeee;
