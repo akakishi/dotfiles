@@ -168,7 +168,7 @@ label {
 .control-center-list-placeholder,
 .notification-group-icon,
 .notification-group {
-  color: @theme_text_color;
+  color: @text;
 }
 
 .notification-group {
