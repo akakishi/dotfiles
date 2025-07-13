@@ -28,7 +28,7 @@ window {
 prompt {
   enabled:                        true;
   padding:                        8px;
-  background-color:               @BLK1;
+  background-color:               transparent;
   text-color:                     @YLLW;
 }
 
@@ -36,13 +36,13 @@ textbox-prompt-colon {
   expand:                         false;
   str:                            "";
   /*border-radius:                  100%;*/
-  background-color:               @BLK2;
+  background-color:               transparent;
   text-color:                     @LGRY;
   padding:                        8px 12px 8px 12px;
 }
 
 entry {
-  background-color:               @BLK1;
+  background-color:               transparent;
   text-color:                     @LGRY;
   placeholder-color:              @LGRY;
   expand:                         true;
@@ -56,7 +56,7 @@ entry {
 
 inputbar {
   children:                     [ entry ];
-  background-color:             @BLK1;
+  background-color:             transparent;
   text-color:                   @LGRY;
   expand:                       false;
   border:                       0px 0px 0px 0px;
@@ -93,7 +93,7 @@ mainbox {
 }
 
 element {
-  background-color:             @BLK1;
+  background-color:             transparent;
   text-color:                   @LGRY;
   orientation:                  horizontal;
   border-width:                 0px;
