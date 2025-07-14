@@ -50,11 +50,10 @@ label {
 }
 
 .notification {
-  border: @lavender;
+  border: 2px solid @lavender;
   box-shadow: none;
   border-radius: 4px;
-  border-width: 2px;
-  background: @base;
+  background: @overlay0;
 }
 
 .notification button {
@@ -62,23 +61,26 @@ label {
   border-radius: 0px;
   border: none;
   margin: 0px;
-  padding: 0px;
+  padding: 4px;
 }
 
 .notification button:hover {
   background: @text;
+  color: @base;
 }
 
 .notification-content {
-  min-height: 64px;
+  min-height: 32px;
   margin: 10px;
   padding: 0px;
   border-radius: 0px;
 }
 
 .close-button {
-  min-height: 64px;
-  background: @lavender;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 2px;
+  background: @red;
   color: @base;
 }
 
@@ -125,7 +127,7 @@ label {
   color: @subtext0;
   font-size: 12px;
   text-shadow: none;
-  margin: 0px 0px 0px 0px;
+  margin: 2px 32px 2px 2px;
   padding: 2px 0px;
 }
 
@@ -148,7 +150,6 @@ label {
 }
 
 /* Control center */
-
 .control-center {
   background: alpha(@surface0, 0.8);
   border-radius: 4px;
@@ -241,13 +242,13 @@ label {
   font-weight: 700;
   padding: 7px 3px;
   margin-right: 10px;
-  background: transparent;
-  color: @text;
+  background: @base;
+  color: @base;
   border: none;
   border-radius: 4px;
 }
 .widget-title > button:hover {
-  background: @lavender;
+  background: @overlay2;
 }
 
 /* Label widget */
