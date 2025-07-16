@@ -25,6 +25,7 @@ oh-my-posh
 opentabletdriver
 pass
 rofi-wayland
+sox
 spotify
 stow
 swaync
