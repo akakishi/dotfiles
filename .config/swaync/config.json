@@ -31,6 +31,13 @@
   "script-fail-notify": true,
   "text-empty": "Nothing here",
 
+  "scripts": {
+    "sound-script": {
+      "exec": "bash ~/.config/swaync/notification_sound.sh",
+      "app-name": ".*"
+    }
+  },
+
   "widgets": [
     "mpris",
     "title",
