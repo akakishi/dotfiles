@@ -29,6 +29,7 @@
     "network",
     "battery",
     "custom/notification",
+    "idle_inhibitor",
     "clock"
   ],
 
