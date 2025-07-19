@@ -50,7 +50,7 @@ label {
 }
 
 .notification {
-  border: 2px solid @lavender;
+  border: 1px solid @lavender;
   box-shadow: none;
   border-radius: 4px;
   background: @overlay0;
@@ -151,16 +151,16 @@ label {
 
 /* Control center */
 .control-center {
-  background: alpha(@surface0, 0.8);
+  background: alpha(@surface0, 0.95);
   border-radius: 4px;
-  border: 2px solid @lavender;
+  border: 1px solid @lavender;
   box-shadow: none;
   margin: 10px;
   padding: 4px;
 }
 
 .control-center-list {
-  background: @surface0;
+  background: transparent;
   min-height: 5px;
   border-top: none;
   border-radius: 0px 0px 4px 4px;
@@ -174,14 +174,14 @@ label {
 
 .notification-group {
   /* unset the annoying focus thingie */
-  opacity: 0;
+  opacity: 1;
   box-shadow: none;
 }
 
 .notification-group > box {
   all: unset;
   background: transparent;
-  padding: 4px;
+  padding: 0px;
   margin: 0px;
   border: none;
   border-radius: 4px;
@@ -193,7 +193,7 @@ label {
   transition: all 1s ease;
   background: @surface1;
   border: 0px solid @crust;
-  margin: 10px 5px 0px 5px;
+  margin: 10px 0px 0px 0px;
   border-radius: 14px;
 }
 
@@ -240,7 +240,7 @@ label {
 
 .widget-title > button {
   font-weight: 700;
-  padding: 7px 3px;
+  padding: 8px 4px;
   margin-right: 10px;
   background: @base;
   color: @base;
@@ -388,8 +388,8 @@ carouselindicatordots {
 
 .widget-dnd > switch {
   background: @mantle;
-  font-size: initial;
-  border-radius: 8px;
+  font-size: 1.5rem;
+  border-radius: 4px;
   box-shadow: none;
   padding: 2px;
 }
@@ -408,7 +408,7 @@ carouselindicatordots {
 
 .widget-dnd > switch slider {
   background: @lavender;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 /* Toggles */
