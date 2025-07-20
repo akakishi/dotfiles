@@ -151,7 +151,7 @@ label {
 
 /* Control center */
 .control-center {
-  background: alpha(@surface0, 0.95);
+  background: alpha(@surface0, 0.8);
   border-radius: 4px;
   border: 1px solid @lavender;
   box-shadow: none;

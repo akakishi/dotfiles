@@ -143,6 +143,7 @@
     ],
     "justify": "center",
     "align": 0.5,
+    "on-click": "sleep 0.1 && ~/.config/rofi/bin/rofi-wifi-menu.sh",
     "tooltip": true,
     "tooltip-format": "{ifname} ({ipaddr})",
     "tooltip-format-wifi": "{essid} ({signalStrength}%): {ipaddr}"

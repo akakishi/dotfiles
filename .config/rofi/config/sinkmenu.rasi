@@ -13,11 +13,11 @@ configuration {
 
 window {
     transparency:           "real";
-    background-color:       @BLK1;
+    background-color:       rgba(30,30,47,0.6);
     text-color:             @LGRY;
     border:                 2px;
     border-color:           @LBLU;
-    border-radius:          1px;
+    border-radius:          2px;
     width:                  500px;
     anchor:                 north east;
     padding:                10px;
@@ -26,7 +26,7 @@ window {
 }
 
 listview {
-    background-color:       @BLK1;
+    background-color:       transparent;
     columns:                1;
     fixed-height:           false;
     fixed-columns:          false;
@@ -37,14 +37,14 @@ listview {
 }
 
 mainbox {
-    background-color:       @BLK1;
+    background-color:       transparent;
     children:               [ listview ];
     spacing:                10px;
     padding:                15px;
 }
 
 element {
-    background-color:       @BLK1;
+    background-color:       transparent;
     text-color:             @LGRY;
     orientation:            horizontal;
     border-width:           0px;
