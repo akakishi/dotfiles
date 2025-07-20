@@ -20,6 +20,7 @@ hyprpolkitagent
 hyprutils
 kitty
 lazygit
+megasync
 neovim
 oh-my-posh
 opentabletdriver
