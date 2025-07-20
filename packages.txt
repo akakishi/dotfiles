@@ -21,6 +21,7 @@ hyprutils
 kitty
 lazygit
 megasync
+mpd
 neovim
 oh-my-posh
 opentabletdriver
