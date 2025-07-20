@@ -312,7 +312,7 @@ label {
 .widget-mpris {
   padding: 8px;
   padding-bottom: 15px;
-  margin-bottom: -33px;
+  margin-bottom: 0px;
 }
 .widget-mpris > box {
   padding: 0px;
