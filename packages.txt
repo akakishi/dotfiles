@@ -24,6 +24,8 @@ neovim
 oh-my-posh
 opentabletdriver
 pass
+proton-mail
+proton-pass-bin
 rofi-wayland
 sox
 spotify
