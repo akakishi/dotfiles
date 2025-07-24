@@ -10,6 +10,7 @@ feh
 flatpak
 git-credential-manager
 ghostty
+grim
 hyprcursor
 hypridle
 hyprland
@@ -29,6 +30,7 @@ pass
 proton-mail
 proton-pass-bin
 rofi-wayland
+slurp
 sox
 spotify
 stow
