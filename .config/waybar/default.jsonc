@@ -164,7 +164,8 @@
     "format-critical": "󰈸 {temperatureC}°C",
     "format-warning": " {temperatureC}°C",
     "format": "",
-    "on-click": "sleep 0.1 && kitty btop"
+    "on-click": "sleep 0.1 && kitty btop",
+    "tooltip": true
   },
 
   //****************
