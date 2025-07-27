@@ -7,4 +7,5 @@ rofi \
 	-drun-display-format "{name}" \
 	-no-drun-show-actions \
 	-terminal kitty \
+  -scroll-method 1 \
 	-theme "$HOME"/.config/rofi/config/launcher.rasi

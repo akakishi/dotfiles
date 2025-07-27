@@ -6,6 +6,7 @@ configuration {
   disable-history:                false;
   click-to-exit:                  true;
   location:                       0;
+  scroll-method:                  1;
 }
 
 @import "font.rasi"
@@ -13,14 +14,14 @@ configuration {
 
 window {
   transparency:                   "real";
-  background-color:               rgba(30,30,47,0.6);
+  background-color:               rgba(30,30,47,0.8);
   text-color:                     @LGRY;
   border:                         2px;
   border-color:                   @LBLU;
-  border-radius:                  2px;
+  border-radius:                  0px;
   width:                          500px;
   anchor:                         center;
-  padding:                        10px;
+  padding:                        4px;
   x-offset:                       0;
   y-offset:                       0;
 }
