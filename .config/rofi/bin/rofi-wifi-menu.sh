@@ -10,8 +10,7 @@ if [[ "$connected" =~ "disabled" || "$connected" =~ "desactivado" ]]; then
 elif [[ "$connected" =~ "enabled" || "$connected" =~ "activado" ]]; then
 	toggle="󰖪  Disable Wi-Fi"
 fi
-echo $connected
-echo $toggle
+
 # Use rofi to select wifi network
 chosen_network=$(echo -e "$toggle\n$wifi_list" | uniq -u | rofi -dmenu -i -selected-row 1 -theme $HOME/.config/rofi/config/sinkmenu.rasi -p "Wi-Fi SSID: " )
 # Get name of connection
