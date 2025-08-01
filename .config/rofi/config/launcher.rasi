@@ -18,17 +18,17 @@ window {
   text-color:                     @LGRY;
   border:                         2px;
   border-color:                   @LBLU;
-  border-radius:                  0px;
+  border-radius:                  2px;
   width:                          500px;
   anchor:                         center;
-  padding:                        4px;
+  padding:                        10px;
   x-offset:                       0;
   y-offset:                       0;
 }
 
 prompt {
   enabled:                        true;
-  padding:                        8px;
+  padding:                        0px;
   background-color:               transparent;
   text-color:                     @YLLW;
 }
@@ -43,16 +43,17 @@ textbox-prompt-colon {
 }
 
 entry {
-  background-color:               transparent;
+  background-color:               rgba(30,31,48,0.8);
   text-color:                     @LGRY;
   placeholder-color:              @LGRY;
   expand:                         true;
   horizontal-align:               0;
   placeholder:                    "Search...";
   blink:                          true;
-  border:                         0px 0px 2px 0px;
+  border:                         0px 0px 0px 0px;
+  border-radius:                  2px;
   border-color:                   @LBLU;
-  padding:                        8px;
+  padding:                        10px;
 }
 
 inputbar {
@@ -60,10 +61,10 @@ inputbar {
   background-color:             transparent;
   text-color:                   @LGRY;
   expand:                       false;
-  border:                       0px 0px 0px 0px;
-  border-radius:                2px;
+  border:                       0px;
+  border-radius:                0px;
   border-color:                 @LBLU;
-  margin:                       0px 0px 0px 0px;
+  margin:                       0px;
   padding:                      0px;
   position:                     center;
 }
@@ -81,6 +82,7 @@ listview {
   fixed-height:                 true;
   fixed-columns:                true;
   spacing:                      4px;
+  padding:                      0px;
   cycle:                        false;
   dynamic:                      true;
   layout:                       vertical;
@@ -90,7 +92,7 @@ mainbox {
   background-color:             transparent;
   children:                     [ inputbar, listview, message ];
   spacing:                      10px;
-  padding:                      15px;
+  padding:                      10px;
 }
 
 element {
@@ -117,8 +119,6 @@ element-text {
   expand:                       true;
   horizontal-align:             0;
   vertical-align:               0.5;
-  border-color:                 @BLK1;
-  border:                       0px solid;
   margin:                       2px;
 }
 
@@ -126,7 +126,7 @@ element normal.urgent,
 element alternate.urgent {
   background-color:             @PINK;
   text-color:                   @LGRY;
-  border-radius:                2px;
+  border-radius:                0px;
 }
 
 element normal.active,
@@ -138,13 +138,12 @@ element alternate.active {
 element selected {
   background-color:             @LBLU;
   text-color:                   @BLK2;
-  border:                       0px 0px 0px 0px;
+  border:                       0px;
   border-radius:                2px;
   border-color:                 @LBLU;
 }
 
 element-text selected {
-  border-color:                 @LBLU;
 }
 
 element selected.urgent {

@@ -1,7 +1,6 @@
 configuration {
     modi:                   "dmenu";
     show-icons:             true;
-    display-drun:           "";
     drun-display-format:    "{name}";
     disable-history:        true;
     click-to-exit:          true;
@@ -13,7 +12,7 @@ configuration {
 
 window {
     transparency:           "real";
-    background-color:       rgba(30,30,47,0.6);
+    background-color:       rgba(30,30,47,0.8);
     text-color:             @LGRY;
     border:                 2px;
     border-color:           @LBLU;
@@ -31,6 +30,7 @@ listview {
     fixed-height:           false;
     fixed-columns:          false;
     spacing:                4px;
+    padding:                0px;
     cycle:                  false;
     dynamic:                true;
     layout:                 vertical;
@@ -40,7 +40,7 @@ mainbox {
     background-color:       transparent;
     children:               [ listview ];
     spacing:                10px;
-    padding:                15px;
+    padding:                10px;
 }
 
 element {
@@ -65,7 +65,7 @@ element-text {
     expand:                 true;
     horizontal-align:       0;
     vertical-align:         0;
-    margin:                 0px;
+    margin:                 2px;
     font:                   @font10;
 }
 
