@@ -21,7 +21,7 @@ window {
     anchor:                 north east;
     padding:                10px;
     x-offset:               -5px;
-    y-offset:               40px;
+    y-offset:               5px;
 }
 
 listview {

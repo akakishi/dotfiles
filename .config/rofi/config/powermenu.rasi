@@ -1,11 +1,11 @@
 configuration {
-    modi:                           "dmenu";
-    show-icons:                     true;
-    display-drun: 		            "";
-    drun-display-format:            "{icon} {name}";
-    disable-history:                false;
-    click-to-exit: 		            true;
-    location:                       0;
+  modi:                   "dmenu";
+  show-icons:             true;
+  display-drun:           "";
+  drun-display-format:    "{icon} {name}";
+  disable-history:        false;
+  click-to-exit:          true;
+  location:               0;
 }
 
 @import "font.rasi"
@@ -15,94 +15,93 @@ configuration {
 /* BUTTON = TRUE */
 
 window {
-    transparency:                   "real";
-    background-color:               @BLK1;
-    text-color:                     @LGRY;
-    border:                         2px;
-    border-color:                   @LBLU;
-    border-radius:                  2px;
-    width:                          350px;
-    anchor:                         center;
-    padding:                        10px;
-    x-offset:                       0;
-    y-offset:                       0;
+  transparency:           "real";
+  background-color:       rgba(30,30,47,0.8);
+  text-color:             @LGRY;
+  border:                 2px;
+  border-color:           @LBLU;
+  border-radius:          2px;
+  width:                  350px;
+  anchor:                 center;
+  padding:                10px;
+  x-offset:               0;
+  y-offset:               0;
 }
 
 prompt {
-    enabled:                        true;
-    padding:                        8px;
-    background-color:               @BLK1;
-    text-color:                     @YLLW;
+  enabled:                true;
+  padding:                10px;
+  background-color:       transparent;
+  text-color:             @YLLW;
+  font:                   @font14;
 }
 
 entry {
-    expand:                         true;
-    width:                          150px;
-    background-color:               @BLK1;
-    text-color:                     @LGRY;
+  expand:                 true;
+  background-color:       transparent;
+  text-color:             @LGRY;
 }
 
 inputbar {
-    children:                       [ prompt ];
-    background-color:               @BLK1;
-    text-color:                     @LGRY;
-    expand:                         false;
-    margin:                         0px;
-    padding:                        0px;
-    position:                       center;
+  children:               [ prompt ];
+  background-color:       transparent;
+  text-color:             @LGRY;
+  expand:                 false;
+  margin:                 0px;
+  padding:                0px;
+  position:               center;
 }
 
 listview {
-    background-color:               @BLK1;
-    columns:                        1;
-    lines:                          7;
-    fixed-height:                   true;
-    fixed-columns:                  true;
-    spacing:                        4px;
-    cycle:                          false;
-    dynamic:                        true;
-    layout:                         vertical;
+  background-color:       transparent;
+  columns:                1;
+  fixed-height:           false;
+  fixed-columns:          false;
+  spacing:                4px;
+  padding:                0px;
+  cycle:                  false;
+  dynamic:                true;
+  layout:                 vertical;
 }
 
 mainbox {
-    background-color:               @BLK1;
-    children:                       [ inputbar, listview ];
-    spacing:                        10px;
-    padding:                        15px;
+  background-color:       transparent;
+  children:               [ inputbar, listview ];
+  spacing:                10px;
+  padding:                10px;
 }
 
 element {
-    background-color:               @BLK1;
-    text-color:                     @LGRY;
-    orientation:                    horizontal;
-    border-width:                   2px 0px 2px 0px;
-    border-radius:                  2px;
-    padding:                        6px 6px 6px 6px;
+  background-color:       transparent;
+  text-color:             @LGRY;
+  orientation:            horizontal;
+  border-width:           0px;
+  border-radius:          2px;
+  padding:                6px;
 }
 
 element-icon {
-    background-color: 		        inherit;
-    text-color:       		        inherit;
-    /*horizontal-align:               0.5;*/
-    /*vertical-align:                 0.5;*/
-    size:                           0px;
-    border:                         0px;
+  background-color:       inherit;
+  text-color:             inherit;
+  horizontal-align:       0.5;
+  vertical-align:         0.5;
+  size:                   0px;
+  border:                 0px;
 }
 
 element-text {
-    background-color: 		        inherit;
-    text-color:       		        inherit;
-    /*font:			                "JetBrainsMono Nerd Font 20";*/
-    expand:                         true;
-    horizontal-align:               0;
-    vertical-align:                 0.5;
-    margin:                         2px 2px 2px 2px;
+  background-color:       inherit;
+  text-color:             inherit;
+  expand:                 true;
+  horizontal-align:       0;
+  vertical-align:         0;
+  margin:                 2px;
 }
 
 element selected {
-    background-color:               @LBLU;
-    text-color:                     @BLK2;
-    border:                  	    0px 0px 0px 0px;
-    border-radius:                  2px;
-    border-color:                   @LBLU;
+  background-color:       @LBLU;
+  text-color:             @BLK2;
+  border:                 0px;
+  border-radius:          2px;
+  border-color:           @LBLU;
 }
