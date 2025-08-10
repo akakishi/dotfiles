@@ -177,11 +177,25 @@
     "device": "intel_backlight",
     "on-scroll-up": "brightnessctl s 5%+",
     "on-scroll-down": "brightnessctl s 5%-",
-    "format": "{icon} {percent}",
+    "tooltip": true,
+    "tooltip-format": "Brightness: {percent}%",
+    "format": "{icon}",
     "format-icons": [
-      "󱩎",
-      "󱩒",
-      "󰛨"
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
     ]
   },
 
@@ -223,10 +237,10 @@
   },
 
   "pulseaudio": {
-    "format": "{icon} {volume}",
+    "format": "{icon}",
     "tooltip": true,
     "tooltip-format": "Volume: {volume}%\nDevice: {desc}",
-    "format-muted": " {volume}",
+    "format-muted": "",
     "on-click": "sleep 0.1 && ~/.config/waybar/scripts/audio_changer.py",
     "on-click-right": "sleep 0.1 && pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-middle": "sleep 0.1 && pavucontrol",
@@ -282,7 +296,7 @@
 
   "custom/notification": {
     "tooltip": false,
-    "format": "{icon} {0}",
+    "format": "{icon}",
     "format-icons": {
       "notification": "",
       "none": "",
