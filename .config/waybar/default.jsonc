@@ -7,6 +7,7 @@
   "name": "topbar",
   "layer": "top",
   "position": "top",
+  "expand-center": true,
 
   //****************
   // Define Modules
@@ -265,11 +266,12 @@
   "custom/media": {
     "format": "{icon} {0}",
     "return-type": "json",
-    "max-length": 25,
+    // "max-length": 25,
     "format-icons": {
       "spotify": "",
       "default": ""
     },
+    "expand": true,
     "escape": true,
     // "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
     "exec": "python3 $HOME/.config/waybar/scripts/mediaplayer.py --player spotify 2> /dev/null", // Filter player based on name
