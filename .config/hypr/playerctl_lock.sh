@@ -70,9 +70,9 @@ case "$1" in
 --status)
   status=$(playerctl status 2>/dev/null)
   if [[ $status == "Playing" ]]; then
-    echo ""
+    echo ""
   elif [[ $status == "Paused" ]]; then
-    echo ""
+    echo ""
   else
     echo ""
   fi
