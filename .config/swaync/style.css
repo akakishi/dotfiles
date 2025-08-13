@@ -54,7 +54,6 @@ label {
   box-shadow: none;
   border-radius: 0px;
   background: alpha(@surface1,0.3);
-  /*background: rgba(30,30,47,0.3);*/
 }
 
 .notification button {
