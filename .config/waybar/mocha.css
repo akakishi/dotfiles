@@ -63,7 +63,7 @@
   background-color: transparent;
   min-width: 1.0rem;
   color: @text;
-  text-shadow: 0px 0px 8px @mantle;
+  text-shadow: 0px 0px 6px @mantle;
   border-radius: .0em;
 }
 

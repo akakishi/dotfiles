@@ -47,17 +47,18 @@ label {
 }
 
 .notification {
-  border: 8px solid @lavender;
+  /*border: 8px solid @lavender;*/
+  border-left: none;
   border-top: none;
-  border-bottom: none;
+  border-bottom: 10px solid @lavender;
   border-right: none;
   box-shadow: none;
   border-radius: 0px;
-  background: alpha(@surface1,0.3);
+  background: alpha(@surface1,0.6);
 }
 
 .notification button {
-  background: @surface1;
+  background: alpha(@surface1,0.6);
   border-radius: 0px;
   border: 0px solid @lavender;
   margin: 0px;
@@ -75,7 +76,7 @@ label {
 }
 
 .close-button {
-  margin: 4px;
+  margin: 0px;
   padding: 4px;
   border-radius: 0px;
   background: @red;
@@ -138,19 +139,19 @@ label {
 
 /* Control center */
 .control-center {
-  background: @surface0;
+  background: alpha(@surface0,0.6);
   border-radius: 0px;
   border: 1px solid @lavender;
   box-shadow: none;
-  margin: 10px;
-  padding: 4px;
+  margin: 0px;
+  padding: 8px;
 }
 
 .control-center-list {
   background: transparent;
   min-height: 5px;
   border-top: none;
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px;
 }
 
 .control-center-list-placeholder,
@@ -192,12 +193,14 @@ label {
   background: transparent;
   border: none;
   margin: 0px;
-  padding: 5px 10px 5px 10px;
+  padding: 0px;
+  /*padding: 5px 10px 5px 10px;*/
   box-shadow: none;
 }
 
 .control-center-list > row:last-child {
-  padding: 5px 10px 10px 10px;
+  /*padding: 5px 10px 10px 10px;*/
+  padding: 0px;
 }
 
 
@@ -210,23 +213,23 @@ label {
 
 /* Title widget */
 .widget-title {
-  margin: 0px;
+  margin: 8px;
   background: transparent;
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 0px;
   border-bottom: none;
 }
 
 .widget-title > label {
-  margin: 18px 10px;
+  margin: 0px;
   font-size: 20px;
   font-weight: 500;
 }
 
 .widget-title > button {
   font-weight: 700;
-  padding: 8px 4px;
-  margin-right: 10px;
-  background: @base;
+  padding: 8px;
+  margin-right: 0px;
+  background: transparent;
   color: @base;
   border: none;
   border-radius: 0px;
@@ -239,9 +242,9 @@ label {
 .widget-label {
   margin: 0px;
   padding: 0px;
-  min-height: 5px;
-  background: @mantle;
-  border-radius: 0px 0px 4px 4px;
+  min-height: 0px;
+  background: transparent;
+  border-radius: 0px;
   border-top: none;
 }
 .widget-label > label {
@@ -256,16 +259,16 @@ label {
   border-bottom: none;
 }
 .widget-menubar > box > box {
-  margin: 5px 10px 5px 10px;
-  min-height: 40px;
+  margin: 0px;
+  min-height: 0px;
   border-radius: 0px;
   background: transparent;
 }
 .widget-menubar > box > box > button {
   background: @mantle;
-  min-width: 185px;
-  min-height: 50px;
-  margin-right: 10px;
+  min-width: 0px;
+  min-height: 0px;
+  margin-right: 0px;
   font-size: 14px;
   padding: 0px;
 }
@@ -281,26 +284,26 @@ label {
 }
 
 .widget-menubar > box > revealer > box {
-  margin: 5px 10px 5px 10px;
+  margin: 0px;
   background: @mantle;
   border-radius: 0px;
 }
 .widget-menubar > box > revealer > box > button {
   background: transparent;
-  min-height: 50px;
+  min-height: 0px;
   padding: 0px;
-  margin: 5px;
+  margin: 0px;
 }
 
 /* Mpris widget */
 .widget-mpris {
-  padding: 8px;
-  padding-bottom: 15px;
+  padding: 0px;
+  padding-bottom: 0px;
   margin-bottom: 0px;
 }
 .widget-mpris > box {
   padding: 0px;
-  margin: -5px 0px -10px 0px;
+  margin: 0px;
   padding: 0px;
   border-radius: 0px;
   background: @mantle;
@@ -310,13 +313,13 @@ label {
   margin-bottom: 0px;
 }
 .widget-mpris > box > button:nth-child(1) {
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: 0px;
+  margin-right: 0px;
   opacity: 0;
 }
 .widget-mpris > box > button:nth-child(3) {
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: 0px;
+  margin-right: 0px;
   opacity: 0;
 }
 
@@ -326,7 +329,7 @@ label {
 
 /* Player button box */
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) {
-  margin: 5px 0px -5px 90px;
+  margin: 0px;
 }
 
 /* Player buttons */
@@ -357,41 +360,41 @@ carouselindicatordots {
   margin: 0px;
 }
 .widget-mpris-player > box > image {
-  margin: 0px 0px -48px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .notification-group > box.vertical {
-  margin-top: 3px
+  margin-top: 0px
 }
 
 /* DND widget */
 .widget-dnd {
-  margin: 5px 10px;
-  padding: 5px 10px;
+  margin-left: 350px;
+  padding: 0px 0px;
   font-size: large;
   color: @text;
 }
 
 .widget-dnd > switch {
   background: @mantle;
-  border-radius: 0px;
+  border-radius: 4px;
 }
 
 .widget-dnd > switch:hover {
-  background: @overlay1;
+  background: @surface0;
 }
 
 .widget-dnd > switch:checked {
-  background: @overlay0;
+  background: @base;
 }
 
 .widget-dnd > switch:checked:hover {
-  background: @overlay1;
+  background: @surface0;
 }
 
 .widget-dnd > switch slider {
-  background: @lavender;
-  border-radius: 0px;
+  background: @surface2;
+  border-radius: 4px;
 }
 
 /* Toggles */
