@@ -134,6 +134,7 @@ label {
 /* The "Notifications" and "Do Not Disturb" text widget */
 .top-action-title {
   color: @text;
+  font-family: "JT Millburn";
   text-shadow: none;
 }
 
