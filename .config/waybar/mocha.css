@@ -107,19 +107,19 @@ window#waybar {
 window > box {
   /*background-color: transparent;*/
   /*background-color: rgba(30, 30, 46, 0.2);*/
-  background-image: linear-gradient(0deg, alpha(@base,0), alpha(@base,0.3));
+  background-image: linear-gradient(0deg, alpha(@base,0), alpha(@base,0.6));
 }
 .modules-left {
-  /*background-color: #1e1e2e;*/
+  /*background-color: alpha(@base, 0.5);*/
   margin-left: .2rem;
   padding: 0rem .0rem 0rem .0rem;
 }
 .modules-center {
-  /*background-color: #1e1e2e;*/
+  /*background-color: alpha(@base, 0.5);*/
   padding: 0rem .0rem 0rem .0rem;
 }
 .modules-right {
-  /*background-color: #1e1e2e;*/
+  /*background-color: alpha(@base, 0.5);*/
   margin-right: .2rem;
   padding: 0rem .0rem 0rem .0rem;
 }
@@ -193,6 +193,16 @@ tooltip label {
   /*color: #1db954;*/
   color: @text;
   font-weight: bold;
+  /*padding-left: 6px;
+  padding-right: 6px;
+  border: 1px solid @base;
+  border-radius: 6px;
+  background: rgba(203,166,247,0.5);
+  background: radial-gradient(circle, rgba(203,166,247,0.5) 0%, rgba(193,168,247,0.5) 12%, rgba(249,226,175,0.5) 19%, rgba(189,169,247,0.5) 20%, rgba(182,171,247,0.5) 24%, rgba(198,255,194,0.5) 36%, rgba(177,172,247,0.5) 37%, rgba(170,173,248,0.5) 48%, rgba(255,255,255,0.5) 52%, rgba(166,174,248,0.5) 52%, rgba(160,175,248,1) 59%, rgba(148,226,213,1) 66%, rgba(155,176,248,1) 67%, rgba(152,177,248,1) 68%, rgba(205,214,244,1) 77%, rgba(148,178,249,1) 78%, rgba(144,179,250,1) 82%, rgba(180,190,254,1) 83%, rgba(141,179,250,1) 90%, rgba(137,180,250,1) 100%); 
+  background-size: 400% 400%;
+  animation: gradient_f 20s ease-in-out infinite;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+  box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;*/
 }
 #custom-media.custom-vlc {
   color: #ffa000;
