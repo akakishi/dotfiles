@@ -48,5 +48,6 @@ wf-recorder
 wl-clip-persist
 wl-clipboard
 wofi
+yazi
 zen-browser-bin
 zoxide
