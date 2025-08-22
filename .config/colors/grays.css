@@ -1,14 +1,14 @@
-@define-color black      hsl(0deg, 0%, 0%);
-@define-color gray1      hsl(0deg, 0%, 10%);
-@define-color gray2      hsl(0deg, 0%, 20%);
-@define-color gray3      hsl(0deg, 0%, 30%);
-@define-color gray4      hsl(0deg, 0%, 40%);
-@define-color gray5      hsl(0deg, 0%, 50%);
-@define-color gray6      hsl(0deg, 0%, 60%);
-@define-color gray7      hsl(0deg, 0%, 70%);
-@define-color gray8      hsl(0deg, 0%, 80%);
-@define-color gray9      hsl(0deg, 0%, 90%);
-@define-color white      hsl(0deg, 0%, 100%);
+@define-color black     hsl(0deg, 0%, 0%);
+@define-color gray1     hsl(0deg, 0%, 10%);
+@define-color gray2     hsl(0deg, 0%, 20%);
+@define-color gray3     hsl(0deg, 0%, 30%);
+@define-color gray4     hsl(0deg, 0%, 40%);
+@define-color gray5     hsl(0deg, 0%, 50%);
+@define-color gray6     hsl(0deg, 0%, 60%);
+@define-color gray7     hsl(0deg, 0%, 70%);
+@define-color gray8     hsl(0deg, 0%, 80%);
+@define-color gray9     hsl(0deg, 0%, 90%);
+@define-color white     hsl(0deg, 0%, 100%);
 
 @define-color blue      hsl(217deg, 92%, 76%);
 @define-color lavender  hsl(232deg, 97%, 85%);
@@ -24,3 +24,11 @@
 @define-color pink      hsl(316deg, 72%, 86%);
 @define-color flamingo  hsl(0deg, 59%, 88%);
 @define-color rosewater hsl(10deg, 56%, 91%);
+
+
+/*
+ *ff00ff purple
+ *fbff00 yellow
+ *26ff00 green
+ *00eeff cyan
+ * */

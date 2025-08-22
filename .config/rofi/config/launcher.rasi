@@ -43,7 +43,7 @@ textbox-prompt-colon {
 }
 
 entry {
-  background-color:               rgba(30,31,48,0.8);
+  background-color:               rgba(30,30,47,0.6);
   text-color:                     @LGRY;
   placeholder-color:              @LGRY;
   expand:                         true;
@@ -136,7 +136,7 @@ element alternate.active {
 }
 
 element selected {
-  background-color:             @LBLU;
+  background-color:             @LGRY;
   text-color:                   @BLK2;
   border:                       0px;
   border-radius:                2px;

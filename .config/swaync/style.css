@@ -50,7 +50,7 @@ label {
   /*border: 8px solid @lavender;*/
   border-left: none;
   border-top: none;
-  border-bottom: 10px solid @lavender;
+  border-bottom: 0px solid @lavender;
   border-right: none;
   box-shadow: 0px 4px 8px alpha(@base,0.4);
   border-radius: 0px;
