@@ -10,20 +10,14 @@
 @define-color gray9     hsl(0deg, 0%, 90%);
 @define-color white     hsl(0deg, 0%, 100%);
 
-@define-color blue      hsl(217deg, 92%, 76%);
-@define-color lavender  hsl(232deg, 97%, 85%);
-@define-color sapphire  hsl(199deg, 76%, 69%);
-@define-color sky       hsl(189deg, 71%, 73%);
-@define-color teal      hsl(170deg, 57%, 73%);
-@define-color green     hsl(115deg, 54%, 76%);
-@define-color yellow    hsl(41deg, 86%, 83%);
-@define-color peach     hsl(23deg, 92%, 75%);
-@define-color maroon    hsl(350deg, 65%, 77%);
-@define-color red       hsl(343deg, 81%, 75%);
-@define-color mauve     hsl(267deg, 84%, 81%);
-@define-color pink      hsl(316deg, 72%, 86%);
-@define-color flamingo  hsl(0deg, 59%, 88%);
-@define-color rosewater hsl(10deg, 56%, 91%);
+@define-color blue      hsl(229deg, 83%, 60%);
+@define-color purple    hsl(276deg, 91%, 38%);
+@define-color cyan      hsl(194deg, 85%, 62%);
+@define-color green     hsl(158deg, 100%, 65%);
+@define-color yellow    hsl(55deg, 100%, 50%);
+@define-color orange    hsl(33deg, 100%, 57%);
+@define-color red       hsl(323deg, 100%, 45%);
+@define-color pink      hsl(333deg, 93%, 56%);
 
 
 /*
