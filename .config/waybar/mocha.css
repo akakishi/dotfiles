@@ -147,12 +147,12 @@ window > box {
 
 /* Tooltip */
 tooltip {
-  background-color: @text;
-  border-radius: .4rem;
+  background-color: alpha(@text,0.8);
+  border-radius: 2px;
   border: none;
 }
 tooltip label {
-  color: @mantle;
+  color: @base;
 }
 
 /* battery */
