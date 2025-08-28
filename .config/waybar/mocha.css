@@ -2,10 +2,6 @@
 
 /* Global */
 * {
-  /* font "JetBrainsMono Nerd Font" shows icons vertically aligned
-   * font "JetBrains Mono" show icons horizontally aligned
-   * fix modules with only text/icons and with both
-   * */
   font-family: "JetBrainsMono Nerd Font Propo", "Symbols Nerd Font", FontAwesome, monospace;
   font-size: 1.2rem;
   transition-property: background-color;
@@ -91,8 +87,7 @@
 #mpd:hover,
 #pulseaudio:hover,
 #scratchpad:hover,
-#temperature:hover,
-#window:hover {
+#temperature:hover {
   background-color: rgba(180, 190, 254, 0.1);
   color: @text;
   text-shadow: 0px 0px 4px alpha(@surface1,0.3);
