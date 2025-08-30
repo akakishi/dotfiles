@@ -1,23 +1,23 @@
-@define-color black     hsl(0deg, 0%, 0%);
-@define-color gray1     hsl(0deg, 0%, 10%);
-@define-color gray2     hsl(0deg, 0%, 20%);
-@define-color gray3     hsl(0deg, 0%, 30%);
-@define-color gray4     hsl(0deg, 0%, 40%);
-@define-color gray5     hsl(0deg, 0%, 50%);
-@define-color gray6     hsl(0deg, 0%, 60%);
-@define-color gray7     hsl(0deg, 0%, 70%);
-@define-color gray8     hsl(0deg, 0%, 80%);
-@define-color gray9     hsl(0deg, 0%, 90%);
-@define-color white     hsl(0deg, 0%, 100%);
+@define-color black     #000000;
+@define-color gray1     #1a1a1a;
+@define-color gray2     #333333;
+@define-color gray3     #4d4d4d;
+@define-color gray4     #666666;
+@define-color gray5     #808080;
+@define-color gray6     #999999;
+@define-color gray7     #b3b3b3;
+@define-color gray8     #cccccc;
+@define-color gray9     #e6e6e6;
+@define-color white     #ffffff;
 
-@define-color blue      hsl(229deg, 83%, 60%);
-@define-color purple    hsl(276deg, 91%, 38%);
-@define-color cyan      hsl(194deg, 85%, 62%);
-@define-color green     hsl(158deg, 100%, 65%);
-@define-color yellow    hsl(55deg, 100%, 50%);
-@define-color orange    hsl(33deg, 100%, 57%);
-@define-color red       hsl(323deg, 100%, 45%);
-@define-color pink      hsl(333deg, 93%, 56%);
+@define-color blue      #4463ee;
+@define-color purple    #7309b9;
+@define-color cyan      #4ccaf0;
+@define-color green     #4dffbe;
+@define-color yellow    #ffea00;
+@define-color orange    #ff9c24;
+@define-color red       #e6008e;
+@define-color pink      #f72684;
 
 /*
  *ff00ff purple
