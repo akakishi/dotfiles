@@ -164,10 +164,6 @@ tooltip label {
   color: @red;  /* not active */
 }
 
-#custom-media {
-  color: #333333;
-}
-
 #custom-media.custom-spotify {
   font-weight: bold;
 }
