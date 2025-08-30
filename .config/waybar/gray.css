@@ -59,7 +59,7 @@
   background-color: transparent;
   min-width: 1.0rem;
   color: @gray8;
-  text-shadow: 0px 0px 4px alpha(@gray3,0.3);
+  text-shadow: 0px 0px 8px alpha(@gray1,0.3);
   border-radius: .0em;
 }
 
@@ -88,9 +88,8 @@
 #pulseaudio:hover,
 #scratchpad:hover,
 #temperature:hover {
-  background-color: rgba(180, 190, 254, 0.1);
   color: @white;
-  text-shadow: 0px 0px 4px alpha(@gray5,0.3);
+  text-shadow: 0px 0px 8px alpha(@gray2,0.3);
 }
 
 /* Bar */
@@ -98,7 +97,7 @@ window#waybar {
   background-color: transparent;
 }
 window > box {
-  background-image: linear-gradient(0deg, alpha(@gray3,0), alpha(@gray3,0.6));
+  background-image: linear-gradient(0deg, alpha(@gray1,0), alpha(@gray1,0.6));
 }
 .modules-left {
   margin-left: .2rem;
