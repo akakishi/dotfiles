@@ -1,0 +1,182 @@
+@import "../colors/grays.css";
+
+/* Global */
+* {
+  font-family: "JetBrainsMono Nerd Font Propo", "Symbols Nerd Font", FontAwesome, monospace;
+  font-size: 1.2rem;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+@keyframes blink_red {
+  to {
+    background-color: @orange;
+    color: @white;
+    text-shadow: @red;
+  }
+}
+
+.warning, .critical, .urgent {
+  animation-name: blink_red;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#backlight,
+#battery,
+#clock,
+#cpu,
+#custom-cava-internal,
+#custom-launcher,
+#custom-media,
+#custom-notification,
+#custom-pacman,
+#custom-powermenu,
+#custom-reboot,
+#custom-weather,
+#custom-workspaces,
+#disk,
+#idle_inhibitor,
+#memory,
+#mode,
+#network,
+#mpd,
+#mpd.paused,
+#mpd.stopped,
+#pulseaudio,
+#scratchpad,
+#temperature,
+#tray,
+#window,
+#workspaces {
+  padding: .3rem .6rem;
+  margin-top: .0rem;
+  margin-left: .0rem;
+  margin-right: .0rem;
+  margin-bottom: .0rem;
+  background-color: transparent;
+  min-width: 1.0rem;
+  color: @gray8;
+  text-shadow: 0px 0px 4px alpha(@gray3,0.3);
+  border-radius: .0em;
+}
+
+#backlight:hover,
+#battery:hover,
+#battery.full:hover,
+#battery.charging:hover,
+#battery.discharging:hover,
+#battery.critical:hover,
+#clock:hover,
+#cpu:hover,
+#custom-cava-internal:hover,
+#custom-launcher:hover,
+#custom-media:hover,
+#custom-notification:hover,
+#custom-pacman:hover,
+#custom-powermenu:hover,
+#custom-reboot:hover,
+#custom-weather:hover,
+#disk:hover,
+#idle_inhibitor:hover,
+#memory:hover,
+#mode:hover,
+#network:hover,
+#mpd:hover,
+#pulseaudio:hover,
+#scratchpad:hover,
+#temperature:hover {
+  background-color: rgba(180, 190, 254, 0.1);
+  color: @white;
+  text-shadow: 0px 0px 4px alpha(@gray5,0.3);
+}
+
+/* Bar */
+window#waybar {
+  background-color: transparent;
+}
+window > box {
+  background-image: linear-gradient(0deg, alpha(@gray3,0), alpha(@gray3,0.6));
+}
+.modules-left {
+  margin-left: .2rem;
+  padding: 0rem .0rem 0rem .0rem;
+}
+.modules-center {
+  padding: 0rem .0rem 0rem .0rem;
+}
+.modules-right {
+  margin-right: .2rem;
+  padding: 0rem .0rem 0rem .0rem;
+}
+
+/* Workspaces */
+#workspaces {
+  background-color: transparent;
+}
+#workspaces button {
+  all: initial;
+  padding-right: .2rem;
+  padding-left: .2rem;
+  padding-top: .0rem;
+  padding-bottom: .0rem;
+  background: transparent;
+  border-radius: .0rem;
+  color: inherit;
+}
+#workspaces button.active {
+  color: inherit;
+}
+#workspaces button:hover {
+  color: inherit;
+}
+
+/* Tooltip */
+tooltip {
+  background-color: alpha(@white,0.8);
+  border-radius: 2px;
+  border: none;
+}
+tooltip label {
+  color: @gray3;
+}
+
+/* battery */
+#battery.critical:not(.charging) {
+  color: @pink;
+}
+#custom-powermenu:hover {
+  color: @white;
+  background-color: #e6008e;
+}
+
+/* Extra */
+#backlight-slider {
+  min-width: 100px;
+}
+
+#clock {
+  font-weight: bold;
+}
+
+#network.disconnected {
+  color: @red;  /* not active */
+}
+
+#custom-media {
+  color: #333333;
+}
+
+#custom-media.custom-spotify {
+  font-weight: bold;
+}
+
+#custom-media.custom-vlc {
+  color: #ffa000;
+}
+
+#custom-notification {
+  font-family: "JetBrainsMono Nerd Font";
+}
