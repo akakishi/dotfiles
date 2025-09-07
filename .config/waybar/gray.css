@@ -117,25 +117,35 @@ window > box {
 }
 #workspaces button {
   all: initial;
-  padding-right: .2rem;
-  padding-left: .2rem;
+  margin-right: .2rem;
+  margin-left: .2rem;
+  padding-right: .4rem;
+  padding-left: .4rem;
   padding-top: .0rem;
   padding-bottom: .0rem;
-  background: transparent;
-  border-radius: .0rem;
+  background: alpha(@gray6, 0.2);
+  border-radius: .2rem;
   color: inherit;
+  font-weight: bold;
 }
 #workspaces button.active {
-  color: inherit;
+  background: @gray8;
+  color: @black;
+  padding-right: .8rem;
+  padding-left: .8rem;
 }
 #workspaces button:hover {
-  color: inherit;
+  color: @white;
+}
+#workspaces button.active:hover {
+  background: @white;
+  color: @gray2;
 }
 
 /* Tooltip */
 tooltip {
   background-color: alpha(@white,0.8);
-  border-radius: 2px;
+  border-radius: .2rem;
   border: none;
 }
 tooltip label {
