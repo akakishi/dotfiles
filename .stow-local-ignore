@@ -25,3 +25,4 @@ _darcs
 # my ignore list
 
 ^/packages.lst
+\.config/nvim\.bak
