@@ -59,7 +59,7 @@
   background-color: transparent;
   min-width: 1.0rem;
   color: @gray8;
-  text-shadow: 0px 0px 8px alpha(@gray1,0.3);
+  text-shadow: 0px 0px 12px alpha(@gray1,0.6), 0px 0px 4px alpha(@gray1,0.9);
   border-radius: .0em;
 }
 
@@ -89,7 +89,7 @@
 #scratchpad:hover,
 #temperature:hover {
   color: @white;
-  text-shadow: 0px 0px 8px alpha(@gray2,0.3);
+  text-shadow: 0px 0px 16px alpha(@gray1,0.6), 0px 0px 8px alpha(@gray1,0.9);
 }
 
 /* Bar */

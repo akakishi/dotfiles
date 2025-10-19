@@ -14,7 +14,7 @@
   //****************
 
   "modules-left": [
-    "custom/powermenu",
+    //"custom/powermenu",
     "hyprland/workspaces"
     //"hyprland/window"
   ],
