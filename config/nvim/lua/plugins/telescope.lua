@@ -1,44 +1,51 @@
 return {
-    "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
-    dependencies = {
-        "nvim-lua/plenary.nvim"
-    },
-    config = function ()
-        local harpoon = require('harpoon')
-        harpoon:setup({})
+	"nvim-telescope/telescope.nvim",
+	branch = "0.1.x",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+	},
+	config = function()
+		local harpoon = require("harpoon")
+		harpoon:setup({})
 
-        -- basic telescope configuration
-        local conf = require("telescope.config").values
-        local function toggle_telescope(harpoon_files)
-            local file_paths = {}
-            for _, item in ipairs(harpoon_files.items) do
-                table.insert(file_paths, item.value)
-            end
+		-- basic telescope configuration
+		local conf = require("telescope.config").values
+		local function toggle_telescope(harpoon_files)
+			local file_paths = {}
+			for _, item in ipairs(harpoon_files.items) do
+				table.insert(file_paths, item.value)
+			end
 
-            require("telescope.pickers").new({}, {
-                prompt_title = "Harpoon",
-                finder = require("telescope.finders").new_table({
-                    results = file_paths,
-                }),
-                previewer = conf.file_previewer({}),
-                sorter = conf.generic_sorter({}),
-            }):find()
-        end
+			require("telescope.pickers")
+				.new({}, {
+					prompt_title = "Harpoon",
+					finder = require("telescope.finders").new_table({
+						results = file_paths,
+					}),
+					previewer = conf.file_previewer({}),
+					sorter = conf.generic_sorter({}),
+				})
+				:find()
+		end
 
-        vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end,
-            { desc = "Open harpoon window" })
+		vim.keymap.set("n", "<C-e>", function()
+			toggle_telescope(harpoon:list())
+		end, { desc = "Open harpoon window" })
 
-        local builtin = require('telescope.builtin')
-        local utils = require("telescope.utils")
-        vim.keymap.set('n', '<leader>pf', function()
-          builtin.find_files()
-          --builtin.find_files({ hidden = true, file_ignore_patterns = { "^./.git/" } })
-        end, { desc = "Find Files" })
-        vim.keymap.set('n', '<C-p>', builtin.git_files, {})
-        vim.keymap.set('n', '<leader>ps', function()
-            builtin.grep_string({ search = vim.fn.input("Grep > ") });
-        end, { desc = "Grep >" })
-        vim.keymap.set('n', '<leader>vh', builtin.help_tags, { desc = "Help Tags" })
-    end
+		local builtin = require("telescope.builtin")
+		local utils = require("telescope.utils")
+		vim.keymap.set("n", "<leader>pf", function()
+			builtin.find_files()
+			--builtin.find_files({ hidden = true, file_ignore_patterns = { "^./.git/" } })
+		end, { desc = "Find Files" })
+		vim.keymap.set("n", "<C-p>", builtin.git_files, {})
+		vim.keymap.set("n", "<leader>ps", function()
+			builtin.grep_string({ search = vim.fn.input("Grep > ") })
+		end, { desc = "Grep >" })
+		vim.keymap.set("n", "<leader>vh", builtin.help_tags, { desc = "Help Tags" })
+
+		vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
+		vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
+		vim.api.nvim_set_hl(0, "TelescopeTitle", { bg = "none" })
+	end,
 }
