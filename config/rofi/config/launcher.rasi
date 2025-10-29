@@ -14,11 +14,11 @@ configuration {
 
 window {
   transparency:                   "real";
-  background-color:               rgba(30,30,47,0.6);
-  text-color:                     @LGRY;
+  background-color:               rgba(60,60,60,0.5);
+  text-color:                     rgba(80,80,80,1.0);
   border:                         0px;
   border-color:                   @LBLU;
-  border-radius:                  0px;
+  border-radius:                  4px;
   width:                          400px;
   anchor:                         center;
   padding:                        10px;
@@ -36,22 +36,22 @@ prompt {
 textbox-prompt-colon {
   expand:                         false;
   str:                            "";
-  /*border-radius:                  100%;*/
+  border-radius:                  100%;
   background-color:               transparent;
-  text-color:                     @LGRY;
+  text-color:                     rgba(80,80,80,1.0);
   padding:                        8px 12px 8px 12px;
 }
 
 entry {
-  background-color:               rgba(30,30,47,0.6);
-  text-color:                     @LGRY;
-  placeholder-color:              @LGRY;
+  background-color:               rgba(30,30,30,0.5);
+  text-color:                     rgba(80,80,80,1.0);
+  placeholder-color:              rgba(80,80,80,1.0);
   expand:                         true;
   horizontal-align:               0;
   placeholder:                    "Search...";
   blink:                          true;
   border:                         0px 0px 0px 0px;
-  border-radius:                  2px;
+  border-radius:                  4px;
   border-color:                   @LBLU;
   padding:                        10px;
 }
@@ -59,7 +59,7 @@ entry {
 inputbar {
   children:                     [ entry ];
   background-color:             transparent;
-  text-color:                   @LGRY;
+  text-color:                   rgba(80,80,80,1.0);
   expand:                       false;
   border:                       0px;
   border-radius:                0px;
@@ -139,7 +139,7 @@ element selected {
   background-color:             @LGRY;
   text-color:                   @BLK2;
   border:                       0px;
-  border-radius:                2px;
+  border-radius:                4px;
   border-color:                 @LBLU;
 }
 
