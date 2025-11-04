@@ -8,27 +8,27 @@ fi
 
 status=$(cat "$batdir/status")
 capacity=$(cat "$batdir/capacity")
-icon="󰂎"
+icon="<span foreground=\"#f38ba8\">󰂎</span>"
 
 if [[ "$status" == *"Charging"* ]]; then
   icon=""
-elif [ "$capacity" -gt 90 ]; then
+elif [ "$capacity" -gt 95 ]; then
   icon="󰁹"
-elif [ "$capacity" -gt 80 ]; then
+elif [ "$capacity" -gt 85 ]; then
   icon="󰂂"
-elif [ "$capacity" -gt 70 ]; then
+elif [ "$capacity" -gt 75 ]; then
   icon="󰂁"
-elif [ "$capacity" -gt 60 ]; then
+elif [ "$capacity" -gt 65 ]; then
   icon="󰂀"
-elif [ "$capacity" -gt 50 ]; then
+elif [ "$capacity" -gt 55 ]; then
   icon="󰁿"
-elif [ "$capacity" -gt 40 ]; then
+elif [ "$capacity" -gt 45 ]; then
   icon="󰁾"
-elif [ "$capacity" -gt 30 ]; then
-  icon="<span foreground=\"#f38ba8\">󰁽</span>"
-elif [ "$capacity" -gt 20 ]; then
+elif [ "$capacity" -gt 35 ]; then
+  icon="󰁽"
+elif [ "$capacity" -gt 25 ]; then
   icon="<span foreground=\"#f38ba8\">󰁼</span>"
-elif [ "$capacity" -gt 10 ]; then
+elif [ "$capacity" -gt 15 ]; then
   icon="<span foreground=\"#f38ba8\">󰁻</span>"
 fi
 
