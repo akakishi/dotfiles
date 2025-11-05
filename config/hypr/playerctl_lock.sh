@@ -37,10 +37,10 @@ case "$1" in
     echo ""
   else
     title_length=${#title}
-    if (( title_length > 15 )); then
-      echo "${title:0:15}..."
+    if (( title_length > 40 )); then
+      echo "${title:0:40}..."
     else
-      echo "${title:0:15}" # Limit the output to 50 characters
+      echo "${title:0:40}" # Limit the output to 50 characters
     fi
   fi
   ;;
