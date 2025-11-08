@@ -23,7 +23,7 @@
   ],
   "modules-right": [
     "tray",
-    "mpd",
+    //"mpd",
     "temperature",
     "pulseaudio",
     "backlight",
