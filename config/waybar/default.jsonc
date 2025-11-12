@@ -25,7 +25,8 @@
     "tray",
     //"mpd",
     "temperature",
-    "pulseaudio",
+    "pulseaudio#output",
+    "pulseaudio#input",
     "backlight",
     "network",
     "battery",
@@ -243,7 +244,19 @@
     "tooltip-format": "{title} - {artist} ({elapsedTime:%M:%S}/{totalTime:%H:%M:%S})"
   },
 
-  "pulseaudio": {
+  "pulseaudio#input": {
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "format": "{format_source}",
+    "scroll-step": 1,
+    "smooth-scrolling-threshold": 1,
+    "on-click": "sleep 0.1 && amixer sset 'Capture' toggle",
+    "on-click-middle": "sleep 0.1 && pavucontrol",
+    "on-scroll-up": "sleep 0.1 && amixer sset 'Capture' 5%+",
+    "on-scroll-down": "sleep 0.1 && amixer sset 'Capture' 5%-",
+  },
+
+  "pulseaudio#output": {
     "format": "{icon}",
     "tooltip": true,
     "tooltip-format": "Volume: {volume}%\nDevice: {desc}",
