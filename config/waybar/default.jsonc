@@ -15,6 +15,7 @@
 
   "modules-left": [
     //"custom/powermenu",
+    "idle_inhibitor",
     "hyprland/workspaces"
     //"hyprland/window"
   ],
@@ -23,6 +24,7 @@
   ],
   "modules-right": [
     "tray",
+    "custom/divider",
     //"mpd",
     "temperature",
     "pulseaudio#output",
@@ -31,8 +33,10 @@
     "network",
     "battery",
     "custom/notification",
-    "idle_inhibitor",
-    "clock"
+    "custom/divider",
+    "clock",
+    "custom/divider",
+    "custom/weather"
   ],
 
   //****************
@@ -216,7 +220,7 @@
 
   "clock": {
     "interval": 1,
-    "format": "{:%a %d %b %H:%M}",
+    "format": "{:%d %b %H:%M}",
     "tooltip": true,
     "tooltip-format": "<big>{:%A, %d %B %Y}</big>\n<tt>{calendar}</tt>"
   },
@@ -257,7 +261,7 @@
   },
 
   "pulseaudio#output": {
-    "format": "{icon}",
+    "format": "{icon} {volume}%",
     "tooltip": true,
     "tooltip-format": "Volume: {volume}%\nDevice: {desc}",
     "format-muted": "",
@@ -288,6 +292,11 @@
   "custom/cava-internal": {
     "exec": "~/.config/waybar/Cava.sh",
     "tooltip": false
+  },
+
+  "custom/divider": {
+    "format": "|"
+    //"format": "󰇙"
   },
 
   "custom/launcher": {
@@ -376,7 +385,8 @@
     "tooltip": true,
     "interval": 900,
     "exec": "sleep 0.1 && ~/.config/waybar/scripts/wabar-wttr.py",
-    "return-type": "json"
+    "return-type": "json",
+    "on-click": "sleep 0.1 && kitty --hold curl wttr.in"
   },
 
   "custom/workspaces": {

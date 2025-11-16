@@ -29,6 +29,7 @@
 #clock,
 #cpu,
 #custom-cava-internal,
+#custom-divider,
 #custom-launcher,
 #custom-media,
 #custom-notification,
@@ -103,6 +104,7 @@ window > box {
 .modules-left {
   margin-left: .2rem;
   padding: 0rem .0rem 0rem .0rem;
+  /* background-color: alpha(@gray4, 0.4); */
 }
 .modules-center {
   padding: 0rem .0rem 0rem .0rem;
@@ -110,6 +112,7 @@ window > box {
 .modules-right {
   margin-right: .2rem;
   padding: 0rem .0rem 0rem .0rem;
+  /* background-color: alpha(@gray4, 0.4); */
 }
 
 /* Workspaces */
@@ -185,4 +188,9 @@ tooltip label {
 
 #custom-notification {
   font-family: "JetBrainsMono Nerd Font";
+}
+
+#custom-divider {
+  font-size: 1rem;
+  padding: .3rem .3rem;
 }
