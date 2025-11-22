@@ -12,23 +12,23 @@ icon="<span foreground=\"#f38ba8\">󰂎</span>"
 
 if [[ "$status" == *"Charging"* ]]; then
   icon=""
-elif [ "$capacity" -gt 95 ]; then
+elif [ "$capacity" -gt 90 ]; then
   icon="󰁹"
-elif [ "$capacity" -gt 85 ]; then
+elif [ "$capacity" -gt 80 ]; then
   icon="󰂂"
-elif [ "$capacity" -gt 75 ]; then
+elif [ "$capacity" -gt 70 ]; then
   icon="󰂁"
-elif [ "$capacity" -gt 65 ]; then
+elif [ "$capacity" -gt 60 ]; then
   icon="󰂀"
-elif [ "$capacity" -gt 55 ]; then
+elif [ "$capacity" -gt 50 ]; then
   icon="󰁿"
-elif [ "$capacity" -gt 45 ]; then
+elif [ "$capacity" -gt 40 ]; then
   icon="󰁾"
-elif [ "$capacity" -gt 35 ]; then
+elif [ "$capacity" -gt 30 ]; then
   icon="󰁽"
-elif [ "$capacity" -gt 25 ]; then
+elif [ "$capacity" -gt 20 ]; then
   icon="<span foreground=\"#f38ba8\">󰁼</span>"
-elif [ "$capacity" -gt 15 ]; then
+elif [ "$capacity" -gt 10 ]; then
   icon="<span foreground=\"#f38ba8\">󰁻</span>"
 fi
 

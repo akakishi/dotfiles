@@ -14,29 +14,27 @@
   //****************
 
   "modules-left": [
-    //"custom/powermenu",
-    "idle_inhibitor",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "custom/media"
     //"hyprland/window"
   ],
   "modules-center": [
-    "custom/media"
   ],
   "modules-right": [
     "tray",
-    "custom/divider",
-    //"mpd",
     "temperature",
+    "custom/divider",
     "pulseaudio#output",
     "pulseaudio#input",
+    "custom/divider",
     "backlight",
     "network",
     "battery",
-    "custom/notification",
     "custom/divider",
+    "custom/weather",
     "clock",
-    "custom/divider",
-    "custom/weather"
+    "idle_inhibitor",
+    "custom/notification",
   ],
 
   //****************
@@ -220,7 +218,7 @@
 
   "clock": {
     "interval": 1,
-    "format": "{:%d %b %H:%M}",
+    "format": "{:%d/%m %a %H:%M}",
     "tooltip": true,
     "tooltip-format": "<big>{:%A, %d %B %Y}</big>\n<tt>{calendar}</tt>"
   },
@@ -383,7 +381,7 @@
   "custom/weather": {
     "format": "{}",
     "tooltip": true,
-    "interval": 900,
+    "interval": 1800,
     "exec": "sleep 0.1 && ~/.config/waybar/scripts/wabar-wttr.py",
     "return-type": "json",
     "on-click": "sleep 0.1 && kitty --hold curl wttr.in"
