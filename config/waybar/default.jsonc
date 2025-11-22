@@ -34,7 +34,7 @@
     "custom/weather",
     "clock",
     "idle_inhibitor",
-    "custom/notification",
+    "custom/notification"
   ],
 
   //****************
