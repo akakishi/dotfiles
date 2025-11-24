@@ -10,9 +10,9 @@
 
 @keyframes blink_red {
   to {
-    background-color: @orange;
+    /*background-color: @orange;*/
     color: @white;
-    text-shadow: @red;
+    text-shadow: 0px 0px 10px alpha(#bb2222,0.4), 0px 0px 6px alpha(#dd1111,0.8), 0px 0px 4px alpha(#ff0000,0.9);
   }
 }
 

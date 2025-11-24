@@ -14,11 +14,12 @@
   //****************
 
   "modules-left": [
-    "hyprland/workspaces",
-    "custom/media"
+    "idle_inhibitor",
+    "hyprland/workspaces"
     //"hyprland/window"
   ],
   "modules-center": [
+    "custom/media"
   ],
   "modules-right": [
     "tray",
@@ -28,12 +29,11 @@
     "pulseaudio#input",
     "custom/divider",
     "backlight",
-    "network",
     "battery",
+    "network",
     "custom/divider",
     "custom/weather",
     "clock",
-    "idle_inhibitor",
     "custom/notification"
   ],
 
@@ -317,8 +317,7 @@
     // "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
     "exec": "python3 $HOME/.config/waybar/scripts/mediaplayer.py --player spotify 2> /dev/null", // Filter player based on name
     "on-click": "sleep 0.1 && playerctl --player=spotify play-pause",
-    "on-scroll-up": "sleep 0.1 && playerctl --player=spotify next",
-    "on-scroll-down": "sleep 0.1 && playerctl --player=spotify previous"
+    "on-click-right": "sleep 0.1 && playerctl --player=spotify next"
   },
 
   "custom/notification": {
