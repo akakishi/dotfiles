@@ -97,12 +97,14 @@ window#waybar {
 }
 window > box {
   /*background-image: linear-gradient(0deg, alpha(@gray1,0), alpha(@gray1,0.6));*/
+  margin-top: .2rem;
   background-color: transparent;
 }
 .modules-left {
   margin-left: .2rem;
   padding: 0rem .0rem 0rem .0rem;
-  /* background-color: alpha(@gray4, 0.4); */
+  background-color: alpha(@gray2, 0.6);
+  border-radius: .4rem;
 }
 .modules-center {
   padding: 0rem .0rem 0rem .0rem;
@@ -110,7 +112,8 @@ window > box {
 .modules-right {
   margin-right: .2rem;
   padding: 0rem .0rem 0rem .0rem;
-  /* background-color: alpha(@gray4, 0.4); */
+  background-color: alpha(@gray2, 0.6);
+  border-radius: .4rem;
 }
 
 /* Workspaces */
