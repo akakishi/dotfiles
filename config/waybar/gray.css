@@ -10,7 +10,10 @@
 
 @keyframes blink_red {
   to {
-    text-shadow: 0px 0px 16px alpha(#cc2200,0.4), 0px 0px 8px alpha(#dd6600,0.6), 0px 0px 4px alpha(#eecc00,0.8);
+    text-shadow:
+      0px 0px 16px #ff4444,
+      0px 0px 8px #ff8888,
+      0px 0px 4px #ffcccc;
   }
 }
 
@@ -102,16 +105,16 @@ window > box {
 }
 .modules-left {
   margin-left: .2rem;
-  padding: 0rem .0rem 0rem .0rem;
+  padding: .0rem .0rem .0rem .0rem;
   background-color: alpha(@gray2, 0.6);
   border-radius: .4rem;
 }
 .modules-center {
-  padding: 0rem .0rem 0rem .0rem;
+  padding: .0rem .0rem .0rem .0rem;
 }
 .modules-right {
   margin-right: .2rem;
-  padding: 0rem .0rem 0rem .0rem;
+  padding: .0rem .0rem .0rem .0rem;
   background-color: alpha(@gray2, 0.6);
   border-radius: .4rem;
 }
