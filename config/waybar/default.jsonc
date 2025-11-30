@@ -24,6 +24,7 @@
   "modules-right": [
     "tray",
     "temperature",
+    "custom/privacydots",
     "custom/divider",
     "pulseaudio#output",
     "pulseaudio#input",
@@ -354,6 +355,16 @@
     "format": "",
     "on-click": "sleep 0.1 && ~/.config/rofi/bin/powermenu.sh",
     "tooltip": false
+  },
+
+  "custom/privacydots": {
+    "exec": "~/.config/waybar/scripts/privacy_dots.sh",
+    "return-type": "json",
+    "interval": 3,
+    "format": "{text}",
+    "tooltip": true,
+    "escape": false,
+    "markup": "pango"
   },
 
   "custom/reboot": {

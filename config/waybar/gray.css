@@ -10,6 +10,8 @@
 
 @keyframes blink_red {
   to {
+    background-color: @gray5;
+    color: @white;
     text-shadow:
       0px 0px 16px #ff4444,
       0px 0px 8px #ff8888,
@@ -36,6 +38,7 @@
 #custom-notification,
 #custom-pacman,
 #custom-powermenu,
+#custom-privacydots,
 #custom-reboot,
 #custom-weather,
 #custom-workspaces,
@@ -79,6 +82,7 @@
 #custom-notification:hover,
 #custom-pacman:hover,
 #custom-powermenu:hover,
+#custom-privacydots:hover,
 #custom-reboot:hover,
 #custom-weather:hover,
 #disk:hover,
@@ -197,4 +201,10 @@ tooltip label {
 #custom-divider {
   font-size: 1rem;
   padding: .3rem .3rem;
+}
+
+#custom-privacydots {
+  /*padding: 0 10px;
+  font-size: 12px;
+  letter-spacing: 3px;*/
 }
