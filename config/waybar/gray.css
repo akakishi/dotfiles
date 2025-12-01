@@ -126,6 +126,7 @@ window > box {
 /* Workspaces */
 #workspaces {
   background-color: transparent;
+  font-size: 0.8rem;
 }
 #workspaces button {
   all: initial;
@@ -136,9 +137,12 @@ window > box {
   padding-top: .0rem;
   padding-bottom: .0rem;
   background: alpha(@gray6, 0.2);
-  border-radius: .2rem;
+  /*border-radius: .2rem;*/
+  border-radius: 999px;
   color: inherit;
   font-weight: bold;
+  min-width: 1.0rem;
+  min-height: 1.0rem;
 }
 #workspaces button.active {
   background: @gray8;
@@ -153,15 +157,21 @@ window > box {
   background: @white;
   color: @gray2;
 }
+#workspaces button.special:not(.active) {
+  background: transparent;
+}
 
 /* Tooltip */
 tooltip {
   background-color: alpha(@white,0.8);
   border-radius: .2rem;
   border: none;
+  padding: .4rem;
+  box-shadow: 0px 0px 5px @gray1;
 }
 tooltip label {
-  color: @gray3;
+  color: @gray1;
+  text-shadow: none;
 }
 
 /* battery */
