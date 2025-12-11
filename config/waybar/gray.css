@@ -63,9 +63,8 @@
   margin-bottom: .0rem;
   background-color: transparent;
   min-width: 1.0rem;
-  color: @gray8;
-  text-shadow: 0px 0px 8px alpha(@gray4,0.4), 0px 0px 4px alpha(@gray2,0.8), 0px 0px 2px alpha(@black,0.9);
-  border-radius: .0em;
+  color: @white;
+  border-radius: 999px;
 }
 
 #backlight:hover,
@@ -94,7 +93,7 @@
 #pulseaudio:hover,
 #scratchpad:hover,
 #temperature:hover {
-  color: @white;
+  background-color: alpha(@gray5, 0.6);
   text-shadow: 0px 0px 10px alpha(@gray4,0.4), 0px 0px 6px alpha(@gray2,0.8), 0px 0px 4px alpha(@black,0.9);
 }
 
@@ -110,8 +109,8 @@ window > box {
 .modules-left {
   margin-left: .2rem;
   padding: .0rem .0rem .0rem .0rem;
-  background-color: alpha(@gray2, 0.6);
-  border-radius: .4rem;
+  background-color: alpha(@gray2, 0.8);
+  border-radius: 999px;
 }
 .modules-center {
   padding: .0rem .0rem .0rem .0rem;
@@ -119,8 +118,8 @@ window > box {
 .modules-right {
   margin-right: .2rem;
   padding: .0rem .0rem .0rem .0rem;
-  background-color: alpha(@gray2, 0.6);
-  border-radius: .4rem;
+  background-color: alpha(@gray2, 0.8);
+  border-radius: 999px;
 }
 
 /* Workspaces */
@@ -136,29 +135,29 @@ window > box {
   padding-left: .4rem;
   padding-top: .0rem;
   padding-bottom: .0rem;
-  background: alpha(@gray6, 0.2);
-  /*border-radius: .2rem;*/
+  background-color: alpha(@gray5, 0.6);
   border-radius: 999px;
-  color: inherit;
+  color: @white;
   font-weight: bold;
   min-width: 1.0rem;
   min-height: 1.0rem;
 }
 #workspaces button.active {
-  background: @gray8;
+  background-color: @white;
   color: @black;
   padding-right: .8rem;
   padding-left: .8rem;
 }
 #workspaces button:hover {
+  background-color: @gray6;
   color: @white;
 }
 #workspaces button.active:hover {
-  background: @white;
+  background-color: @white;
   color: @gray2;
 }
 #workspaces button.special:not(.active) {
-  background: transparent;
+  background-color: transparent;
 }
 
 /* Tooltip */
