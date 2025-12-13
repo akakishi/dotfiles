@@ -9,6 +9,8 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -28,20 +30,20 @@ vim.opt.updatetime = 50
 
 --vim.opt.colorcolumn = "80"
 vim.opt.listchars = {
-    space = '·',
-    --eol = '↵',
-    tab = ' ▷',
-    nbsp = '○',
-    trail = '·',
-    extends = '>',
-    precedes = '<'
+	space = "·",
+	--eol = '↵',
+	tab = " ▷",
+	nbsp = "○",
+	trail = "·",
+	extends = ">",
+	precedes = "<",
 }
 
 vim.o.list = true
 vim.o.updatetime = 100
 vim.g.mapleader = " "
 
-vim.opt.spelllang = { 'en', 'es' }
+vim.opt.spelllang = { "en", "es" }
 vim.opt.spell = true
 
 unique = true
