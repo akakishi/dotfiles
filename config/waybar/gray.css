@@ -56,8 +56,8 @@
 #tray,
 #window,
 #workspaces {
-  padding-left: .6rem;
-  padding-right: .6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: .2rem;
   padding-bottom: .2rem;
   margin-top: .0rem;
@@ -69,6 +69,10 @@
   color: @white;
   border-radius: 999px;
   text-shadow:
+    0px 0px 6px @black,
+    0px 0px 4px @black,
+    0px 0px 2px @black;
+  -gtk-icon-shadow:
     0px 0px 6px @black,
     0px 0px 4px @black,
     0px 0px 2px @black;
@@ -109,10 +113,11 @@ window#waybar {
   margin: 0rem;
 }
 window > box {
-  /*background-image: linear-gradient(0deg, alpha(@gray1,0), alpha(@gray1,0.6));*/
-  margin-top: .2rem;
+  background-image: linear-gradient(0deg, alpha(@black,0), alpha(black,0.6));
+  margin-top: .0rem;
   margin-bottom: .0rem;
-  background-color: transparent;
+  padding-top: .2rem;
+  /*background-color: transparent;*/
 }
 .modules-left {
   margin-left: .5rem;
@@ -152,12 +157,17 @@ window > box {
   font-weight: bold;
   font-size: .8rem;
   min-width: 1.5rem;
+  text-shadow:
+    0px 0px 6px @black,
+    0px 0px 4px @black,
+    0px 0px 2px @black;
 }
 #workspaces button.active {
   background-color: @white;
   color: @black;
   padding-right: .8rem;
   padding-left: .8rem;
+  text-shadow: none;
 }
 #workspaces button:hover {
   color: @white;
