@@ -96,3 +96,7 @@ export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"
 eval "$(/usr/bin/oh-my-posh --init --shell bash --config $HOME/.config/oh-my-posh/catppuccin_mocha.omp.toml)"
 eval "$(thefuck --alias)"
 eval "$(zoxide init bash)"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
