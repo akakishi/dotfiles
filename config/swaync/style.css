@@ -1,40 +1,24 @@
-/*
-*
-* Catppuccin Mocha palette
-* Maintainer: rubyowo
-*
-*/
+@define-color black     #000000;
+@define-color gray1     #1a1a1a;
+@define-color gray2     #333333;
+@define-color gray3     #4d4d4d;
+@define-color gray4     #666666;
+@define-color gray5     #808080;
+@define-color gray6     #999999;
+@define-color gray7     #b3b3b3;
+@define-color gray8     #cccccc;
+@define-color gray9     #e6e6e6;
+@define-color white     #ffffff;
 
-@define-color base      #1E1D2E;
-@define-color mantle    #181825;
-@define-color crust     #11111b;
+@define-color blue      #4463ee;
+@define-color purple    #7309b9;
+@define-color cyan      #4ccaf0;
+@define-color green     #44cc44;
+@define-color yellow    #ffea00;
+@define-color orange    #ff9c24;
+@define-color red       #dd0044;
+@define-color pink      #f72684;
 
-@define-color text      #cdd6f4;
-@define-color subtext0  #a6adc8;
-@define-color subtext1  #bac2de;
-
-@define-color surface0  #313244;
-@define-color surface1  #45475a;
-@define-color surface2  #585b70;
-
-@define-color overlay0  #6c7086;
-@define-color overlay1  #7f849c;
-@define-color overlay2  #9399b2;
-
-@define-color blue      #89b4fa;
-@define-color lavender  #b4befe;
-@define-color sapphire  #74c7ec;
-@define-color sky       #89dceb;
-@define-color teal      #94e2d5;
-@define-color green     #a6e3a1;
-@define-color yellow    #f9e2af;
-@define-color peach     #fab387;
-@define-color maroon    #eba0ac;
-@define-color red       #f38ba8;
-@define-color mauve     #cba6f7;
-@define-color pink      #f5c2e7;
-@define-color flamingo  #f2cdcd;
-@define-color rosewater #f5e0dc;
 
 * {
   font-family: "JetBrainsMono Nerd Font";
@@ -43,30 +27,30 @@
 }
 
 label {
-  color: @text;
+  color: @white;
+  text-shadow: 0px 0px 4px @black;
 }
 
 .notification {
-  /*border: 8px solid @lavender;*/
   border-left: none;
-  border-top: none;
-  border-bottom: 0px solid @lavender;
+  border-top: 1px solid @gray5;
+  border-bottom: 1px solid @gray3;
   border-right: none;
-  box-shadow: 0px 4px 8px alpha(@base,0.4);
-  border-radius: 0px;
-  background: alpha(@surface1,0.6);
+  box-shadow: 0px 0px 8px @gray1;
+  border-radius: 8px;
+  background: @gray4;
 }
 
 .notification button {
-  background: alpha(@surface1,0.6);
+  background: @gray4;
   border-radius: 0px;
-  border: 0px solid @lavender;
+  border: 0px;
   margin: 0px;
   padding: 4px;
 }
 
 .notification button:hover {
-  background: @surface2;
+  background: @gray5;
 }
 
 .notification-content {
@@ -76,16 +60,20 @@ label {
 }
 
 .close-button {
-  margin: 0px;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-left: 0px;
+  margin-bottom: 0px;
   padding: 4px;
-  border-radius: 0px;
-  background: @red;
-  color: @base;
+  border-radius: 8px;
+  background: transparent;
+  color: @gray2;
   opacity: 1;
 }
 
 .close-button:hover {
-  background: @text;
+  background: @red;
+  color: @black;
 }
 
 .notification-action {
@@ -94,26 +82,27 @@ label {
 }
 
 .notification-default-action:hover {
-  background: @surface2;
+  background: @gray5;
 }
 
 .notification-action:hover {
-  background: @surface2;
+  background: @gray5;
 }
 
 /*** Notification ***/
 /* Notification header */
 .summary {
-  color: @text;
+  color: @white;
   font-size: 16px;
   font-weight: 700;
+  text-shadow: 0px 0px 4px @black;
 }
 
 .time {
-  color: @subtext0;
+  color: @gray8;
   font-size: 16px;
   font-weight: 700;
-  text-shadow: none;
+  text-shadow: 0px 0px 4px @black;
   background: transparent;
   margin: 0px 34px 0px 0px;
   padding: 2px 0px;
@@ -122,27 +111,28 @@ label {
 .body {
   font-size: 14px;
   font-weight: 500;
-  color: @text;
-  text-shadow: none;
+  color: @gray8;
   margin: 0px 0px 0px 0px;
+  text-shadow: 0px 0px 4px @black;
 }
 
 .body-image {
   border-radius: 0px;
+  text-shadow: 0px 0px 4px @black;
 }
 
 /* The "Notifications" and "Do Not Disturb" text widget */
 .top-action-title {
-  color: @text;
+  color: @gray8;
   text-shadow: none;
 }
 
 /* Control center */
 .control-center {
-  background: alpha(@surface0,0.6);
-  border-radius: 0px;
-  border: 0px solid @lavender;
-  box-shadow: 0px 4px 8px alpha(@base,0.4);
+  background: alpha(@gray3,0.6);
+  border-radius: 8px;
+  border: 0px;
+  box-shadow: 0px 4px 8px @black;
   margin: 0px;
   padding: 8px;
 }
@@ -157,7 +147,7 @@ label {
 .control-center-list-placeholder,
 .notification-group-icon,
 .notification-group {
-  color: @text;
+  color: @gray8;
 }
 
 .notification-group {
@@ -194,12 +184,10 @@ label {
   border: none;
   margin: 0px;
   padding: 0px;
-  /*padding: 5px 10px 5px 10px;*/
   box-shadow: none;
 }
 
 .control-center-list > row:last-child {
-  /*padding: 5px 10px 10px 10px;*/
   padding: 0px;
 }
 
@@ -230,12 +218,12 @@ label {
   padding: 8px;
   margin-right: 0px;
   background: transparent;
-  color: @base;
+  color: @gray3;
   border: none;
-  border-radius: 0px;
+  border-radius: 8px;
 }
 .widget-title > button:hover {
-  background: alpha(@overlay2,0.3);
+  background: @gray4;
 }
 
 /* Label widget */
@@ -265,7 +253,7 @@ label {
   background: transparent;
 }
 .widget-menubar > box > box > button {
-  background: @mantle;
+  background: @black;
   min-width: 0px;
   min-height: 0px;
   margin-right: 0px;
@@ -279,13 +267,13 @@ label {
   box-shadow: none;
 }
 .widget-menubar button:focus:hover {
-  background: @base;
+  background: @gray4;
   box-shadow: none;
 }
 
 .widget-menubar > box > revealer > box {
   margin: 0px;
-  background: @mantle;
+  background: @black;
   border-radius: 0px;
 }
 .widget-menubar > box > revealer > box > button {
@@ -306,7 +294,7 @@ label {
   margin: 0px;
   padding: 0px;
   border-radius: 0px;
-  background: @mantle;
+  background: @black;
 }
 .widget-mpris > box > button:nth-child(1),
 .widget-mpris > box > button:nth-child(3) {
@@ -334,26 +322,26 @@ label {
 
 /* Player buttons */
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) > button {
-  color: @text;
+  color: @gray8;
   border-radius: 50%;
 }
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) > button:hover {
-  background: alpha(@overlay2,0.3);
+  background: @gray6;
 }
 carouselindicatordots {
   opacity: 1;
 }
 
 .widget-mpris-title {
-  color: @text;
+  color: @gray8;
   font-weight: bold;
   font-size: 1.25rem;
-  text-shadow: 0px 0px 5px alpha(@base,1);
+  text-shadow: 0px 0px 4px @black;
 }
 .widget-mpris-subtitle {
   color: @text;
   font-size: 1rem;
-  text-shadow: 0px 0px 3px alpha(@base,1);
+  text-shadow: 0px 0px 4px @black;
 }
 
 .widget-mpris-player {
@@ -373,37 +361,38 @@ carouselindicatordots {
   margin-left: 350px;
   padding: 0px 0px;
   font-size: large;
-  color: @text;
+  color: @gray8;
+  border-radius: 999px;
 }
 
 .widget-dnd > switch {
-  background: @mantle;
-  border-radius: 4px;
+  background: @black;
+  border-radius: 999px;
 }
 
 .widget-dnd > switch:hover {
-  background: @surface0;
+  background: @gray2;
 }
 
 .widget-dnd > switch:checked {
-  background: @base;
+  background: @green;
 }
 
 .widget-dnd > switch:checked:hover {
-  background: @surface0;
+  background: @gray6;
 }
 
 .widget-dnd > switch slider {
-  background: @surface2;
-  border-radius: 4px;
+  background: @gray8;
+  border-radius: 999px;
 }
 
 /* Toggles */
 .toggle:checked {
-  background: @overlay1;
+  background: @gray5;
 }
 .toggle:checked:hover {
-  background: @overlay2;
+  background: @gray7;
 }
 
 .right.overlay-indicator {
