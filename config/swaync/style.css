@@ -130,8 +130,11 @@ label {
 /* Control center */
 .control-center {
   background: alpha(@gray3,0.6);
+  border-top: 1px solid @gray4;
+  border-left: 1px solid @gray4;
+  border-right: 1px solid @gray2;
+  border-bottom: 1px solid @gray2;
   border-radius: 8px;
-  border: 0px;
   box-shadow: 0px 4px 8px @black;
   margin: 0px;
   padding: 8px;
@@ -216,7 +219,7 @@ label {
 .widget-title > button {
   font-weight: 700;
   padding: 8px;
-  margin-right: 0px;
+  margin: 0px;
   background: transparent;
   color: @gray3;
   border: none;
@@ -358,32 +361,34 @@ carouselindicatordots {
 
 /* DND widget */
 .widget-dnd {
+  margin-top: 0px;
   margin-left: 350px;
   padding: 0px 0px;
   font-size: large;
   color: @gray8;
-  border-radius: 999px;
 }
 
 .widget-dnd > switch {
-  background: @black;
+  background: alpha(@green,0.6);
   border-radius: 999px;
 }
 
 .widget-dnd > switch:hover {
-  background: @gray2;
-}
-
-.widget-dnd > switch:checked {
   background: @green;
 }
 
+.widget-dnd > switch:checked {
+  background: alpha(@red,0.6);
+}
+
 .widget-dnd > switch:checked:hover {
-  background: @gray6;
+  background: @red;
 }
 
 .widget-dnd > switch slider {
   background: @gray8;
+  border-top: 1px solid @gray9;
+  border-left: 1px solid @gray9;
   border-radius: 999px;
 }
 
