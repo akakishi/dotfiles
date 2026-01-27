@@ -104,7 +104,8 @@
 #pulseaudio:hover,
 #scratchpad:hover,
 #temperature:hover {
-  background-color: alpha(@white, 0.2);
+  background-image: linear-gradient(0deg, alpha(@white, 0.0), alpha(@white, 0.4));
+  box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);
 }
 
 /* Bar */
@@ -151,7 +152,7 @@ window > box {
   padding-left: .4rem;
   padding-top: .0rem;
   padding-bottom: .0rem;
-  background-color: alpha(@white, 0.2);
+  background-color: transparent;
   border-radius: 999px;
   color: @white;
   font-weight: bold;
@@ -163,14 +164,16 @@ window > box {
     0px 0px 2px @black;
 }
 #workspaces button.active {
-  background-color: @white;
+  background-image: linear-gradient(0deg, alpha(@white, 0.6), alpha(@white, 0.8));
   color: @black;
+  box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);
   padding-right: .8rem;
   padding-left: .8rem;
   text-shadow: none;
 }
 #workspaces button:hover {
   color: @white;
+  background-image: linear-gradient(0deg, alpha(@white, 0.0), alpha(@white, 0.4));
   box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);
 }
 #workspaces button.active:hover {
