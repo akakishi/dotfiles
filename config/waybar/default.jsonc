@@ -392,7 +392,7 @@
     "format": "{}",
     "tooltip": true,
     "interval": 1800,
-    "exec": "sleep 0.1 && ~/.config/waybar/scripts/wabar-wttr.py",
+    "exec": "sleep 0.1 && ~/.config/waybar/scripts/weather_cache.sh",
     "return-type": "json",
     "on-click": "sleep 0.1 && kitty --hold curl wttr.in"
   },

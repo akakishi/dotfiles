@@ -369,20 +369,20 @@ carouselindicatordots {
 }
 
 .widget-dnd > switch {
-  background: alpha(@green,0.6);
+  background: alpha(@gray6,0.6);
   border-radius: 999px;
 }
 
 .widget-dnd > switch:hover {
-  background: @green;
+  background: @gray6;
 }
 
 .widget-dnd > switch:checked {
-  background: alpha(@red,0.6);
+  background: alpha(@green,0.6);
 }
 
 .widget-dnd > switch:checked:hover {
-  background: @red;
+  background: @green;
 }
 
 .widget-dnd > switch slider {
