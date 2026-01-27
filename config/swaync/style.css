@@ -33,16 +33,20 @@ label {
 
 .notification {
   border-left: none;
-  border-top: 1px solid @gray5;
-  border-bottom: 1px solid @gray3;
+  border-top: 1px solid alpha(@white, 0.4);
+  border-bottom: 1px solid alpha(@white, 0.2);
   border-right: none;
-  box-shadow: 0px 0px 8px @gray1;
+  box-shadow: 0px 2px 4px alpha(@black, 0.2);
   border-radius: 8px;
-  background: @gray4;
+  background: alpha(@white, 0.4);
+}
+
+.notification:hover {
+  background: transparent;
 }
 
 .notification button {
-  background: @gray4;
+  background: transparent;
   border-radius: 0px;
   border: 0px;
   margin: 0px;
@@ -50,11 +54,11 @@ label {
 }
 
 .notification button:hover {
-  background: @gray5;
+  background: alpha(@white, 0.4)
 }
 
 .notification-content {
-  padding: 0px;
+  padding-left: 8px;
   border-radius: 0px;
   min-height: 32px;
 }
@@ -67,7 +71,7 @@ label {
   padding: 4px;
   border-radius: 8px;
   background: transparent;
-  color: @gray2;
+  color: alpha(@black, 0.4);
   opacity: 1;
 }
 
@@ -82,11 +86,11 @@ label {
 }
 
 .notification-default-action:hover {
-  background: @gray5;
+  background: alpha(@white, 0.6);
 }
 
 .notification-action:hover {
-  background: @gray5;
+  background: alpha(@white, 0.6);
 }
 
 /*** Notification ***/
@@ -99,7 +103,7 @@ label {
 }
 
 .time {
-  color: @gray8;
+  color: alpha(@white, 0.8);
   font-size: 16px;
   font-weight: 700;
   text-shadow: 0px 0px 4px @black;
@@ -111,7 +115,7 @@ label {
 .body {
   font-size: 14px;
   font-weight: 500;
-  color: @gray8;
+  color: alpha(@white, 0.8);
   margin: 0px 0px 0px 0px;
   text-shadow: 0px 0px 4px @black;
 }
@@ -123,17 +127,17 @@ label {
 
 /* The "Notifications" and "Do Not Disturb" text widget */
 .top-action-title {
-  color: @gray8;
+  color: alpha(@white, 0.8);
   text-shadow: none;
 }
 
 /* Control center */
 .control-center {
-  background: alpha(@gray3,0.6);
-  border-top: 1px solid @gray4;
-  border-left: 1px solid @gray4;
-  border-right: 1px solid @gray2;
-  border-bottom: 1px solid @gray2;
+  background: alpha(@black,0.4);
+  border-top: 1px solid alpha(@white, 0.4);
+  border-left: 1px solid alpha(@white, 0.4);
+  border-right: 1px solid alpha(@white, 0.2);
+  border-bottom: 1px solid alpha(@white, 0.2);
   border-radius: 8px;
   box-shadow: 0px 4px 8px @black;
   margin: 0px;
@@ -160,12 +164,11 @@ label {
 }
 
 .notification-group > box {
-  all: unset;
   background: transparent;
   padding: 0px;
   margin: 0px;
   border: none;
-  border-radius: 0px;
+  border-radius: 999px;
   box-shadow: none;
 }
 
@@ -224,9 +227,11 @@ label {
   color: @gray3;
   border: none;
   border-radius: 8px;
+  border-top: 1px solid transparent;
 }
 .widget-title > button:hover {
-  background: @gray4;
+  background: alpha(@white, 0.2);
+  border-top: 1px solid alpha(@white, 0.4);
 }
 
 /* Label widget */
@@ -270,7 +275,8 @@ label {
   box-shadow: none;
 }
 .widget-menubar button:focus:hover {
-  background: @gray4;
+  background: alpha(@white, 0.2);
+  border-top: 1px solid alpha(@white, 0.4);
   box-shadow: none;
 }
 
@@ -325,24 +331,24 @@ label {
 
 /* Player buttons */
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) > button {
-  color: @gray8;
-  border-radius: 50%;
+  color: alpha(@white, 0.8);
+  border-radius: 999px;
 }
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) > button:hover {
-  background: @gray6;
+  background: alpha(@white, 0.6);
 }
 carouselindicatordots {
   opacity: 1;
 }
 
 .widget-mpris-title {
-  color: @gray8;
+  color: alpha(@white, 0.8);
   font-weight: bold;
   font-size: 1.25rem;
   text-shadow: 0px 0px 4px @black;
 }
 .widget-mpris-subtitle {
-  color: @text;
+  color: @white;
   font-size: 1rem;
   text-shadow: 0px 0px 4px @black;
 }
@@ -365,39 +371,43 @@ carouselindicatordots {
   margin-left: 350px;
   padding: 0px 0px;
   font-size: large;
-  color: @gray8;
+  color: alpha(@white, 0.8);
+}
+
+.widget-dnd > label {
+  margin-right: 0px;
 }
 
 .widget-dnd > switch {
-  background: alpha(@gray6,0.6);
+  background-image: linear-gradient(0deg, alpha(@white, 0.2), alpha(@white, 0.1));
   border-radius: 999px;
 }
 
 .widget-dnd > switch:hover {
-  background: @gray6;
+  background-image: linear-gradient(0deg, alpha(@white, 0.3), alpha(@white, 0.2));
 }
 
 .widget-dnd > switch:checked {
-  background: alpha(@green,0.6);
+  background-image: linear-gradient(0deg, alpha(@green, 0.4), alpha(@green, 0.2));
 }
 
 .widget-dnd > switch:checked:hover {
-  background: @green;
+  background-image: linear-gradient(0deg, alpha(@green, 0.5), alpha(@green, 0.3));
 }
 
 .widget-dnd > switch slider {
-  background: @gray8;
-  border-top: 1px solid @gray9;
-  border-left: 1px solid @gray9;
+  background: alpha(@white, 0.5);
+  border-top: 1px solid alpha(@white, 0.7);
+  border-left: 1px solid alpha(@white, 0.7);
+  border-right: 1px solid alpha(@white, 0.5);
+  border-bottom: 1px solid alpha(@white, 0.5);
   border-radius: 999px;
 }
 
 /* Toggles */
 .toggle:checked {
-  background: @gray5;
 }
 .toggle:checked:hover {
-  background: @gray7;
 }
 
 .right.overlay-indicator {
