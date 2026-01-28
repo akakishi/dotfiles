@@ -32,17 +32,10 @@ label {
 }
 
 .notification {
-  border-left: none;
-  border-top: 1px solid alpha(@white, 0.4);
-  border-bottom: 1px solid alpha(@white, 0.2);
-  border-right: none;
+  border: 1px solid alpha(@white, 0.2);
   box-shadow: 0px 2px 4px alpha(@black, 0.2);
   border-radius: 8px;
-  background: alpha(@white, 0.4);
-}
-
-.notification:hover {
-  background: transparent;
+  background: alpha(@white, 0.1);
 }
 
 .notification button {
@@ -54,7 +47,7 @@ label {
 }
 
 .notification button:hover {
-  background: alpha(@white, 0.4)
+  background: alpha(@white, 0.2)
 }
 
 .notification-content {
@@ -64,20 +57,21 @@ label {
 }
 
 .close-button {
-  margin-top: 2px;
-  margin-right: 2px;
+  margin-top: 4px;
+  margin-right: 4px;
   margin-left: 0px;
   margin-bottom: 0px;
   padding: 4px;
   border-radius: 8px;
   background: transparent;
-  color: alpha(@black, 0.4);
-  opacity: 1;
+  border: 1px solid transparent;
+  color: alpha(@white, 0.6);
 }
 
 .close-button:hover {
-  background: @red;
-  color: @black;
+  background: alpha(@red, 0.4);
+  border: 1px solid alpha(@white, 0.2);
+  color: @white;
 }
 
 .notification-action {
@@ -86,11 +80,11 @@ label {
 }
 
 .notification-default-action:hover {
-  background: alpha(@white, 0.6);
+  background: alpha(@white, 0.2);
 }
 
 .notification-action:hover {
-  background: alpha(@white, 0.6);
+  background: alpha(@white, 0.2);
 }
 
 /*** Notification ***/
@@ -134,12 +128,9 @@ label {
 /* Control center */
 .control-center {
   background: alpha(@black,0.4);
-  border-top: 1px solid alpha(@white, 0.4);
-  border-left: 1px solid alpha(@white, 0.4);
-  border-right: 1px solid alpha(@white, 0.2);
-  border-bottom: 1px solid alpha(@white, 0.2);
+  border: 1px solid alpha(@white, 0.4);
   border-radius: 8px;
-  box-shadow: 0px 4px 8px @black;
+  box-shadow: 0px 2px 4px @black;
   margin: 0px;
   padding: 8px;
 }
@@ -147,7 +138,7 @@ label {
 .control-center-list {
   background: transparent;
   min-height: 5px;
-  border-top: none;
+  border: none;
   border-radius: 0px;
 }
 
@@ -193,10 +184,35 @@ label {
   box-shadow: none;
 }
 
+.notification-group-collapse-button {
+  background: alpha(@white, 0.2);
+  color: alpha(@white, 0.6);
+  border: 1px solid alpha(@white, 0.1);
+  border-radius: 8px;
+}
+
+.notification-group-collapse-button:hover {
+  background: alpha(@white, 0.4);
+  border: 1px solid alpha(@white, 0.2);
+  color: @white;
+}
+
+.notification-group-close-all-button {
+  background: alpha(@white, 0.2);
+  color: alpha(@white, 0.6);
+  border: 1px solid alpha(@white, 0.1);
+  border-radius: 8px;
+}
+
+.notification-group-close-all-button:hover {
+  background: alpha(@red, 0.4);
+  border: 1px solid alpha(@white, 0.2);
+  color: @white;
+}
+
 .control-center-list > row:last-child {
   padding: 0px;
 }
-
 
 /* Window behind control center and on all other monitors */
 .blank-window {
@@ -210,7 +226,7 @@ label {
   margin: 8px;
   background: transparent;
   border-radius: 0px;
-  border-bottom: none;
+  border: none;
 }
 
 .widget-title > label {
@@ -221,17 +237,18 @@ label {
 
 .widget-title > button {
   font-weight: 700;
-  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
   margin: 0px;
   background: transparent;
-  color: @gray3;
-  border: none;
+  color: alpha(@white, 0.4);
   border-radius: 8px;
-  border-top: 1px solid transparent;
+  border: 1px solid transparent;
 }
 .widget-title > button:hover {
-  background: alpha(@white, 0.2);
-  border-top: 1px solid alpha(@white, 0.4);
+  background: alpha(@white, 0.1);
+  border: 1px solid alpha(@white, 0.2);
+  color: @white;
 }
 
 /* Label widget */
@@ -241,7 +258,7 @@ label {
   min-height: 0px;
   background: transparent;
   border-radius: 0px;
-  border-top: none;
+  border: none;
 }
 .widget-label > label {
   font-size: 15px;
@@ -251,20 +268,16 @@ label {
 /* Menubar */
 .widget-menubar {
   background: transparent;
-  border-top: none;
-  border-bottom: none;
+  border: none;
 }
 .widget-menubar > box > box {
   margin: 0px;
-  min-height: 0px;
   border-radius: 0px;
   background: transparent;
 }
 .widget-menubar > box > box > button {
   background: @black;
-  min-width: 0px;
-  min-height: 0px;
-  margin-right: 0px;
+  margin: 0px;
   font-size: 14px;
   padding: 0px;
 }
@@ -276,7 +289,7 @@ label {
 }
 .widget-menubar button:focus:hover {
   background: alpha(@white, 0.2);
-  border-top: 1px solid alpha(@white, 0.4);
+  border: 1px solid alpha(@white, 0.4);
   box-shadow: none;
 }
 
@@ -375,7 +388,7 @@ carouselindicatordots {
 }
 
 .widget-dnd > label {
-  margin-right: 0px;
+  margin: 0px;
 }
 
 .widget-dnd > switch {
@@ -397,10 +410,7 @@ carouselindicatordots {
 
 .widget-dnd > switch slider {
   background: alpha(@white, 0.5);
-  border-top: 1px solid alpha(@white, 0.7);
-  border-left: 1px solid alpha(@white, 0.7);
-  border-right: 1px solid alpha(@white, 0.5);
-  border-bottom: 1px solid alpha(@white, 0.5);
+  border: 1px solid alpha(@white, 0.7);
   border-radius: 999px;
 }
 
