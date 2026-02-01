@@ -310,13 +310,13 @@ label {
   padding: 0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  background: transparent;
 }
 .widget-mpris > box {
   padding: 0px;
   margin: 0px;
   padding: 0px;
-  border-radius: 0px;
-  background: @black;
+  background: transparent;
 }
 .widget-mpris > box > button:nth-child(1),
 .widget-mpris > box > button:nth-child(3) {
@@ -325,16 +325,15 @@ label {
 .widget-mpris > box > button:nth-child(1) {
   margin-left: 0px;
   margin-right: 0px;
-  opacity: 1;
 }
 .widget-mpris > box > button:nth-child(3) {
   margin-left: 0px;
   margin-right: 0px;
-  opacity: 1;
 }
 
 .widget-mpris-album-art {
   all: unset;
+  border-radius: 8px;
 }
 
 /* Player button box */
@@ -346,9 +345,11 @@ label {
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) > button {
   color: alpha(@white, 0.8);
   border-radius: 999px;
+  border: 1px solid transparent;
 }
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) > button:hover {
-  background: alpha(@white, 0.6);
+  background: alpha(@white, 0.4);
+  border: 1px solid alpha(@white, 0.8);
 }
 carouselindicatordots {
   opacity: 1;
@@ -367,11 +368,14 @@ carouselindicatordots {
 }
 
 .widget-mpris-player {
-  border-radius: 0px;
-  margin: 0px;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 0px;
+  color: @white;
 }
 .widget-mpris-player > box > image {
   margin: 0px 0px 0px 0px;
+  border-radius: 8px;
 }
 
 .notification-group > box.vertical {
