@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # --- Configuración ---
-FILE_CACHE="weather_info.txt"
-PYTHON_SCRIPT="wabar-wttr.py"
+FILE_CACHE="$HOME/.config/waybar/scripts/weather_info.txt"
+PYTHON_SCRIPT="$HOME/.config/waybar/scripts/wabar-wttr.py"
 EXPIRATON_SECONDS=3600 # 1 hora (ajusta según prefieras)
 
 # --- Lógica ---
@@ -25,8 +25,14 @@ if [ -f "$FILE_CACHE" ]; then
 
     # 2. Verificar si expiró
     if [ $DIFERENCIA -lt $EXPIRATON_SECONDS ]; then
-        # El archivo es reciente, devolver contenido
-        cat "$FILE_CACHE"
+        if ! grep -q '[^[:space:]]' "$FILE_CACHE"; then
+          # El archivo está vacío, borrar y actualizar
+          rm "$FILE_CACHE"
+          get_new_weather
+        else
+          # El archivo es reciente y no está vacío, devolver contenido
+          cat "$FILE_CACHE"
+        fi
     else
         # El archivo expiró, borrar y actualizar
         rm "$FILE_CACHE"
