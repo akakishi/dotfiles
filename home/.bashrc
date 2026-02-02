@@ -83,7 +83,7 @@ _open_files_for_editing() {
 ## Uncomment an alias if you want to use it.
 ##
 
-# alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
+alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
 # alias pacdiff=eos-pacdiff
 ################################################################################
 
@@ -96,7 +96,7 @@ export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"
 eval "$(/usr/bin/oh-my-posh --init --shell bash --config $HOME/.config/oh-my-posh/catppuccin_mocha.omp.toml)"
 eval "$(thefuck --alias)"
 eval "$(zoxide init bash)"
-eval "$(ssh-agent)"
+eval "$(ssh-agent)" >/dev/null 2>&1
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
