@@ -28,7 +28,7 @@
 
 label {
   color: @white;
-  text-shadow: 0px 0px 4px @black;
+  text-shadow: 0px 0px 8px @black;
 }
 
 .notification {
@@ -132,7 +132,10 @@ label {
   border-radius: 8px;
   box-shadow: 0px 2px 4px @black;
   margin: 0px;
-  padding: 8px;
+  padding-top: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 0px;
 }
 
 .control-center-list {
@@ -223,7 +226,7 @@ label {
 
 /* Title widget */
 .widget-title {
-  margin: 8px;
+  margin: 0px;
   background: transparent;
   border-radius: 0px;
   border: none;
@@ -231,6 +234,7 @@ label {
 
 .widget-title > label {
   margin: 0px;
+  padding: 0px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -425,5 +429,4 @@ carouselindicatordots {
 }
 
 .right.overlay-indicator {
-  all: unset;
 }
