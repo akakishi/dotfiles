@@ -47,7 +47,7 @@
 
   "widget-config": {
     "title": {
-      "text": "NOTIFICATION Center",
+      "text": "",
       "clear-all-button": true,
       "button-text": "Clear All"
     },

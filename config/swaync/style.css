@@ -237,6 +237,7 @@ label {
   padding: 0px;
   font-size: 20px;
   font-weight: 500;
+  display: none;
 }
 
 .widget-title > button {
