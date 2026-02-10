@@ -9,4 +9,16 @@
     YLLW:   #FAE3B0ff;
     GREY:   #575268ff;
     LGRN:   #ABE9B3ff;
+
+    BLAK:  #000000ff;
+    GRY1:  #1A1A1Aff;
+    GRY2:  #333333ff;
+    GRY3:  #4D4D4Dff;
+    GRY4:  #666666ff;
+    GRY5:  #808080ff;
+    GRY6:  #999999ff;
+    GRY7:  #B3B3B3ff;
+    GRY8:  #CCCCCCff;
+    GRY9:  #E3E3E3ff;
+    WHIT:  #FFFFFFff;
 }
