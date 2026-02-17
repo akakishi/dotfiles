@@ -2,23 +2,50 @@
 @import "font.rasi"
 
 * {
-    background-color:       @BG;
-    text-color:             @FG;
+  background-color: rgba(26,26,26,0.4);
+  text-color:       @WHIT;
 }
 
 window {
-    width:        	        250px;
-    padding:    	        20px;
-    border:		            0px 0px 2px 0px;
-    border-radius:          8px;
-    border-color:           @BDR;
-    location:               0;
-    x-offset:               0;
-    y-offset:               -4%;
+  transparency:   "real";
+  width:          400px;
+  padding:        10px;
+  border:         2px;
+  border-radius:  4px;
+  border-color:   rgba(255,255,255,0.4);
+  location:       0;
+  x-offset:       0;
+  y-offset:       0;
+}
+
+prompt {
+  enabled:        true;
+  padding:        0px;
+  background-color: transparent;
+  text-color:     @YLLW;
 }
 
 entry {
-    expand: 		        true;
-    width: 		            150px;
-    text-color:		        @BDR;
+  expand:         true;
+  width:          350px;
+  enabled:        true;
+  background-color: transparent;
+  placeholder:    "Enter password...";
+
+}
+
+inputbar {
+  children:       [ entry ];
+  background-color: transparent;
+  border:         0px;
+  border-radius:  0px;
+  border-color:   @LBLU;
+}
+
+mainbox {
+  children:       [ inputbar ];
+  background-color: transparent;
+  border:         0px;
+  border-radius:  0px;
+  border-color:   @LBLU;
 }

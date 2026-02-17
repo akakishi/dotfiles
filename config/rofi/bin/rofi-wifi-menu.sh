@@ -13,8 +13,9 @@ fi
 
 # Use rofi to select wifi network
 chosen_network=$(echo -e "$toggle\n$wifi_list" | uniq -u | rofi -dmenu -i -selected-row 1 -theme $HOME/.config/rofi/config/sinkmenu.rasi -p "Wi-Fi SSID: " )
+
 # Get name of connection
-chosen_id=$(echo "${chosen_network:3}" | xargs)
+chosen_id=$(echo "$chosen_network" | sed -E 's/^(.*) (.*) (.*)$/\2/')
 
 if [ "$chosen_network" = "" ]; then
 	exit
@@ -31,8 +32,13 @@ else
 		nmcli connection up id "$chosen_id" | grep "successfully" && notify-send "Connection Established" "$success_message"
 	else
 		if [[ "$chosen_network" =~ "" ]]; then
-			wifi_password=$(rofi -dmenu -p "Password: " )
+			wifi_password=$(rofi -theme "~/.config/rofi/config/askpass.rasi" -dmenu -p "Password: " -lines 1)
 		fi
-		nmcli device wifi connect "$chosen_id" password "$wifi_password" | grep "successfully" && notify-send "Connection Established" "$success_message"
+    result_message=$(nmcli device wifi connect "$chosen_id" password "$wifi_password")
+    if [[ "$result_message" =~ "Error" ]]; then
+      notify-send "Connection Failed" "Could not connect to \"$chosen_id\". Please check your password and try again."
+    else
+      notify-send "Connection Established" "$success_message"
+    fi
 	fi
 fi
