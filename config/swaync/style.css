@@ -34,8 +34,8 @@ label {
 .notification {
   border: 1px solid alpha(@white, 0.4);
   box-shadow: 0px 2px 4px alpha(@black, 0.2);
-  border-radius: 8px;
-  background: alpha(@gray5, 0.4);
+  border-radius: 4px;
+  background: alpha(@gray1, 0.4);
 }
 
 .notification button {
@@ -62,7 +62,7 @@ label {
   margin-left: 0px;
   margin-bottom: 0px;
   padding: 4px;
-  border-radius: 8px;
+  border-radius: 4px;
   background: transparent;
   border: 1px solid transparent;
   color: alpha(@white, 0.6);
@@ -127,9 +127,9 @@ label {
 
 /* Control center */
 .control-center {
-  background: alpha(@gray5,0.4);
-  border: 1px solid alpha(@white, 0.4);
-  border-radius: 8px;
+  background: alpha(@gray1,0.4);
+  border: 2px solid alpha(@white, 0.4);
+  border-radius: 4px;
   box-shadow: 0px 2px 4px @black;
   margin: 0px;
   padding-top: 0px;
@@ -191,7 +191,7 @@ label {
   background: alpha(@white, 0.2);
   color: alpha(@white, 0.6);
   border: 1px solid alpha(@white, 0.1);
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .notification-group-collapse-button:hover {
@@ -204,7 +204,7 @@ label {
   background: alpha(@white, 0.2);
   color: alpha(@white, 0.6);
   border: 1px solid alpha(@white, 0.1);
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .notification-group-close-all-button:hover {
@@ -247,7 +247,7 @@ label {
   margin: 0px;
   background: transparent;
   color: alpha(@white, 0.4);
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid transparent;
 }
 .widget-title > button:hover {
@@ -338,7 +338,7 @@ label {
 
 .widget-mpris-album-art {
   all: unset;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 /* Player button box */
@@ -373,14 +373,14 @@ carouselindicatordots {
 }
 
 .widget-mpris-player {
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 8px;
   padding: 0px;
   color: @white;
 }
 .widget-mpris-player > box > image {
   margin: 0px 0px 0px 0px;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .notification-group > box.vertical {
