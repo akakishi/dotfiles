@@ -21,4 +21,16 @@
     GRY8:  #CCCCCCff;
     GRY9:  #E3E3E3ff;
     WHIT:  #FFFFFFff;
+    
+    aBLAK:  #00000088;
+    aGRY1:  #1A1A1A88;
+    aGRY2:  #33333388;
+    aGRY3:  #4D4D4D88;
+    aGRY4:  #66666688;
+    aGRY5:  #80808088;
+    aGRY6:  #99999988;
+    aGRY7:  #B3B3B388;
+    aGRY8:  #CCCCCC88;
+    aGRY9:  #E3E3E388;
+    aWHIT:  #FFFFFF88;
 }

@@ -9,70 +9,28 @@ configuration {
 
 @import "font.rasi"
 @import "colors.rasi"
+@import "shared.rasi"
 
 window {
-  transparency:           "real";
-  background-color:       rgba(60,60,60,0.5);
-  text-color:             rgba(80,80,80,1.0);
-  border:                 0px;
-  border-color:           @LBLU;
-  border-radius:          4px;
   width:                  500px;
   anchor:                 north east;
-  padding:                10px;
   x-offset:               -5px;
   y-offset:               5px;
 }
 
 listview {
-  background-color:       transparent;
-  columns:                1;
   fixed-height:           false;
   fixed-columns:          false;
-  spacing:                4px;
-  padding:                0px;
-  cycle:                  false;
-  dynamic:                true;
-  layout:                 vertical;
 }
 
 mainbox {
-  background-color:       transparent;
   children:               [ listview ];
-  spacing:                10px;
-  padding:                10px;
-}
-
-element {
-  background-color:       transparent;
-  text-color:             @LGRY;
-  orientation:            horizontal;
-  border-width:           0px;
-  border-radius:          2px;
-  padding:                6px;
 }
 
 element-icon {
-  background-color:       inherit;
-  text-color:             inherit;
   size:                   0px;
-  border:                 0px;
 }
 
 element-text {
-  background-color:       inherit;
-  text-color:             inherit;
-  expand:                 true;
-  horizontal-align:       0;
-  vertical-align:         0.5;
-  margin:                 2px;
   font:                   @font10;
-}
-
-element selected {
-  background-color:       @LGRY;
-  text-color:             @BLK2;
-  border:                 0px;
-  border-radius:          4px;
-  border-color:           @LBLU;
 }
