@@ -9,8 +9,6 @@ configuration {
   scroll-method:       1;
 }
 
-@import "font.rasi"
-@import "colors.rasi"
 @import "shared.rasi"
 
 window {
@@ -37,7 +35,7 @@ textbox-prompt-colon {
 }
 
 entry {
-  background-color:    @aGRY3;
+  background-color:    @aGRY1;
   text-color:          @WHIT;
   placeholder-color:   @aWHIT;
   expand:              true;
@@ -45,9 +43,9 @@ entry {
   placeholder:         "Search...";
   blink:               true;
   border:              0px 0px 0px 0px;
-  border-radius:       4px;
+  border-radius:       40px;
   border-color:        @aWHIT;
-  padding:             10px;
+  padding:             10px 20px 10px 20px;
 }
 
 inputbar {
