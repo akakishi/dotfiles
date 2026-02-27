@@ -2,88 +2,136 @@
 @import "colors.rasi"
 
 window {
-  transparency:                   "real";
-  background-color:               @aGRY2;
-  text-color:                     @GRY5;
-  border:                         1px;
-  border-color:                   @aWHIT;
-  border-radius:                  4px;
-  padding:                        10px;
+  transparency:        "real";
+  background-color:    @aGRY2;
+  text-color:          @GRY5;
+  border:              1px;
+  border-color:        @aWHIT;
+  border-radius:       4px;
+  padding:             10px;
+}
+
+prompt {
+  padding:             0px;
+  background-color:    transparent;
+  text-color:          @aWHIT;
+}
+
+textbox-prompt-colon {
+  expand:              false;
+  str:                 "";
+  border-radius:       100%;
+  background-color:    transparent;
+  text-color:          @aWHIT;
+  padding:             8px 12px 8px 12px;
+}
+
+entry {
+  background-color:    @aGRY1;
+  text-color:          @WHIT;
+  placeholder-color:   @aWHIT;
+  expand:              true;
+  horizontal-align:    0;
+  placeholder:         "Search...";
+  blink:               true;
+  border:              0px 0px 0px 0px;
+  border-radius:       4px;
+  border-color:        @aWHIT;
+  padding:             10px 20px 10px 20px;
+}
+
+inputbar {
+  children:            [ entry ];
+  background-color:    transparent;
+  text-color:          @WHIT;
+  expand:              false;
+  border:              0px;
+  border-radius:       0px;
+  border-color:        @aWHIT;
+  margin:              0px;
+  padding:             0px;
+  position:            center;
+}
+
+case-indicator {
+  background-color:    transparent;
+  text-color:          @GRY5;
+  spacing:             0;
 }
 
 listview {
-  background-color:             transparent;
-  columns:                      1;
-  spacing:                      4px;
-  padding:                      0px;
-  cycle:                        false;
-  dynamic:                      true;
-  layout:                       vertical;
+  background-color:    transparent;
+  columns:             1;
+  spacing:             4px;
+  padding:             0px;
+  cycle:               false;
+  dynamic:             true;
+  layout:              vertical;
 }
 
 mainbox {
-  background-color:             transparent;
-  spacing:                      10px;
-  padding:                      10px;
+  background-color:    transparent;
+  spacing:             10px;
+  padding:             10px;
 }
 
 element {
-  background-color:             transparent;
-  text-color:                   @GRY8;
-  orientation:                  horizontal;
-  border:                       1px;
-  border-radius:                4px;
-  padding:                      6px;
+  background-color:    transparent;
+  text-color:          @GRY8;
+  orientation:         horizontal;
+  border:              1px;
+  border-radius:       4px;
+  padding:             6px;
 }
 
 element-icon {
-  background-color:             transparent;
-  text-color:                   inherit;
-  horizontal-align:             0.5;
-  vertical-align:               0.5;
-  size:                         36px;
-  border:                       0px;
+  background-color:    transparent;
+  text-color:          inherit;
+  horizontal-align:    0.5;
+  vertical-align:      0.5;
+  size:                36px;
+  border:              0px;
 }
 
 element-text {
-  background-color:             transparent;
-  text-color:                   inherit;
-  expand:                       true;
-  horizontal-align:             0;
-  vertical-align:               0.5;
-  margin:                       2px;
+  background-color:    transparent;
+  text-color:          inherit;
+  expand:              true;
+  horizontal-align:    0;
+  vertical-align:      0.5;
+  margin:              2px;
 }
 
 element normal.urgent,
 element alternate.urgent {
-  background-color:             @PINK;
-  text-color:                   @GRY8;
-  border-radius:                1px;
+  background-color:    @PINK;
+  text-color:          @GRY8;
+  border-radius:       1px;
 }
 
 element normal.active,
 element alternate.active {
-  background-color:             @GRY8;
-  text-color:                   @BLAK;
+  background-color:    @GRY8;
+  text-color:          @BLAK;
 }
 
 element selected {
-  background-image:             linear-gradient(to top, #ffffff88, #ffffffaa);
-  text-color:                   @BLAK;
-  border-color:                 @WHIT;
+  background-image:    linear-gradient(to top, #ffffff88, #ffffffaa);
+  text-color:          @BLAK;
+  border-color:        @WHIT;
 }
 
 element selected.urgent {
-  background-color:             @PINK;
-  text-color:                   @LGRY;
+  background-color:    @PINK;
+  text-color:          @LGRY;
 }
 
 element selected.active {
-  background-color:             @LBLU;
-  color:                        @LGRY;
+  background-color:    @LBLU;
+  color:               @LGRY;
 }
 
 message {
-  background-color:             @PINK;
-  text-color:                   @LGRY;
+  background-color:    @PINK;
+  text-color:          @LGRY;
 }
