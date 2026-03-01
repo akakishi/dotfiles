@@ -39,10 +39,10 @@
   },
 
   "widgets": [
-    "mpris",
     "title",
     "dnd",
-    "notifications"
+    "notifications",
+    "mpris"
   ],
 
   "widget-config": {
@@ -63,7 +63,23 @@
     
     "mpris": {
       "image-size": 96,
-      "image-radius": 4
+      "image-radius": 4,
+      "loop-carousel": false
+    },
+
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "",
+          "command": "swaync-client -C",
+          "type": "button"
+        },
+        {
+          "label": "󰂠",
+          "command": "swaync-client -d",
+          "type": "toggle"
+        }
+      ]
     }
   }
 }
