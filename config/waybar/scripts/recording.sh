@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # $XDG_CONFIG_HOME/waybar/scripts/recording.sh
 
 pidf="$HOME/Videos/Screencasts/process.pid"

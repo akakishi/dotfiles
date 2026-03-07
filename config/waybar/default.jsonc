@@ -19,6 +19,7 @@
     //"hyprland/window"
   ],
   "modules-center": [
+    "custom/recording",
     "custom/media"
   ],
   "modules-right": [
@@ -379,10 +380,10 @@
   },
 
   "custom/recording": {
-    "exec": "sleep 0.1 && $XDG_CONFIG_HOME/waybar/scripts/recording.sh status",
+    "exec": "sleep 0.1 && ~/.config/waybar/scripts/recording.sh status",
     "format": "{}",
-    "on-click": "sleep 0.1 && $XDG_CONFIG_HOME/waybar/scripts/recording.sh toggle fullscreen",
-    "on-click-right": "sleep 0.1 && $XDG_CONFIG_HOME/waybar/scripts/recording.sh toggle region",
+    "on-click": "sleep 0.1 && ~/.config/waybar/scripts/recording.sh toggle fullscreen",
+    "on-click-right": "sleep 0.1 && ~/.config/waybar/scripts/recording.sh toggle region",
     "restart-interval": 1,
     "return-type": "json",
     "tooltip": true
