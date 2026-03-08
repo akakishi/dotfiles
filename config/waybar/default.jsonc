@@ -254,10 +254,10 @@
     "format": "{format_source}",
     "scroll-step": 1,
     "smooth-scrolling-threshold": 1,
-    "on-click": "sleep 0.1 && amixer sset 'Capture' toggle",
+    "on-click": "sleep 0.1 && wpctl set-mute @DEFAULT_SOURCE@ toggle",
     "on-click-middle": "sleep 0.1 && pavucontrol",
-    "on-scroll-up": "sleep 0.1 && amixer sset 'Capture' 5%+",
-    "on-scroll-down": "sleep 0.1 && amixer sset 'Capture' 5%-",
+    "on-scroll-up": "sleep 0.1 && wpctl set-volume @DEFAULT_SOURCE@ 5%+",
+    "on-scroll-down": "sleep 0.1 && wpctl set-volume @DEFAULT_SOURCE@ 5%-",
   },
 
   "pulseaudio#output": {
@@ -265,7 +265,7 @@
     "tooltip": true,
     "tooltip-format": "Volume: {volume}%\nDevice: {desc}",
     "format-muted": "",
-    "on-click": "sleep 0.1 && pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click": "sleep 0.1 && wpctl set-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "sleep 0.1 && ~/.config/waybar/scripts/audio_changer.py",
     "on-click-middle": "sleep 0.1 && pavucontrol",
     "scroll-step": 5,
