@@ -19,7 +19,7 @@ delete_image () {
   fi
 }
 
-action=$(dunstify -i $filePath \
+action=$(notify-send -i $filePath \
   --action="open=Open image" \
   --action="delete=Delete" "Screenshot Ready")
 
