@@ -19,7 +19,6 @@
     //"hyprland/window"
   ],
   "modules-center": [
-    "custom/recording",
     "custom/media"
   ],
   "modules-right": [
@@ -27,6 +26,7 @@
     "temperature",
     "custom/privacydots",
     //"custom/divider",
+    "custom/recording",
     "pulseaudio#output",
     "pulseaudio#input",
     //"custom/divider",
@@ -74,7 +74,7 @@
       "7": "7",
       "8": "8",
       "9": "9",
-      "urgent": "",
+      "urgent": "󱈸",
       //"active": "",
       "default": "",
       "special": ""

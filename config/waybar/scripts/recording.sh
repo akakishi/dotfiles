@@ -9,12 +9,12 @@ if [ "$1" == "status" ];
 then
   if [ -f "$pidf" ];
   then
-    awk 'BEGIN{printf "{\"text\":\"\", \"tooltip\":\"Recording\\n"}
+    awk 'BEGIN{printf "{\"text\":\"󰻃\", \"tooltip\":\"Recording\\n"}
     NR==1{printf "PID: %s\\n", $0}
     NR==2{printf "Save to: %s\\n", $0}
     NR==3{printf "Log to: %s\"}", $0}' "$pidf"
   else
-    echo '{"text":"", "tooltip":"Stopped"}'
+    echo '{"text":"󰹑", "tooltip":"Stopped"}'
   fi
   exit
 elif [ "$1" == "toggle" ];
