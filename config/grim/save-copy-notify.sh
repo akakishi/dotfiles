@@ -1,7 +1,7 @@
 #!/bin/bash
 
 picturesPath=$(xdg-user-dir PICTURES)
-dateFormat=$(date +%Y%m%d-%H%M%S)
+dateFormat=$(date +%Y%m%d-%H%M%S.%3N)
 folderPath=$picturesPath"/Screenshots"
 
 if [ ! -d "$folderPath" ]; then

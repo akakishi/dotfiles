@@ -10,6 +10,7 @@ fi
 open_image () {
   gthumb $filePath
 }
+
 delete_image () {
   if [[ -f $filePath ]]; then
     rm $filePath
@@ -18,7 +19,7 @@ delete_image () {
   fi
 }
 
-action=$(notify-send -i $filePath \
+action=$(dunstify -i $filePath \
   --action="open=Open image" \
   --action="delete=Delete" "Screenshot Ready")
 
