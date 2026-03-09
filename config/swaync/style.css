@@ -1,24 +1,4 @@
-@define-color black     #000000;
-@define-color gray1     #1a1a1a;
-@define-color gray2     #333333;
-@define-color gray3     #4d4d4d;
-@define-color gray4     #666666;
-@define-color gray5     #808080;
-@define-color gray6     #999999;
-@define-color gray7     #b3b3b3;
-@define-color gray8     #cccccc;
-@define-color gray9     #e6e6e6;
-@define-color white     #ffffff;
-
-@define-color blue      #4463ee;
-@define-color purple    #7309b9;
-@define-color cyan      #4ccaf0;
-@define-color green     #44cc44;
-@define-color yellow    #ffea00;
-@define-color orange    #ff9c24;
-@define-color red       #dd2244;
-@define-color pink      #f72684;
-
+@import "../colors/grays.css";
 
 * {
   font-family: "JetBrainsMono Nerd Font";
@@ -32,7 +12,7 @@ label {
 }
 
 .notification {
-  border: 2px solid @white;
+  border: 0px solid @white;
   box-shadow: none;
   border-radius: 4px;
   background-image: linear-gradient(
@@ -91,9 +71,10 @@ label {
 /*** Notification ***/
 /* Notification header */
 .summary {
-  color: @gray1;
+  color: @black;
   font-weight: 700;
   text-shadow: 0px 0px 4px @white;
+  padding-left: 10px;
 }
 
 .time {
@@ -106,7 +87,7 @@ label {
 }
 
 .body {
-  color: @gray1;
+  color: @black;
   margin: 0px 0px 0px 0px;
   text-shadow: 0px 0px 4px @white;
 }
@@ -124,7 +105,7 @@ label {
 
 /* Control center */
 .control-center {
-  background: alpha(@gray4,0.8);
+  background: alpha(@gray2,0.8);
   border: 2px solid alpha(@white, 0.5);
   border-radius: 4px;
   box-shadow: none;

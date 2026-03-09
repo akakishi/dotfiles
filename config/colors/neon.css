@@ -1,5 +1,11 @@
 @define-color blue    #26547c;
-@define-color red     #ef476f;
-@define-color yellow  #ffd166;
+@define-color cyan    #01befe;
+@define-color gold    #ffdd00;
 @define-color green   #06d6a0;
+@define-color lime    #adff02;
+@define-color orange  #ff7d00;
+@define-color pink    #ff006d;
+@define-color purple  #8f00ff;
+@define-color red     #ef476f;
 @define-color white   #fffcf9;
+@define-color yellow  #ffd166;

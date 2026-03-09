@@ -6,7 +6,7 @@ window {
   background-color:    @aGRY2;
   text-color:          @GRY5;
   border:              1px;
-  border-color:        @aWHIT;
+  border-color:        transparent;
   border-radius:       4px;
   padding:             10px;
 }
@@ -116,7 +116,8 @@ element alternate.active {
 }
 
 element selected {
-  background-image:    linear-gradient(to top, #ffffff88, #ffffffaa);
+  /*background-image:    linear-gradient(to top, #ffffff88, #ffffffaa);*/
+  background-color:    @aGRY9;
   text-color:          @BLAK;
   border-color:        @WHIT;
 }
