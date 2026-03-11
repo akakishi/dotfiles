@@ -1,4 +1,4 @@
-@import "../colors/grays.css";
+@import "../colors/gray.css";
 
 /* Global */
 * {
@@ -67,6 +67,7 @@
   min-width: 1.0rem;
   color: @gray9;
   border-radius: 999px;
+  border: 1px solid transparent;
   text-shadow:
     0px 0px 6px @black,
     0px 0px 4px @black,
@@ -105,8 +106,10 @@
 #scratchpad:hover,
 #temperature:hover {
   color: @white;
-  background-image: linear-gradient(0deg, alpha(@white, 0.0), alpha(@white, 0.4));
-  box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);
+  /*background-image: linear-gradient(0deg, alpha(@white, 0.0), alpha(@white, 0.4));
+  box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);*/
+  border: 1px solid alpha(@white, 0.6);
+  background-color: alpha(@white, 0.3);
 }
 
 /* Bar */
@@ -115,7 +118,7 @@ window#waybar {
   margin: 0rem;
 }
 window > box {
-  background-image: linear-gradient(0deg, alpha(@black,0), alpha(black,0.4));
+  /*background-image: linear-gradient(0deg, alpha(@black,0), alpha(black,0.4));*/
   margin-top: .0rem;
   margin-bottom: .0rem;
   padding-top: .2rem;
@@ -155,6 +158,7 @@ window > box {
   padding-bottom: .0rem;
   background-color: transparent;
   border-radius: 999px;
+  border: 1px solid transparent;
   color: @white;
   font-weight: bold;
   font-size: .8rem;
@@ -165,24 +169,45 @@ window > box {
     0px 0px 2px @black;
 }
 #workspaces button.active {
-  background-image: linear-gradient(0deg, alpha(@white, 0.6), alpha(@white, 0.8));
   color: @black;
-  box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);
+  background-color: alpha(@white, 0.8);
+  /*background-image: linear-gradient(0deg, alpha(@white, 0.6), alpha(@white, 0.8));
+  box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);*/
   padding-right: .8rem;
   padding-left: .8rem;
+  border: 1px solid transparent;
   text-shadow: none;
 }
 #workspaces button:hover {
   color: @white;
-  background-image: linear-gradient(0deg, alpha(@white, 0.0), alpha(@white, 0.4));
-  box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);
+  background-color: alpha(@white, 0.3);
+  border: 1px solid alpha(@white, 0.6);
+  /*background-image: linear-gradient(0deg, alpha(@white, 0.0), alpha(@white, 0.4));
+  box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);*/
 }
 #workspaces button.active:hover {
   background-color: @white;
   color: @black;
 }
 #workspaces button.special:not(.active) {
-  background-color: transparent;
+}
+#workspaces button.special:not(.active):hover {
+  color: @white;
+  background-color: alpha(@white, 0.3);
+  border: 1px solid alpha(@white, 0.6);
+  /*background-image: linear-gradient(0deg, alpha(@white, 0.0), alpha(@white, 0.4));
+  box-shadow: inset 0 0 0 .05rem alpha(@white, 0.5);*/
+}
+#workspaces button.special.active {
+  color: @black;
+  background-color: alpha(@white, 0.8);
+  padding-right: .4rem;
+  padding-left: .4rem;
+  text-shadow: none;
+}
+#workspaces button.special.active:hover {
+  background-color: @white;
+  color: @black;
 }
 
 /* Tooltip */
