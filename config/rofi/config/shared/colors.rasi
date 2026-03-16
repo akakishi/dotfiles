@@ -11,15 +11,15 @@
     GRY9:  #D3D3E3ff;
     WHIT:  #EFEFFFff;
     
-    aBLAK:  #000000e0;
-    aGRY1:  #0A0A1Ae0;
-    aGRY2:  #232333e0;
-    aGRY3:  #3D3D4De0;
-    aGRY4:  #565666e0;
-    aGRY5:  #707080e0;
-    aGRY6:  #898999e0;
-    aGRY7:  #A3A3B3e0;
-    aGRY8:  #BCBCCCe0;
-    aGRY9:  #D3D3E3e0;
-    aWHIT:  #EFEFFFe0;
+    aBLAK:  #00000099;
+    aGRY1:  #0A0A1A99;
+    aGRY2:  #23233399;
+    aGRY3:  #3D3D4D99;
+    aGRY4:  #56566699;
+    aGRY5:  #70708099;
+    aGRY6:  #89899999;
+    aGRY7:  #A3A3B399;
+    aGRY8:  #BCBCCC99;
+    aGRY9:  #D3D3E399;
+    aWHIT:  #EFEFFF99;
 }
