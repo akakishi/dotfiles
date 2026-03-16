@@ -28,7 +28,7 @@ textbox-prompt-colon {
 }
 
 entry {
-  background-color:    rgba(255,255,255,0.5);
+  background-color:    rgba(240,240,255,0.6);
   text-color:          @BLAK;
   placeholder-color:   @aGRY3;
   expand:              true;
@@ -37,7 +37,7 @@ entry {
   blink:               true;
   border:              1px;
   border-radius:       25px;
-  border-color:        @aWHIT;
+  border-color:        rgba(225,225,255,0.8);
   padding:             10px 20px 10px 20px;
 }
 
@@ -70,7 +70,7 @@ listview {
   layout:              vertical;
   border-radius:       25px;
   border:              1px;
-  border-color:        @WHIT;
+  border-color:        rgb(225,225,255);
 }
 
 mainbox {
@@ -124,7 +124,7 @@ element selected {
   /*background-image:    linear-gradient(to top, #ffffff88, #ffffffaa);*/
   background-color:    @aGRY9;
   text-color:          @BLAK;
-  border-color:        @WHIT;
+  border-color:        rgb(225,225,255);
 }
 
 element selected.urgent {
