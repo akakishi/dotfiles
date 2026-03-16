@@ -61,7 +61,7 @@ case-indicator {
 }
 
 listview {
-  background-color:    rgba(255,255,255,0.5);
+  background-color:    rgba(240,240,255,0.6);
   columns:             1;
   spacing:             4px;
   padding:             0px;

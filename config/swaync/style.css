@@ -68,14 +68,14 @@ label {
 .summary {
   color: @black;
   font-weight: 700;
-  text-shadow: 0px 0px 4px @white;
-  padding-left: 10px;
+  text-shadow: 0px 1px 4px @white;
+  padding-left: 0px;
 }
 
 .time {
   color: alpha(@black, 0.8);
   font-weight: 700;
-  text-shadow: 0px 0px 4px @white;
+  text-shadow: 0px 1px 4px @white;
   background: transparent;
   margin: 0px 38px 0px 0px;
   padding: 2px 0px;
@@ -84,12 +84,13 @@ label {
 .body {
   color: @black;
   margin: 0px 0px 0px 0px;
-  text-shadow: 0px 0px 4px @white;
+  padding: 0px 4px 0px 0px;
+  text-shadow: 0px 1px 4px @white;
 }
 
 .body-image {
   border-radius: 0px;
-  text-shadow: 0px 0px 4px @black;
+  text-shadow: 0px 1px 4px @white;
 }
 
 /* The "Notifications" and "Do Not Disturb" text widget */
@@ -323,6 +324,10 @@ label {
   color: alpha(@white, 0.5);
 }
 
+.widget-dnd > label {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+}
 .widget-dnd > switch {
   background-color: alpha(@white, 0.5);
   border-radius: 999px;

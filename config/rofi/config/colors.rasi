@@ -1,25 +1,25 @@
 * {
     BLAK:  #000000ff;
-    GRY1:  #1A1A1Aff;
-    GRY2:  #333333ff;
-    GRY3:  #4D4D4Dff;
-    GRY4:  #666666ff;
-    GRY5:  #808080ff;
-    GRY6:  #999999ff;
-    GRY7:  #B3B3B3ff;
-    GRY8:  #CCCCCCff;
-    GRY9:  #E3E3E3ff;
-    WHIT:  #FFFFFFff;
+    GRY1:  #0A0A1Aff;
+    GRY2:  #232333ff;
+    GRY3:  #3D3D4Dff;
+    GRY4:  #565666ff;
+    GRY5:  #707080ff;
+    GRY6:  #898999ff;
+    GRY7:  #A3A3B3ff;
+    GRY8:  #BCBCCCff;
+    GRY9:  #D3D3E3ff;
+    WHIT:  #EFEFFFff;
     
     aBLAK:  #000000e0;
-    aGRY1:  #1A1A1Ae0;
-    aGRY2:  #333333e0;
-    aGRY3:  #4D4D4De0;
-    aGRY4:  #666666e0;
-    aGRY5:  #808080e0;
-    aGRY6:  #999999e0;
-    aGRY7:  #B3B3B3e0;
-    aGRY8:  #CCCCCCe0;
-    aGRY9:  #E3E3E3e0;
-    aWHIT:  #FFFFFFe0;
+    aGRY1:  #0A0A1Ae0;
+    aGRY2:  #232333e0;
+    aGRY3:  #3D3D4De0;
+    aGRY4:  #565666e0;
+    aGRY5:  #707080e0;
+    aGRY6:  #898999e0;
+    aGRY7:  #A3A3B3e0;
+    aGRY8:  #BCBCCCe0;
+    aGRY9:  #D3D3E3e0;
+    aWHIT:  #EFEFFFe0;
 }

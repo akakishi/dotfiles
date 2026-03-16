@@ -1,13 +1,13 @@
 @define-color black     #000000;
-@define-color gray1     #1a1a1a;
-@define-color gray2     #333333;
-@define-color gray3     #4d4d4d;
-@define-color gray4     #666666;
-@define-color gray5     #808080;
-@define-color gray6     #999999;
-@define-color gray7     #b3b3b3;
-@define-color gray8     #cccccc;
-@define-color gray9     #e6e6e6;
+@define-color gray1     #0a0a1a;
+@define-color gray2     #232333;
+@define-color gray3     #3d3d4d;
+@define-color gray4     #565666;
+@define-color gray5     #707080;
+@define-color gray6     #898999;
+@define-color gray7     #a3a3b3;
+@define-color gray8     #bcbccc;
+@define-color gray9     #d6d6e6;
 @define-color white     #ffffff;
 
 @define-color blue      #4463ee;
