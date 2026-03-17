@@ -19,10 +19,10 @@ textbox-prompt-colon {
 }
 
 entry {
-  background-color:    @aGRY7;
+  background-color:    @aGRY9;
   text-color:          @BLAK;
   placeholder-color:   @aGRY3;
-  border-color:        @aWHIT;
+  border-color:        @aGRY5;
 }
 
 inputbar {
@@ -37,8 +37,8 @@ case-indicator {
 }
 
 listview {
-  background-color:    @aGRY7;
-  border-color:        @aWHIT;
+  background-color:    @aGRY9;
+  border-color:        @aGRY5;
 }
 
 mainbox {
@@ -76,7 +76,7 @@ element alternate.active {
 element selected {
   background-color:    @aWHIT;
   text-color:          @BLAK;
-  border-color:        @aWHIT;
+  border-color:        @aGRY5;
 }
 
 element selected.urgent {

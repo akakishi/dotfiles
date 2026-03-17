@@ -43,7 +43,7 @@ case-indicator {
 listview {
   columns:             1;
   spacing:             4px;
-  padding:             0px;
+  padding:             16px 0px 16px 0px;
   cycle:               false;
   dynamic:             true;
   layout:              vertical;
@@ -58,7 +58,7 @@ mainbox {
 
 element {
   orientation:         horizontal;
-  border:              1px;
+  border:              1px 0px 1px 0px;
   border-radius:       0px;
   padding:             6px;
 }

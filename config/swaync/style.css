@@ -30,7 +30,7 @@ label {
 }
 
 .notification-content {
-  padding-left: 0px;
+  padding: 8px;
   border-radius: 0px;
   min-height: 32px;
 }
