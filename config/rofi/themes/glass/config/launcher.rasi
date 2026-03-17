@@ -9,8 +9,8 @@ configuration {
   scroll-method:       1;
 }
 
-@import "./shared/shared-colors-glass.rasi"
-@import "./shared/shared-numbers.rasi"
+@import "../applied-colors.rasi"
+@import "../numbers.rasi"
 
 window {
   width:               400px;

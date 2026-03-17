@@ -8,8 +8,8 @@ configuration {
   location:               0;
 }
 
-@import "./shared/shared-colors-glass.rasi"
-@import "./shared/shared-numbers.rasi"
+@import "../applied-colors.rasi"
+@import "../numbers.rasi"
 
 /* Line Responsible For Button Layouts */
 /* BUTTON = TRUE */

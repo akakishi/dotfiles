@@ -7,8 +7,8 @@ configuration {
   location:               3;
 }
 
-@import "./shared/shared-colors-glass.rasi"
-@import "./shared/shared-numbers.rasi"
+@import "../applied-colors.rasi"
+@import "../numbers.rasi"
 
 window {
   width:                  500px;

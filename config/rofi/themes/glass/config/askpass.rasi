@@ -1,5 +1,5 @@
-@import "colors.rasi"
-@import "font.rasi"
+@import "../colors.rasi"
+@import "../../shared/font.rasi"
 
 * {
   background-color: rgba(26,26,26,0.4);

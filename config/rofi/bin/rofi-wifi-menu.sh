@@ -15,7 +15,7 @@ elif [[ "$connected" =~ "enabled" || "$connected" =~ "activado" ]]; then
 fi
 
 # Use rofi to select wifi network
-chosen_network=$(echo -e "$toggle\n$wifi_list" | uniq -u | rofi -dmenu -i -selected-row 1 -theme $HOME/.config/rofi/config/sinkmenu.rasi -p "Wi-Fi SSID: " )
+chosen_network=$(echo -e "$toggle\n$wifi_list" | uniq -u | rofi -dmenu -i -selected-row 1 -theme $HOME/.config/rofi/themes/glass/config/sinkmenu.rasi -p "Wi-Fi SSID: " )
 
 # Get name of connection
 chosen_id=$(echo "$chosen_network" | sed -E 's/^(.*) (.*) (.*)$/\2/')

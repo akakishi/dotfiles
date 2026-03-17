@@ -7,5 +7,5 @@ rofi \
 	-no-drun-show-actions \
 	-terminal kitty \
   -scroll-method 1 \
-	-theme "$HOME"/.config/rofi/config/launcher.rasi \
+	-theme "$HOME"/.config/rofi/themes/glass/config/launcher.rasi \
   -icon-theme "Papirus-Dark"

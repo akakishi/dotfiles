@@ -68,7 +68,7 @@ wofi_command = f"""echo '{output}' | wofi \\
 rofi_command = f"""echo '{output}' | rofi \\
     -dmenu \\
     -m -1 \\
-    -theme $HOME/.config/rofi/config/sinkmenu.rasi \\
+    -theme $HOME/.config/rofi/themes/glass/config/sinkmenu.rasi \\
     -selected-row {default_pos}"""
 rofi_process = subprocess.run(rofi_command, shell=True, encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 

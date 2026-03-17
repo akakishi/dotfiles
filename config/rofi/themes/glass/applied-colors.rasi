@@ -1,6 +1,6 @@
-@import "font.rasi"
+@import "../shared/colors-mocha.rasi"
+@import "../shared/font.rasi"
 @import "colors.rasi"
-@import "colors-mocha.rasi"
 
 window {
   background-color:    transparent;
