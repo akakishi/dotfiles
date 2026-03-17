@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 all_sinks=$(pactl list short sinks | cut -f 2)
