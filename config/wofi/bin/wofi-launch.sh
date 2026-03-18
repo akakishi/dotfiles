@@ -8,4 +8,5 @@ wofi \
     --insensitive \
     --define=allow_markup=true \
     --define=prompt=Search \
-    --no-action
+    --no-action \
+    -s ~/.config/wofi/wofi-launch.css

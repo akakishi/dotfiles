@@ -22,7 +22,7 @@ entry {
   background-color:    @aGRY9;
   text-color:          @BLAK;
   placeholder-color:   @aGRY3;
-  border-color:        @aGRY5;
+  border-color:        @aGRY7;
 }
 
 inputbar {
@@ -38,7 +38,7 @@ case-indicator {
 
 listview {
   background-color:    @aGRY9;
-  border-color:        @aGRY5;
+  border-color:        @aGRY7;
 }
 
 mainbox {
@@ -76,7 +76,7 @@ element alternate.active {
 element selected {
   background-color:    @aWHIT;
   text-color:          @BLAK;
-  border-color:        @aGRY5;
+  border-color:        @aGRY7;
 }
 
 element selected.urgent {
