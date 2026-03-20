@@ -1,10 +1,8 @@
-/*@import url("./.config/my-shared-config/colors/frappe.css");*/
-/*@import url("./.config/my-shared-config/colors/gruv-dark.css");*/
-@import url("./.config/my-shared-config/colors/mocha.css");
+@import url("~/.config/colors/gray.css");
 
 * {
     font-family: JetBrainsMono Nerd Font;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 window {
@@ -17,46 +15,33 @@ window {
     margin-top: 8px;
     margin-left: 0px;
     margin-right: 0px;
-    padding-left: 20px;
+    padding-left: 0px;
     border-style: solid;
-    border-radius: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
-    border-color: @text;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: @white;
     outline: none;
-    color: @surface0;
-    background-color: @base;
+    color: @black;
+    background-color: alpha(@gray8, 0.7);
 }
 
 #input:focus {
     outline: none;
     box-shadow: none;
-    font-size: 20px;
 }
 
 #inner-box {
     margin: 0px;
-    border: none;
-    background-color: @surface0;
+    border: 1px solid @white;
+    background-color: alpha(@gray8, 0.7);
 }
 
 #outer-box {
     margin: 4px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 0px;
-    padding-right: 0px;
-    border-radius: 4px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
-    border-style: solid;
+    padding: 0px;
+    border: none;
     transition: 1s ease-in-out;
-    background-color: @surface0;
-    border-color: @subtext1;
+    background-color: transparent;
 }
 
 #scroll {
@@ -65,25 +50,25 @@ window {
 }
 
 #text {
-    margin: 2px;
+    margin: 0px;
     border: none;
-    color: @subtext1;
+    color: @gray2;
 }
 
 #text:selected {
-    font-weight: bold;
-    color: @surface0;
+    color: @black;
+    outline: none;
 }
 
 #entry:selected {
     outline: none;
-    background-color: @subtext1;
+    border-radius: 0px;
+    background-color: @white;
 }
 
 #entry {
-    margin-right: 0px;
-    margin-left: 0px;
-    border-radius: 0px;
-    padding-left: 20px;
-    background-color: @surface0;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: transparent;
 }

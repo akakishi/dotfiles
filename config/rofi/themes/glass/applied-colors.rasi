@@ -4,7 +4,7 @@
 
 window {
   background-color:    transparent;
-  text-color:          @GRY5;
+  text-color:          transparent;
   border-color:        transparent;
 }
 
@@ -19,16 +19,16 @@ textbox-prompt-colon {
 }
 
 entry {
-  background-color:    @aGRY9;
+  background-color:    @aGRY8;
   text-color:          @BLAK;
   placeholder-color:   @aGRY3;
-  border-color:        @aGRY7;
+  border-color:        @aWHIT;
 }
 
 inputbar {
   background-color:    transparent;
-  text-color:          @WHIT;
-  border-color:        @aWHIT;
+  text-color:          transparent;
+  border-color:        transparent;
 }
 
 case-indicator {
@@ -37,8 +37,8 @@ case-indicator {
 }
 
 listview {
-  background-color:    @aGRY9;
-  border-color:        @aGRY7;
+  background-color:    @aGRY8;
+  border-color:        @aWHIT;
 }
 
 mainbox {
@@ -76,7 +76,7 @@ element alternate.active {
 element selected {
   background-color:    @aWHIT;
   text-color:          @BLAK;
-  border-color:        @aGRY7;
+  border-color:        @aGRY8;
 }
 
 element selected.urgent {

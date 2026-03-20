@@ -1,44 +1,42 @@
 #!/bin/bash
 
-# --- Configuración ---
-FILE_CACHE="$HOME/.config/waybar/scripts/weather_info.txt"
+# --- Config ---
+FILE_CACHE="/tmp/usr/weather_info.txt"
 PYTHON_SCRIPT="$HOME/.config/waybar/scripts/wabar-wttr.py"
 EXPIRATON_SECONDS=3600 # 1 hora (ajusta según prefieras)
 
-# --- Lógica ---
+# --- Logic ---
 
-# Función para obtener clima nuevo
 get_new_weather() {
-    # Ejecuta el script de python y guarda la salida
-    # Asegúrate de usar 'python3' o el comando que uses habitualmente
-    resultado=$(python3 "$PYTHON_SCRIPT")
-    echo "$resultado" > "$FILE_CACHE"
-    echo "$resultado"
+    # Calls weather python script and stores outputa
+    result=$(python3 "$PYTHON_SCRIPT")
+    echo "$result" > "$FILE_CACHE"
+    echo "$result"
 }
 
-# 1. Verificar si el archivo existe
+# 1. Check if file exists
 if [ -f "$FILE_CACHE" ]; then
-    # Obtener la fecha de última modificación en segundos (Unix timestamp)
-    ULTIMA_MOD=$(stat -c %Y "$FILE_CACHE")
-    AHORA=$(date +%s)
-    DIFERENCIA=$((AHORA - ULTIMA_MOD))
+    # Get date of last modification in seconds (Unix timestamp)
+    LAST_MOD=$(stat -c %Y "$FILE_CACHE")
+    NOW=$(date +%s)
+    DIFF=$((NOW - LAST_MOD))
 
-    # 2. Verificar si expiró
-    if [ $DIFERENCIA -lt $EXPIRATON_SECONDS ]; then
+    # 2. Check if expired
+    if [ $DIFF -lt $EXPIRATON_SECONDS ]; then
         if ! grep -q '[^[:space:]]' "$FILE_CACHE"; then
-          # El archivo está vacío, borrar y actualizar
+          # File is empty, delete and update
           rm "$FILE_CACHE"
           get_new_weather
         else
-          # El archivo es reciente y no está vacío, devolver contenido
+          # File is recent and not empty, return content
           cat "$FILE_CACHE"
         fi
     else
-        # El archivo expiró, borrar y actualizar
+        # File has expired, delete and update
         rm "$FILE_CACHE"
         get_new_weather
     fi
 else
-    # 3. El archivo no existe, obtener por primera vez
+    # 3. File doesn't exist, get for first time
     get_new_weather
 fi

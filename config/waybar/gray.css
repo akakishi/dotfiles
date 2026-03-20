@@ -8,12 +8,14 @@
 
 @keyframes blink_red {
   to {
-    background-color: @gray5;
+    background-color: alpha(@gray7,0.3);
     color: @white;
+    border: 1px solid alpha(@pink,0.6);
+    border-radius: 99px;
     text-shadow:
-      0px 0px 16px #ff4444,
-      0px 0px 8px #ff8888,
-      0px 0px 4px #ffcccc;
+      0px 0px 6px #ff4444,
+      0px 0px 4px #ff8888,
+      0px 0px 2px #ffcccc;
   }
 }
 
