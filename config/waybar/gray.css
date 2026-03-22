@@ -8,9 +8,9 @@
 
 @keyframes blink_red {
   to {
-    background-color: alpha(@gray7,0.3);
+    background-color: alpha(@gray9,0.5);
     color: @white;
-    border: 1px solid alpha(@pink,0.6);
+    border: 1px solid alpha(@pink,0.8);
     border-radius: 99px;
     text-shadow:
       0px 0px 6px #ff4444,
@@ -21,7 +21,7 @@
 
 .warning, .critical, .urgent {
   animation-name: blink_red;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
