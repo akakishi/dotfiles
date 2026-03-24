@@ -8,10 +8,9 @@
 
 @keyframes blink_red {
   to {
-    background-color: alpha(@gray9,0.5);
+    background-color: alpha(@pink,0.5);
     color: @white;
-    border: 1px solid alpha(@pink,0.8);
-    border-radius: 99px;
+    border: 1px solid alpha(@gray9,0.8);
     text-shadow:
       0px 0px 6px #ff4444,
       0px 0px 4px #ff8888,
@@ -19,7 +18,27 @@
   }
 }
 
-.warning, .critical, .urgent {
+@keyframes blink_orange {
+  to {
+    background-color: alpha(@pink,0.5);
+    color: @white;
+    border: 1px solid alpha(@gray9,0.8);
+    text-shadow:
+      0px 0px 6px #dddd44,
+      0px 0px 4px #eeee88,
+      0px 0px 2px #ffffcc;
+  }
+}
+
+.warning {
+  animation-name: blink_orange;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.critical, .urgent {
   animation-name: blink_red;
   animation-duration: 0.5s;
   animation-timing-function: linear;
