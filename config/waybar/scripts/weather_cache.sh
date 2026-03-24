@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --- Config ---
-FILE_CACHE="/tmp/usr/weather_info.txt"
+FILE_CACHE="/tmp/weather_info.txt"
 PYTHON_SCRIPT="$HOME/.config/waybar/scripts/wabar-wttr.py"
 EXPIRATON_SECONDS=3600 # 1 hora (ajusta según prefieras)
 
