@@ -21,7 +21,7 @@
 
 @keyframes blink_orange {
   to {
-    background-color: alpha(@pink,0.5);
+    background-color: alpha(@orange,0.5);
     color: @white;
     border: 1px solid alpha(@gray9,0.8);
     text-shadow:

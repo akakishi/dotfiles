@@ -70,13 +70,21 @@ rofi_command = f"""echo '{output}' | rofi \\
     -m -1 \\
     -theme $HOME/.config/rofi/themes/glass/config/sinkmenu.rasi \\
     -selected-row {default_pos}"""
+
+print("command ready")
+
 rofi_process = subprocess.run(rofi_command, shell=True, encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+print("command complete")
 
 if rofi_process.returncode != 0:
     print("User cancelled the operation.")
     exit(0)
 
 selected_sink_name = rofi_process.stdout.strip()
+
+print(selected_sink_name)
+
 sinks = parse_wpctl_status()
 selected_sink = next(sink for sink in sinks if sink['sink_name'] == selected_sink_name)
 subprocess.run(f"wpctl set-default {selected_sink['sink_id']}", shell=True)
