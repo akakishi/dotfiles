@@ -21,6 +21,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
+--require("nvim-highlight-colors").setup({})
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
