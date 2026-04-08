@@ -264,7 +264,7 @@
     "format": "{icon} {volume}%",
     "tooltip": true,
     "tooltip-format": "Volume: {volume}%\nDevice: {desc}",
-    "format-muted": "",
+    "format-muted": "󰓄",
     "on-click": "sleep 0.1 && wpctl set-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "sleep 0.1 && ~/.config/waybar/scripts/audio_changer.py",
     "on-click-middle": "sleep 0.1 && pavucontrol",
@@ -276,7 +276,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""]
+      "default": ["󰓃"]
     }
   },
 
