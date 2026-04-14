@@ -27,7 +27,7 @@
     text-shadow:
       0px 0px 6px #dddd44,
       0px 0px 4px #eeee88,
-      0px 0px 2px #ffffcc;
+      0px 0px 2px #000000;
   }
 }
 
@@ -77,13 +77,13 @@
 #tray,
 #window,
 #workspaces {
-  padding-left: .8rem;
-  padding-right: .8rem;
+  padding-left: .6rem;
+  padding-right: .6rem;
   padding-top: .2rem;
   padding-bottom: .2rem;
   margin-top: .0rem;
-  margin-left: .2rem;
-  margin-right: .2rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
   margin-bottom: .0rem;
   background-color: transparent;
   min-width: 1.2rem;
