@@ -25,10 +25,10 @@ case $chosen in
         hyprlock
         ;;
     $logout)
-        hyprctl dispatch exit
+        hyprshutdown -t 'Logging out...'
         ;;
     $reboot)
-        systemctl reboot
+        hyprshutdown -t 'Restarting...' --post-cmd 'reboot'
         ;;
     $suspend)
         systemctl suspend
@@ -37,6 +37,6 @@ case $chosen in
         systemctl hibernate
         ;;
     $shutdown)
-        systemctl poweroff
+        hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'
         ;;
 esac
