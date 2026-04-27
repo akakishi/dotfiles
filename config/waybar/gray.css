@@ -1,9 +1,8 @@
 @import "../colors/gray.css";
 
-/* Global */
 * {
   font-family: "JetBrainsMono Nerd Font Propo", "Symbols Nerd Font", FontAwesome, monospace;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 

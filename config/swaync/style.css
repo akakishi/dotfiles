@@ -329,21 +329,21 @@ label {
   font-weight: bold;
 }
 .widget-dnd > switch {
-  background-color: alpha(@white, 0.5);
+  background-color: alpha(@gray6, 0.5);
   border-radius: 999px;
   border: 1px solid @white;
 }
 
 .widget-dnd > switch:hover {
-  background-color: alpha(@gray9, 0.9);
+  background-color: alpha(@gray7, 0.9);
 }
 
 .widget-dnd > switch:checked {
-  background-color: alpha(@green, 0.7);
+  background-color: alpha(@white, 0.7);
 }
 
 .widget-dnd > switch:checked:hover {
-  background-color: alpha(@green, 0.9);
+  background-color: alpha(@white, 0.9);
 }
 
 .widget-dnd > switch slider {
@@ -353,10 +353,11 @@ label {
 }
 
 /* Toggles */
+/*
 .toggle:checked {
 }
 .toggle:checked:hover {
 }
-
+*/
 .right.overlay-indicator {
 }
