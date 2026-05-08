@@ -91,8 +91,8 @@ alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
 
 export PATH="$PATH:/home/ramirods/.local/bin"
 export DOTNET_ROOT="/usr/share/dotnet"
-#export DOTNET_ROOT="$HOME/.dotnet"
-export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"
+DOTNET_TOOLS="$HOME/.dotnet/tools"
+export PATH="$PATH:$DOTNET_ROOT:$DOTNET_TOOLS"
 eval "$(/usr/bin/oh-my-posh --init --shell bash --config $HOME/.config/oh-my-posh/catppuccin_mocha.omp.toml)"
 eval "$(thefuck --alias)"
 eval "$(zoxide init bash)"
