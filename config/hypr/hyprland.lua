@@ -1,3 +1,4 @@
+require("confs.animations")
 require("confs.binds")
 require("confs.envs")
 require("confs.execs")
