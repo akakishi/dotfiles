@@ -1,0 +1,20 @@
+* {
+    BLAK: #000000bb;
+    GRY1: #0A0A1Abb;
+    GRY2: #232333bb;
+    GRY3: #3D3D4Dbb;
+    GRY4: #565666bb;
+    GRY5: #707080bb;
+    GRY6: #898999bb;
+    GRY7: #A3A3B3bb;
+    GRY8: #BCBCCCbb;
+    GRY9: #D3D3E3bb;
+    WHIT: #EFEFFFbb;
+    
+    CYAN: #01befebb;
+    YLLW: #ffdd00bb;
+    ORNG: #ff7d00bb;
+    MGNT: #ff006dbb;
+    LIME: #adff02bb;
+    PRPL: #8f00ffbb;
+}

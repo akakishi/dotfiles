@@ -1,0 +1,34 @@
+configuration {
+  modi:                "drun";
+  show-icons:          true;
+  display-drun:        "Apps";
+  drun-display-format: "{icon} {name}";
+  disable-history:     false;
+  click-to-exit:       true;
+  location:            0;
+  scroll-method:       1;
+}
+
+@import "../applied-colors.rasi"
+@import "../numbers.rasi"
+
+window {
+  width:               400px;
+  anchor:              center;
+  x-offset:            0;
+  y-offset:            0;
+}
+
+prompt {
+  enabled:             true;
+}
+
+listview {
+  lines:               7;
+  fixed-height:        true;
+  fixed-columns:       true;
+}
+
+mainbox {
+  children:            [ inputbar, listview, message ];
+}

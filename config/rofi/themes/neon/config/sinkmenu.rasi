@@ -1,0 +1,35 @@
+configuration {
+  modi:                   "dmenu";
+  show-icons:             true;
+  drun-display-format:    "{name}";
+  disable-history:        true;
+  click-to-exit:          true;
+  location:               3;
+}
+
+@import "../applied-colors.rasi"
+@import "../numbers.rasi"
+
+window {
+  width:                  500px;
+  anchor:                 north east;
+  x-offset:               0px;
+  y-offset:               -10px;
+}
+
+listview {
+  fixed-height:           false;
+  fixed-columns:          false;
+}
+
+mainbox {
+  children:               [ listview ];
+}
+
+element-icon {
+  size:                   0px;
+}
+
+element-text {
+  font:                   @font10;
+}

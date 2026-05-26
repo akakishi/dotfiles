@@ -1,0 +1,95 @@
+@import "../shared/colors-mocha.rasi"
+@import "../shared/font.rasi"
+@import "colors.rasi"
+
+window {
+  background-color:    transparent;
+  text-color:          transparent;
+  border-color:        transparent;
+}
+
+prompt {
+  background-color:    transparent;
+  text-color:          @WHIT;
+}
+
+textbox-prompt-colon {
+  background-color:    transparent;
+  text-color:          @WHIT;
+}
+
+entry {
+  background-color:    @GRY8;
+  text-color:          @BLAK;
+  placeholder-color:   @GRY3;
+  border-color:        @WHIT;
+}
+
+inputbar {
+  background-color:    transparent;
+  text-color:          transparent;
+  border-color:        transparent;
+}
+
+case-indicator {
+  background-color:    transparent;
+  text-color:          @GRY5;
+}
+
+listview {
+  background-color:    @GRY8;
+  border-color:        @WHIT;
+}
+
+mainbox {
+  background-color:    transparent;
+}
+
+element {
+  background-color:    transparent;
+  text-color:          @GRY2;
+  border-color:        transparent;
+}
+
+element-icon {
+  background-color:    transparent;
+  text-color:          inherit;
+}
+
+element-text {
+  background-color:    transparent;
+  text-color:          inherit;
+}
+
+element normal.urgent,
+element alternate.urgent {
+  background-color:    @PINK;
+  text-color:          @GRY8;
+}
+
+element normal.active,
+element alternate.active {
+  background-color:    @GRY8;
+  text-color:          @BLAK;
+}
+
+element selected {
+  background-color:    @WHIT;
+  text-color:          @BLAK;
+  border-color:        @GRY8;
+}
+
+element selected.urgent {
+  background-color:    @PINK;
+  text-color:          @GRY8;
+}
+
+element selected.active {
+  background-color:    @SKY;
+  color:               @GRY8;
+}
+
+message {
+  background-color:    @PINK;
+  text-color:          @GRY8;
+}

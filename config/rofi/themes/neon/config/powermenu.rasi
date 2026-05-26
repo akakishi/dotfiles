@@ -1,0 +1,59 @@
+configuration {
+  modi:                   "dmenu";
+  show-icons:             true;
+  display-drun:           "";
+  drun-display-format:    "{icon} {name}";
+  disable-history:        false;
+  click-to-exit:          true;
+  location:               0;
+}
+
+@import "../applied-colors.rasi"
+@import "../numbers.rasi"
+
+/* Line Responsible For Button Layouts */
+/* BUTTON = TRUE */
+
+window {
+  width:                  350px;
+  anchor:                 center;
+  x-offset:               0;
+  y-offset:               0;
+}
+
+prompt {
+  enabled:                true;
+  padding:                0px;
+  background-color:       transparent;
+  text-color:             @YLLW;
+  font:                   @font14;
+}
+
+entry {
+  expand:                 true;
+  background-color:       transparent;
+  text-color:             @LGRY;
+}
+
+inputbar {
+  children:               [ prompt ];
+  background-color:       transparent;
+  text-color:             @LGRY;
+  expand:                 false;
+  margin:                 0px;
+  padding:                0px;
+  position:               center;
+}
+
+listview {
+  fixed-height:           false;
+  fixed-columns:          false;
+}
+
+mainbox {
+  children:               [ listview ];
+}
+
+element-icon {
+  size:                   0px;
+}
