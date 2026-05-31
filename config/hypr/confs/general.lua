@@ -42,18 +42,6 @@ hl.config({
 	animations = {
 		enabled = true,
 	},
-	dwindle = {
-		preserve_split = true,
-	},
-	master = {
-		new_status = "master",
-		orientation = "left",
-		new_on_top = true,
-		drop_at_cursor = false,
-	},
-	scrolling = {
-		fullscreen_on_one_column = true,
-	},
 	xwayland = {
 		force_zero_scaling = true,
 	},
