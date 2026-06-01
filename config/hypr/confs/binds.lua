@@ -29,31 +29,31 @@ hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipboard))
 hl.bind(mainMod .. " + period", function()
 	local workspace = hl.get_active_workspace()
-	if workspace.tiled_layout == "scrolling" then
+	if workspace ~= nil and workspace.tiled_layout == "scrolling" then
 		hl.dispatch(hl.dsp.layout("swapcol r"))
-	elseif workspace.tiled_layout == "monocle" then
+	elseif workspace ~= nil and workspace.tiled_layout == "monocle" then
 		hl.dispatch(hl.dsp.layout("cyclenext"))
 	end
 end)
 hl.bind(mainMod .. " + comma", function()
 	local workspace = hl.get_active_workspace()
-	if workspace.tiled_layout == "scrolling" then
+	if workspace ~= nil and workspace.tiled_layout == "scrolling" then
 		hl.dispatch(hl.dsp.layout("swapcol l"))
-	elseif workspace.tiled_layout == "monocle" then
+	elseif workspace ~= nil and workspace.tiled_layout == "monocle" then
 		hl.dispatch(hl.dsp.layout("cycleprev"))
 	end
 end)
 
 hl.bind(mainMod .. " + SHIFT + period", function()
 	local workspace = hl.get_active_workspace()
-	if workspace.tiled_layout == "scrolling" then
+	if workspace ~= nil and workspace.tiled_layout == "scrolling" then
 		hl.dispatch(hl.dsp.layout("colresize +0.1"))
 	end
 end)
 
 hl.bind(mainMod .. " + SHIFT + comma", function()
 	local workspace = hl.get_active_workspace()
-	if workspace.tiled_layout == "scrolling" then
+	if workspace ~= nil and workspace.tiled_layout == "scrolling" then
 		hl.dispatch(hl.dsp.layout("colresize -0.1"))
 	end
 end)
@@ -177,4 +177,3 @@ hl.bind("SUPER + tab", function()
 		duration = 1500,
 	})
 end)
-

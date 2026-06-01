@@ -17,10 +17,10 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "<leader>vwmm", function()
-    require("vim-with-me").StartVimWithMe()
+	require("vim-with-me").StartVimWithMe()
 end, { desc = "Start Vim-With-Me" })
 vim.keymap.set("n", "<leader>vwms", function()
-    require("vim-with-me").StopVimWithMe()
+	require("vim-with-me").StopVimWithMe()
 end, { desc = "Stop Vim-With-Me" })
 
 -- pasting over a selection keeps the original buffer
@@ -55,47 +55,56 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "Make executable" })
 
 -- make it rain
-vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>", { desc = "Cellular Automaton" });
+vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>", { desc = "Cellular Automaton" })
 
 -- source current file
 vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
+	vim.cmd("so")
 end, { desc = "Source file" })
 
 -- lazygit
-vim.keymap.set("n", "<leader>gg", function ()
-    vim.cmd("LazyGit")
+vim.keymap.set("n", "<leader>gg", function()
+	vim.cmd("LazyGit")
 end, { desc = "LazyGit" })
 
 -- spell check
 -- switch to english
 vim.keymap.set("n", "<leader>lsen", function()
-    vim.opt.spelllang = "en"
-    vim.cmd("echo 'Spell language set to English'")
+	vim.opt.spelllang = "en"
+	vim.cmd("echo 'Spell language set to English'")
 end, { desc = "Spelling language English" })
 -- switch to spanish
 vim.keymap.set("n", "<leader>lses", function()
-    vim.opt.spelllang = "es"
-    vim.cmd("echo 'Spell language set to Spanish'")
+	vim.opt.spelllang = "es"
+	vim.cmd("echo 'Spell language set to Spanish'")
 end, { desc = "Spelling language Spanish" })
 -- switch to both
 vim.keymap.set("n", "<leader>lsb", function()
-    vim.opt.spelllang = "en,es"
-    vim.cmd("echo 'Spell language set to English and Spanish'")
+	vim.opt.spelllang = "en,es"
+	vim.cmd("echo 'Spell language set to English and Spanish'")
 end, { desc = "Spelling language English and Spanish" })
 -- apply spell suggestion
 vim.keymap.set("n", "<leader>lss", function()
-    vim.cmd("normal! 1z=")
+	vim.cmd("normal! 1z=")
 end, { desc = "Spelling suggestions" })
 -- add new word
 vim.keymap.set("n", "<leader>lga", function()
-    vim.cmd("normal! zg")
+	vim.cmd("normal! zg")
 end, { desc = "Add word to spell file" })
 -- remove word
 vim.keymap.set("n", "<leader>lgr", function()
-    vim.cmd("normal! zug")
+	vim.cmd("normal! zug")
 end, { desc = "Remove word from spell file" })
 -- repeat replacement for all matches
 vim.keymap.set("n", "<leader>lgm", function()
-    vim.cmd("normal! zg")
+	vim.cmd("normal! zg")
 end, { desc = "Repeat spell fix" })
+
+-- Go to definition
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+
+-- Go to declaration
+vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
+
+-- Open definition in a vertical split
+vim.keymap.set("n", "gv", ":vsplit | lua vim.lsp.buf.definition()<CR>", { silent = true })
