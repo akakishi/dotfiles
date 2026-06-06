@@ -27,6 +27,7 @@ hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd(notifications))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd(printScreen))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipboard))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("~/.config/waybar/scripts/launch_waybar.sh"))
 hl.bind(mainMod .. " + period", function()
 	local workspace = hl.get_active_workspace()
 	if workspace ~= nil and workspace.tiled_layout == "scrolling" then

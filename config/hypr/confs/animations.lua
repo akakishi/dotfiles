@@ -6,8 +6,8 @@
 hl.config({ animations = { enabled = true } })
 
 -- Bezier curves
-hl.curve("md3_decel", { type = "bezier", points = { { 0.05, 0.7 }, { 0.1, 1 } } })
-hl.curve("md3_accel", { type = "bezier", points = { { 0.3, 0 }, { 0.8, 0.15 } } })
+hl.curve("md3_decel", { type = "bezier", points = { { 0, 0.75 }, { 0.25, 1 } } })
+hl.curve("md3_accel", { type = "bezier", points = { { 0.75, 0 }, { 1, 0.25 } } })
 hl.curve("menu_decel", { type = "bezier", points = { { 0.1, 1 }, { 0, 1 } } })
 hl.curve("menu_accel", { type = "bezier", points = { { 0.38, 0.04 }, { 1, 0.07 } } })
 
@@ -20,8 +20,8 @@ hl.curve("spring_special", { type = "spring", mass = 1, stiffness = 30, dampenin
 
 -- Window animations
 hl.animation({ leaf = "windows", enabled = true, speed = 1, spring = "spring_window" })
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 1, spring = "spring_open", style = "popin 40%" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 3, bezier = "md3_accel", style = "popin 60%" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 1, spring = "spring_open", style = "popin 60%" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 3, bezier = "md3_accel", style = "popin 80%" })
 
 -- Border animations (disabled)
 hl.animation({ leaf = "border", enabled = false })

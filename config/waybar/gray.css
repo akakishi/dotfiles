@@ -143,10 +143,10 @@ window#waybar {
   margin: .0rem;
 }
 window > box {
-  background-image: linear-gradient(0deg, alpha(@gray4,0), alpha(@gray4,0.6));
+  /*background-image: linear-gradient(0deg, alpha(@gray4,0), alpha(@gray4,0.6));*/
   padding-top: .2rem;
   padding-bottom: .2rem;
-  /*background-color: transparent;*/
+  background-color: transparent;
 }
 .modules-left {
   margin-left: .5rem;

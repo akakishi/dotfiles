@@ -1,0 +1,5 @@
+[services.my-nas]
+type = "sftp"
+host = "192.168.1.9"
+user = "rama"
+port = 22

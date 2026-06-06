@@ -36,3 +36,10 @@ hl.layer_rule({
 	animation = "slide right",
 })
 
+hl.layer_rule({
+	name = "waybar",
+	match = {
+		namespace = "topbar",
+	},
+	animation = "slide top",
+})
