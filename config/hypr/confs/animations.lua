@@ -10,6 +10,7 @@ hl.curve("md3_decel", { type = "bezier", points = { { 0, 0.75 }, { 0.25, 1 } } }
 hl.curve("md3_accel", { type = "bezier", points = { { 0.75, 0 }, { 1, 0.25 } } })
 hl.curve("menu_decel", { type = "bezier", points = { { 0.1, 1 }, { 0, 1 } } })
 hl.curve("menu_accel", { type = "bezier", points = { { 0.38, 0.04 }, { 1, 0.07 } } })
+hl.curve("big_small", { type = "bezier", points = { { 0, 0 }, { 0.45, 1.50 } } })
 
 -- Spring Curves
 hl.curve("spring_menu", { type = "spring", mass = 1, stiffness = 80, dampening = 14 })
@@ -40,7 +41,14 @@ hl.animation({ leaf = "fadeLayersIn", enabled = true, speed = 2, bezier = "menu_
 hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.6, bezier = "menu_accel" })
 
 -- Workspace animations
-hl.animation({ leaf = "workspaces", enabled = true, speed = 1, spring = "spring_workspace", style = "slide" })
+hl.animation({
+	leaf = "workspaces",
+	enabled = true,
+	speed = 1,
+	spring = "spring_workspace",
+	style = "slide",
+})
+
 hl.animation({
 	leaf = "specialWorkspace",
 	enabled = true,

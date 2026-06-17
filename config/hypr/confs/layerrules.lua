@@ -43,3 +43,11 @@ hl.layer_rule({
 	},
 	animation = "slide top",
 })
+
+hl.layer_rule({
+	name = "hyprshutdown",
+	match = {
+		namespace = "hyprshutdown",
+	},
+	animation = "fade",
+})
