@@ -16,7 +16,7 @@ if f ~= nil then
 			output = "eDP-1",
 			mode = "preferred",
 			position = "auto",
-			scale = "1",
+			scale = 1,
 		})
 	elseif string.match(hostname, desktopSuffix) then
 		hl.notification.create({
@@ -28,21 +28,22 @@ if f ~= nil then
 			output = "HDMI-A-1",
 			mode = "1920x1080",
 			position = "0x0",
-			scale = "1",
+			scale = 1,
 		})
 
 		hl.monitor({
 			output = "DP-1",
 			mode = "1920x1080",
-			position = "1920x0",
-			scale = "1",
+			position = "3000x0",
+			scale = 1,
 		})
 
 		hl.monitor({
 			output = "DP-2",
 			mode = "1920x1080@75",
-			position = "3840x0",
-			scale = "1",
+			position = "1920x-420",
+			transform = 1,
+			scale = 1,
 		})
 
 		hl.workspace_rule({ workspace = "2", monitor = "DP-1" })
