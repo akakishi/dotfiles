@@ -12,9 +12,9 @@
     color: @white;
     border-color: alpha(@gray9,0.8);
     text-shadow:
-      0px 0px 6px #ff4444,
-      0px 0px 4px #ff8888,
-      0px 0px 2px #ffcccc;
+      0px 0px 6px #884444,
+      0px 0px 4px #662222,
+      0px 0px 2px #440000;
   }
 }
 
@@ -24,15 +24,15 @@
     color: @white;
     border-color: alpha(@gray9,0.8);
     text-shadow:
-      0px 0px 6px #dddd44,
-      0px 0px 4px #eeee88,
+      0px 0px 6px #888822,
+      0px 0px 4px #444411,
       0px 0px 2px #000000;
   }
 }
 
 .warning {
   animation-name: blink_orange;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -76,10 +76,10 @@
 #tray,
 #window,
 #workspaces {
-  padding-left: .4rem;
-  padding-right: .4rem;
-  padding-top: .2rem;
-  padding-bottom: .2rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
   margin-top: .0rem;
   margin-left: .1rem;
   margin-right: .1rem;

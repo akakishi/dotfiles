@@ -1,0 +1,11 @@
+[opener]
+# Text editors (block = true keeps the terminal waiting for CLI apps)
+nvim = [ { run = 'nvim "$@"', block = true, desc = "Neovim" } ]
+code = [ { run = 'code "$@"', orphan = true, desc = "VS Code" } ]
+
+[open]
+prepend_rules = [
+  { mime = "text/*", use = [ "nvim", "code" ] },
+
+  #{ mime = "*", use = [ "open" ] }
+]
