@@ -61,6 +61,10 @@ element-text {
   text-color:          inherit;
 }
 
+element-text selected {
+  text-transform:      bold;
+}
+
 element normal.urgent,
 element alternate.urgent {
   background-color:    @PINK;
