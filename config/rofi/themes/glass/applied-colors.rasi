@@ -19,9 +19,9 @@ textbox-prompt-colon {
 }
 
 entry {
-  background-color:    @aGRY2;
-  text-color:          @WHIT;
-  placeholder-color:   @aGRY8;
+  background-color:    @aGRY8;
+  text-color:          @BLAK;
+  placeholder-color:   @aGRY2;
   border-color:        @aWHIT;
 }
 
@@ -46,8 +46,8 @@ mainbox {
 }
 
 element {
-  background-color:    @aGRY3;
-  text-color:          @GRY9;
+  background-color:    @aGRY8;
+  text-color:          @GRY2;
   border-color:        @aWHIT;
 }
 
@@ -78,8 +78,8 @@ element alternate.active {
 }
 
 element selected {
-  background-color:    @aGRY6;
-  text-color:          @WHIT;
+  background-color:    @GRY9;
+  text-color:          @BLAK;
   border-color:        @WHIT;
 }
 
