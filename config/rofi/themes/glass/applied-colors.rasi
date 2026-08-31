@@ -19,9 +19,9 @@ textbox-prompt-colon {
 }
 
 entry {
-  background-color:    @aGRY8;
-  text-color:          @BLAK;
-  placeholder-color:   @aGRY3;
+  background-color:    @aGRY2;
+  text-color:          @WHIT;
+  placeholder-color:   @aGRY8;
   border-color:        @aWHIT;
 }
 
@@ -37,18 +37,18 @@ case-indicator {
 }
 
 listview {
-  background-color:    @aGRY8;
-  border-color:        @aWHIT;
+  background-color:    transparent;
+  border-color:        transparent;
 }
 
 mainbox {
-  background-color:    transparent;
+  background-color:    @aGRY4;
 }
 
 element {
-  background-color:    transparent;
-  text-color:          @GRY2;
-  border-color:        transparent;
+  background-color:    @aGRY3;
+  text-color:          @GRY9;
+  border-color:        @aWHIT;
 }
 
 element-icon {
@@ -78,9 +78,9 @@ element alternate.active {
 }
 
 element selected {
-  background-color:    @aWHIT;
-  text-color:          @BLAK;
-  border-color:        @aGRY8;
+  background-color:    @aGRY6;
+  text-color:          @WHIT;
+  border-color:        @WHIT;
 }
 
 element selected.urgent {
