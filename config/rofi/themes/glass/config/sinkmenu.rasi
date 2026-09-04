@@ -13,8 +13,8 @@ configuration {
 window {
   width:                  500px;
   anchor:                 north east;
-  x-offset:               0px;
-  y-offset:               -10px;
+  x-offset:               -10px;
+  y-offset:               0px;
 }
 
 listview {
