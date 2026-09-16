@@ -37,7 +37,7 @@ case-indicator {
 }
 
 listview {
-  background-color:    transparent;
+  background-color:    @aGRY8;
   border-color:        transparent;
 }
 
@@ -46,7 +46,7 @@ mainbox {
 }
 
 element {
-  background-color:    @aGRY8;
+  background-color:    transparent;
   text-color:          @GRY2;
   border-color:        @aWHIT;
 }

@@ -87,6 +87,7 @@ element alternate.active {
 }
 
 element selected {
+  border-radius:      4px;
 }
 
 element selected.urgent {
