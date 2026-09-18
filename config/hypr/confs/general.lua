@@ -1,8 +1,8 @@
 hl.config({
 	general = {
-		gaps_in = 2,
-		gaps_out = 4,
-		border_size = 2,
+		gaps_in = 6,
+		gaps_out = 20,
+		border_size = 0,
 		col = {
 			active_border = {
 				colors = {
@@ -19,17 +19,17 @@ hl.config({
 		layout = "dwindle",
 	},
 	decoration = {
-		rounding = 4,
+		rounding = 8,
 		rounding_power = 2,
 		active_opacity = 1.0,
 		inactive_opacity = 1.0,
 		fullscreen_opacity = 1.0,
 		shadow = {
 			enabled = true,
-			range = 32,
+			range = 18,
 			render_power = 2,
-			color = "rgba(1a1a1a88)",
-			color_inactive = "rgba(10101066)",
+			color = "rgba(101010bb)",
+			color_inactive = "rgba(16161688)",
 		},
 		blur = {
 			enabled = true,
