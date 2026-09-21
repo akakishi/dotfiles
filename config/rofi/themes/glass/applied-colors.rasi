@@ -10,18 +10,18 @@ window {
 
 prompt {
   background-color:    transparent;
-  text-color:          @aWHIT;
+  text-color:          @WHIT;
 }
 
 textbox-prompt-colon {
   background-color:    transparent;
-  text-color:          @aWHIT;
+  text-color:          @WHIT;
 }
 
 entry {
   background-color:    @aGRY8;
   text-color:          @BLAK;
-  placeholder-color:   @aGRY2;
+  placeholder-color:   @GRY2;
   border-color:        @aWHIT;
 }
 
@@ -37,7 +37,7 @@ case-indicator {
 }
 
 listview {
-  background-color:    @aGRY8;
+  background-color:    transparent;
   border-color:        transparent;
 }
 
@@ -47,7 +47,7 @@ mainbox {
 
 element {
   background-color:    transparent;
-  text-color:          @GRY2;
+  text-color:          @GRY9;
   border-color:        @aWHIT;
 }
 
