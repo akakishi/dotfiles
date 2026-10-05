@@ -42,12 +42,13 @@ listview {
 }
 
 mainbox {
-  background-color:    @aGRY4;
+  background-color:    @aGRY2;
+  border-color:        @aGRY4;
 }
 
 element {
   background-color:    transparent;
-  text-color:          @GRY9;
+  text-color:          @WHIT;
   border-color:        @aWHIT;
 }
 

@@ -2,13 +2,13 @@ hl.config({
 	general = {
 		gaps_in = 6,
 		gaps_out = 20,
-		border_size = 0,
+		border_size = 1,
 		col = {
 			active_border = {
 				colors = {
-					"rgba(ccccccff)",
-					"rgba(aaaaaaff)",
-					"rgba(ccccccff)",
+					"rgba(606060A0)",
+					"rgba(60606060)",
+					--"rgba(ccccccff)",
 				},
 				angle = 45,
 			},
@@ -19,7 +19,7 @@ hl.config({
 		layout = "dwindle",
 	},
 	decoration = {
-		rounding = 8,
+		rounding = 6,
 		rounding_power = 2,
 		active_opacity = 1.0,
 		inactive_opacity = 1.0,
