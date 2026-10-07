@@ -51,6 +51,8 @@ hl.bind(mainMod .. " + SHIFT + period", function()
 	local workspace = hl.get_active_workspace()
 	if workspace ~= nil and workspace.tiled_layout == "scrolling" then
 		hl.dispatch(hl.dsp.layout("colresize +0.1"))
+	elseif workspace ~= nil and workspace.tiled_layout == "dwindle" then
+		hl.dispatch(hl.dsp.layout("splitratio +0.1"))
 	end
 end)
 
@@ -58,6 +60,8 @@ hl.bind(mainMod .. " + SHIFT + comma", function()
 	local workspace = hl.get_active_workspace()
 	if workspace ~= nil and workspace.tiled_layout == "scrolling" then
 		hl.dispatch(hl.dsp.layout("colresize -0.1"))
+	elseif workspace ~= nil and workspace.tiled_layout == "dwindle" then
+		hl.dispatch(hl.dsp.layout("splitratio -0.1"))
 	end
 end)
 
