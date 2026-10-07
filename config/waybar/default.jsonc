@@ -14,12 +14,12 @@
   //****************
 
   "modules-left": [
-    "idle_inhibitor",
+    "clock",
     "hyprland/workspaces",
-    "hyprland/window"
+    //"hyprland/window"
+    "custom/media"
   ],
   "modules-center": [
-    "custom/media"
   ],
   "modules-right": [
     "tray",
@@ -33,9 +33,9 @@
     "backlight",
     "battery",
     "network",
-    //"custom/divider",
+    "custom/divider",
     "custom/weather",
-    "clock",
+    "idle_inhibitor",
     "custom/notification"
   ],
 
@@ -220,7 +220,7 @@
 
   "clock": {
     "interval": 1,
-    "format": "{:%d/%m %a %H:%M}",
+    "format": "{:%H:%M %a %d/%m}",
     "tooltip": true,
     "tooltip-format": "<big>{:%A, %d %B %Y}</big>\n<tt>{calendar}</tt>"
   },
@@ -295,7 +295,7 @@
   },
 
   "custom/divider": {
-    "format": "|"
+    "format": "·"
     //"format": "󰇙"
   },
 

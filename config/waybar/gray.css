@@ -287,7 +287,9 @@ tooltip label {
 
 #custom-divider {
   font-size: 1rem;
-  padding: .3rem .3rem;
+  padding: .0rem .0rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 
 #custom-privacydots {
