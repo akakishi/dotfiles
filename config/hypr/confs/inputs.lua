@@ -16,7 +16,6 @@ hl.config({
 
 		tablet = {
 			output = "HDMI-A-1",
-			region_size = { 29376, 16524 },
 			region_position = { 0, 0 },
 			active_area_size = { 293.76, 165.24 },
 			transform = 0,
@@ -29,4 +28,3 @@ hl.gesture({
 	direction = "horizontal",
 	action = "workspace",
 })
-

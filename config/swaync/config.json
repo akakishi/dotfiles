@@ -10,7 +10,7 @@
   "control-center-margin-bottom": 10,
   "control-center-margin-right": 10,
   "control-center-width": 500,
-  "fit-to-screen": true,
+  "fit-to-screen": false,
 
   "layer": "overlay",
   "control-center-layer": "overlay",

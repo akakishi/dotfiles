@@ -181,6 +181,7 @@ hl.bind("SUPER + tab", function()
 	hl.dispatch(hl.dsp.exec_cmd(notify_cmd))
 	hl.notification.create({
 		text = "Workspace: " .. workspace.name .. ". \nLayout: " .. next_layout,
+		timeout = 1500,
 		duration = 1500,
 	})
 end)
