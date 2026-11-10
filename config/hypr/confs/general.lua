@@ -37,6 +37,7 @@ hl.config({
 			size = 2,
 			passes = 4,
 			vibrancy = 0.170,
+			variant = "kawase",
 		},
 	},
 	animations = {

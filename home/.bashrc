@@ -93,6 +93,7 @@ export PATH="$PATH:/home/ramirods/.local/bin"
 export DOTNET_ROOT="/usr/share/dotnet"
 DOTNET_TOOLS="$HOME/.dotnet/tools"
 export PATH="$PATH:$DOTNET_ROOT:$DOTNET_TOOLS"
+export DOTNET_CLI_UI_LANGUAGE=en
 eval "$(/usr/bin/oh-my-posh --init --shell bash --config $HOME/.config/oh-my-posh/catppuccin_mocha.omp.toml)"
 eval "$(thefuck --alias)"
 eval "$(zoxide init bash)"
