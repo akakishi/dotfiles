@@ -12,8 +12,8 @@ label {
 
 .notification {
   box-shadow: none;
-  background-color: alpha(#232323,0.8);
-  border: 1px solid alpha(#bcbcbc,0.5);
+  background-color: alpha(@gray2,0.8);
+  border: 1px solid alpha(@gray8,0.5);
   border-radius: 4px;
 }
 
@@ -26,7 +26,7 @@ label {
 }
 
 .notification button:hover {
-  background-color: alpha(@gray9, 0.9);
+  background-color: alpha(@gray4, 0.9);
 }
 
 .notification-content {
@@ -56,24 +56,24 @@ label {
 }
 
 .notification-default-action:hover {
-  background-color: alpha(@gray9, 0.9);
+  background-color: alpha(@gray4, 0.9);
 }
 
 .notification-action:hover {
-  background-color: alpha(@gray9, 0.9);
+  background-color: alpha(@gray4, 0.9);
 }
 
 /*** Notification ***/
 /* Notification header */
 .summary {
-  color: @black;
+  color: @white;
   font-weight: 700;
   text-shadow: 0px 1px 4px @white;
   padding-left: 0px;
 }
 
 .time {
-  color: alpha(@black, 0.8);
+  color: alpha(@white, 0.8);
   font-weight: 700;
   text-shadow: 0px 1px 4px @white;
   background: transparent;
@@ -82,7 +82,7 @@ label {
 }
 
 .body {
-  color: @black;
+  color: @white;
   margin: 0px 0px 0px 0px;
   padding: 0px 4px 0px 0px;
   text-shadow: 0px 1px 4px @white;
@@ -101,8 +101,8 @@ label {
 
 /* Control center */
 .control-center {
-  background-color: alpha(#232323,0.8);
-  border: 1px solid alpha(#bcbcbc,0.5);
+  background-color: alpha(@gray2,0.8);
+  border: 1px solid alpha(@gray8,0.5);
   border-radius: 4px;
   box-shadow: none;
   margin: 0px;
