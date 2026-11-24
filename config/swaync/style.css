@@ -38,7 +38,7 @@ label {
 .close-button {
   margin: 4px;
   padding: 4px;
-  border-radius: 99px;
+  border-radius: 4px;
   background: transparent;
   border: 1px solid transparent;
   color: alpha(@black, 0.5);
@@ -51,7 +51,7 @@ label {
 }
 
 .notification-action {
-  border-radius: 99px;
+  border-radius: 4px;
   border: none;
 }
 
@@ -68,14 +68,14 @@ label {
 .summary {
   color: @white;
   font-weight: 700;
-  text-shadow: 0px 1px 4px @white;
+  text-shadow: 0px 1px 4px @black;
   padding-left: 0px;
 }
 
 .time {
   color: alpha(@white, 0.8);
   font-weight: 700;
-  text-shadow: 0px 1px 4px @white;
+  text-shadow: 0px 1px 4px @black;
   background: transparent;
   margin: 0px 38px 0px 0px;
   padding: 2px 0px;
@@ -85,12 +85,12 @@ label {
   color: @white;
   margin: 0px 0px 0px 0px;
   padding: 0px 4px 0px 0px;
-  text-shadow: 0px 1px 4px @white;
+  text-shadow: 0px 1px 4px @wblack
 }
 
 .body-image {
   border-radius: 0px;
-  text-shadow: 0px 1px 4px @white;
+  text-shadow: 0px 1px 4px @black;
 }
 
 /* The "Notifications" and "Do Not Disturb" text widget */
@@ -157,27 +157,27 @@ label {
 }
 
 .notification-group-collapse-button {
-  background: alpha(@white, 0.5);
-  color: alpha(@black, 0.5);
-  border: 1px solid @white;
-  border-radius: 99px;
+  background: alpha(@gray2, 0.5);
+  color: alpha(@white, 0.5);
+  border: 1px solid @gray8;
+  border-radius: 4px;
 }
 
 .notification-group-collapse-button:hover {
   color: @black;
-  background: alpha(@gray9, 0.9);
+  background: alpha(@gray2, 0.9);
 }
 
 .notification-group-close-all-button {
-  background: alpha(@white, 0.5);
-  color: alpha(@black, 0.5);
-  border: 1px solid @white;
-  border-radius: 99px;
+  background: alpha(@gray2, 0.5);
+  color: alpha(@white, 0.5);
+  border: 1px solid @gray8;
+  border-radius: 4px;
 }
 
 .notification-group-close-all-button:hover {
   background: @red;
-  color: @black;
+  color: @white;
 }
 
 .control-center-list > row:last-child {
@@ -210,14 +210,14 @@ label {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px 8px 0px;
-  background: alpha(@white, 0.5);
-  color: alpha(@black, 0.5);
-  border-radius: 99px;
-  border: 1px solid @white;
+  background: alpha(@gray2, 0.5);
+  color: alpha(@white, 0.5);
+  border-radius: 4px;
+  border: 1px solid @gray8;
 }
 .widget-title > button:hover {
-  background: alpha(@gray9, 0.9);
-  color: @black;
+  background: alpha(@gray2, 0.9);
+  color: @white;
 }
 
 /* Label widget */
@@ -245,7 +245,7 @@ label {
   background: transparent;
 }
 .widget-menubar > box > box > button {
-  background: @black;
+  background: @gray2;
   margin: 0px;
   font-size: 14px;
   padding: 0px;
@@ -257,14 +257,14 @@ label {
   box-shadow: none;
 }
 .widget-menubar button:focus:hover {
-  background: alpha(@gray5, 0.5);
-  border: 1px solid alpha(@white, 0.5);
+  background: alpha(@gray2, 0.5);
+  border: 1px solid alpha(@gray8, 0.5);
   box-shadow: none;
 }
 
 .widget-menubar > box > revealer > box {
   margin: 0px;
-  background: @black;
+  background: @gray2;
   border-radius: 0px;
 }
 .widget-menubar > box > revealer > box > button {
@@ -287,7 +287,7 @@ label {
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) > button {
   color: alpha(@white, 0.6);
   background: alpha(@white, 0.4);
-  border-radius: 999px;
+  border-radius: 4px;
   border: 1px solid transparent;
 }
 .widget-mpris > box > carousel > widget > box > box:nth-child(2) > button:hover {
@@ -330,7 +330,7 @@ label {
 }
 .widget-dnd > switch {
   background-color: alpha(@gray6, 0.5);
-  border-radius: 999px;
+  border-radius: 4px;
   border: 1px solid @white;
 }
 
@@ -347,9 +347,9 @@ label {
 }
 
 .widget-dnd > switch slider {
-  background: alpha(@gray9, 0.8);
-  border: 1px solid @white;
-  border-radius: 999px;
+  background: alpha(@gray2, 0.8);
+  border: 1px solid @gray8;
+  border-radius: 4px;
 }
 
 /* Toggles */
